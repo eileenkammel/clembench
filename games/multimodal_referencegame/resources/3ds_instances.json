@@ -1,0 +1,27 @@
+{
+    "INSTANCES": {
+        "one_attibute_id": [
+            {
+                "stimuli_id": 0.0,
+                "target": "641.png",
+                "distractor1": "2423.png",
+                "distractor2": "5987.png",
+                "id_type": "floor_hue"
+            },
+            {
+                "stimuli_id": 1.0,
+                "target": "641.png",
+                "distractor1": "1181.png",
+                "distractor2": "821.png",
+                "id_type": "wall_hue"
+            },
+            {
+                "stimuli_id": 2.0,
+                "target": "641.png",
+                "distractor1": "659.png",
+                "distractor2": "587.png",
+                "id_type": "object_hue"
+            }
+        ]
+    }
+}
