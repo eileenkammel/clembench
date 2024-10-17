@@ -7869,137 +7869,30 @@
       {
          "name": "TUNA_images",
          "game_instances": [
-             {
-                 "game_id": 0,
-                 "player_1_prompt_header": "You play a picture guessing game where you and another player are given the same three images but in a different order.\nYour task is to describe the image labeled “target” so that the image stands out against the others and the other player knows what image to select.\nSay no more than what's absolutely needed to make the distinction. \nBegin your expression with “Expression: “.\nThe target image is the first image.",
-                 "player_1_first_image": "games/multimodal_referencegame/resources/tuna_images/0.png",
-                 "player_1_second_image": "games/multimodal_referencegame/resources/tuna_images/70.png",
-                 "player_1_third_image": "games/multimodal_referencegame/resources/tuna_images/25.png",
-                 "player_2_prompt_header": "\nYou play a picture guessing game where you and another player are given the same three images but in a different order. You will also see an expression made by the other player describing one of the images. Your task is to identify the image the expression is referring to.\nBegin your expression with “Answer: ” Say only the number of your selected image (first, second, third). No need to explain your reasoning.\nExpression: EXPRESSION\nWhat picture is the expression referring to?\n",
-                 "player_2_first_image": "games/multimodal_referencegame/resources/tuna_images/70.png",
-                 "player_2_second_image": "games/multimodal_referencegame/resources/tuna_images/0.png",
-                 "player_2_third_image": "games/multimodal_referencegame/resources/tuna_images/25.png",
-                 "target_image_name": [
-                     "second",
-                     "2",
-                     "2nd"
-                 ],
-                 "player_1_response_pattern": "^expression:\\s(?P<content>.+)\n*(?P<remainder>.*)",
-                 "player_2_response_pattern": "^answer:\\s(?P<content>first|second|third|1|2|3|1st|2nd|3rd)\n*(?P<remainder>.*)",
-                 "player_1_response_tag": "expression:",
-                 "player_2_response_tag": "answer:",
-                 "human_expression": ""
-             },
-             {
-                 "game_id": 1,
-                 "player_1_prompt_header": "You play a picture guessing game where you and another player are given the same three images but in a different order.\nYour task is to describe the image labeled “target” so that the image stands out against the others and the other player knows what image to select.\nSay no more than what's absolutely needed to make the distinction. \nBegin your expression with “Expression: “.\nThe target image is the first image.",
-                 "player_1_first_image": "games/multimodal_referencegame/resources/tuna_images/2.png",
-                 "player_1_second_image": "games/multimodal_referencegame/resources/tuna_images/43.png",
-                 "player_1_third_image": "games/multimodal_referencegame/resources/tuna_images/0.png",
-                 "player_2_prompt_header": "\nYou play a picture guessing game where you and another player are given the same three images but in a different order. You will also see an expression made by the other player describing one of the images. Your task is to identify the image the expression is referring to.\nBegin your expression with “Answer: ” Say only the number of your selected image (first, second, third). No need to explain your reasoning.\nExpression: EXPRESSION\nWhat picture is the expression referring to?\n",
-                 "player_2_first_image": "games/multimodal_referencegame/resources/tuna_images/0.png",
-                 "player_2_second_image": "games/multimodal_referencegame/resources/tuna_images/43.png",
-                 "player_2_third_image": "games/multimodal_referencegame/resources/tuna_images/2.png",
-                 "target_image_name": [
-                     "first",
-                     "1",
-                     "1st"
-                 ],
-                 "player_1_response_pattern": "^expression:\\s(?P<content>.+)\n*(?P<remainder>.*)",
-                 "player_2_response_pattern": "^answer:\\s(?P<content>first|second|third|1|2|3|1st|2nd|3rd)\n*(?P<remainder>.*)",
-                 "player_1_response_tag": "expression:",
-                 "player_2_response_tag": "answer:",
-                 "human_expression": ""
-             },
-             {
-                 "game_id": 2,
-                 "player_1_prompt_header": "You play a picture guessing game where you and another player are given the same three images but in a different order.\nYour task is to describe the image labeled “target” so that the image stands out against the others and the other player knows what image to select.\nSay no more than what's absolutely needed to make the distinction. \nBegin your expression with “Expression: “.\nThe target image is the first image.",
-                 "player_1_first_image": "games/multimodal_referencegame/resources/tuna_images/0.png",
-                 "player_1_second_image": "games/multimodal_referencegame/resources/tuna_images/1.png",
-                 "player_1_third_image": "games/multimodal_referencegame/resources/tuna_images/57.png",
-                 "player_2_prompt_header": "\nYou play a picture guessing game where you and another player are given the same three images but in a different order. You will also see an expression made by the other player describing one of the images. Your task is to identify the image the expression is referring to.\nBegin your expression with “Answer: ” Say only the number of your selected image (first, second, third). No need to explain your reasoning.\nExpression: EXPRESSION\nWhat picture is the expression referring to?\n",
-                 "player_2_first_image": "games/multimodal_referencegame/resources/tuna_images/1.png",
-                 "player_2_second_image": "games/multimodal_referencegame/resources/tuna_images/0.png",
-                 "player_2_third_image": "games/multimodal_referencegame/resources/tuna_images/57.png",
-                 "target_image_name": [
-                     "second",
-                     "2",
-                     "2nd"
-                 ],
-                 "player_1_response_pattern": "^expression:\\s(?P<content>.+)\n*(?P<remainder>.*)",
-                 "player_2_response_pattern": "^answer:\\s(?P<content>first|second|third|1|2|3|1st|2nd|3rd)\n*(?P<remainder>.*)",
-                 "player_1_response_tag": "expression:",
-                 "player_2_response_tag": "answer:",
-                 "human_expression": ""
-             }
-         ]
-     },
-     {
-         "name": "3DS_images",
-         "game_instances": [
-             {
-                 "game_id": 0,
-                 "player_1_prompt_header": "You play a picture guessing game where you and another player are given the same three images but in a different order.\nYour task is to describe the image labeled “target” so that the image stands out against the others and the other player knows what image to select.\nSay no more than what's absolutely needed to make the distinction. \nBegin your expression with “Expression: “.\nThe target image is the third image.",
-                 "player_1_first_image": "games/multimodal_referencegame/resources/3ds_images/5987.png",
-                 "player_1_second_image": "games/multimodal_referencegame/resources/3ds_images/2423.png",
-                 "player_1_third_image": "games/multimodal_referencegame/resources/3ds_images/641.png",
-                 "player_2_prompt_header": "\nYou play a picture guessing game where you and another player are given the same three images but in a different order. You will also see an expression made by the other player describing one of the images. Your task is to identify the image the expression is referring to.\nBegin your expression with “Answer: ” Say only the number of your selected image (first, second, third). No need to explain your reasoning.\nExpression: EXPRESSION\nWhat picture is the expression referring to?\n",
-                 "player_2_first_image": "games/multimodal_referencegame/resources/3ds_images/641.png",
-                 "player_2_second_image": "games/multimodal_referencegame/resources/3ds_images/2423.png",
-                 "player_2_third_image": "games/multimodal_referencegame/resources/3ds_images/5987.png",
-                 "target_image_name": [
-                     "first",
-                     "1",
-                     "1st"
-                 ],
-                 "player_1_response_pattern": "^expression:\\s(?P<content>.+)\n*(?P<remainder>.*)",
-                 "player_2_response_pattern": "^answer:\\s(?P<content>first|second|third|1|2|3|1st|2nd|3rd)\n*(?P<remainder>.*)",
-                 "player_1_response_tag": "expression:",
-                 "player_2_response_tag": "answer:",
-                 "human_expression": ""
-             },
-             {
-                 "game_id": 1,
-                 "player_1_prompt_header": "You play a picture guessing game where you and another player are given the same three images but in a different order.\nYour task is to describe the image labeled “target” so that the image stands out against the others and the other player knows what image to select.\nSay no more than what's absolutely needed to make the distinction. \nBegin your expression with “Expression: “.\nThe target image is the third image.",
-                 "player_1_first_image": "games/multimodal_referencegame/resources/3ds_images/821.png",
-                 "player_1_second_image": "games/multimodal_referencegame/resources/3ds_images/1181.png",
-                 "player_1_third_image": "games/multimodal_referencegame/resources/3ds_images/641.png",
-                 "player_2_prompt_header": "\nYou play a picture guessing game where you and another player are given the same three images but in a different order. You will also see an expression made by the other player describing one of the images. Your task is to identify the image the expression is referring to.\nBegin your expression with “Answer: ” Say only the number of your selected image (first, second, third). No need to explain your reasoning.\nExpression: EXPRESSION\nWhat picture is the expression referring to?\n",
-                 "player_2_first_image": "games/multimodal_referencegame/resources/3ds_images/641.png",
-                 "player_2_second_image": "games/multimodal_referencegame/resources/3ds_images/1181.png",
-                 "player_2_third_image": "games/multimodal_referencegame/resources/3ds_images/821.png",
-                 "target_image_name": [
-                     "first",
-                     "1",
-                     "1st"
-                 ],
-                 "player_1_response_pattern": "^expression:\\s(?P<content>.+)\n*(?P<remainder>.*)",
-                 "player_2_response_pattern": "^answer:\\s(?P<content>first|second|third|1|2|3|1st|2nd|3rd)\n*(?P<remainder>.*)",
-                 "player_1_response_tag": "expression:",
-                 "player_2_response_tag": "answer:",
-                 "human_expression": ""
-             },
-             {
-                 "game_id": 2,
-                 "player_1_prompt_header": "You play a picture guessing game where you and another player are given the same three images but in a different order.\nYour task is to describe the image labeled “target” so that the image stands out against the others and the other player knows what image to select.\nSay no more than what's absolutely needed to make the distinction. \nBegin your expression with “Expression: “.\nThe target image is the third image.",
-                 "player_1_first_image": "games/multimodal_referencegame/resources/3ds_images/641.png",
-                 "player_1_second_image": "games/multimodal_referencegame/resources/3ds_images/659.png",
-                 "player_1_third_image": "games/multimodal_referencegame/resources/3ds_images/587.png",
-                 "player_2_prompt_header": "\nYou play a picture guessing game where you and another player are given the same three images but in a different order. You will also see an expression made by the other player describing one of the images. Your task is to identify the image the expression is referring to.\nBegin your expression with “Answer: ” Say only the number of your selected image (first, second, third). No need to explain your reasoning.\nExpression: EXPRESSION\nWhat picture is the expression referring to?\n",
-                 "player_2_first_image": "games/multimodal_referencegame/resources/3ds_images/659.png",
-                 "player_2_second_image": "games/multimodal_referencegame/resources/3ds_images/641.png",
-                 "player_2_third_image": "games/multimodal_referencegame/resources/3ds_images/587.png",
-                 "target_image_name": [
-                     "second",
-                     "2",
-                     "2nd"
-                 ],
-                 "player_1_response_pattern": "^expression:\\s(?P<content>.+)\n*(?P<remainder>.*)",
-                 "player_2_response_pattern": "^answer:\\s(?P<content>first|second|third|1|2|3|1st|2nd|3rd)\n*(?P<remainder>.*)",
-                 "player_1_response_tag": "expression:",
-                 "player_2_response_tag": "answer:",
-                 "human_expression": ""
-             }
+            {
+               "game_id": 0,
+               "player_1_prompt_header": "You play a picture guessing game where you and another player are given the same three images but in a different order.\nYour task is to describe the image labeled “target” so that the image stands out against the others and the other player knows what image to select.\nSay no more than what's absolutely needed to make the distinction. \nBegin your expression with “Expression: “.\nThe target image is the first image.",
+               "player_1_first_image": "games/multimodal_referencegame/resources/tuna_images/60.png",
+               "player_1_second_image": "games/multimodal_referencegame/resources/tuna_images/65.png",
+               "player_1_third_image": "games/multimodal_referencegame/resources/tuna_images/66.png",
+               "player_1_fourth_image": "games/multimodal_referencegame/resources/tuna_images/47.png",
+               "player_2_prompt_header": "\nYou play a picture guessing game where you and another player are given the same three images but in a different order. You will also see an expression made by the other player describing one of the images. Your task is to identify the image the expression is referring to.\nBegin your expression with “Answer: ” Say only the number of your selected image (first, second, third). No need to explain your reasoning.\nExpression: EXPRESSION\nWhat picture is the expression referring to?\n",
+               "player_2_first_image": "games/multimodal_referencegame/resources/tuna_images/65.png",
+               "player_2_second_image": "games/multimodal_referencegame/resources/tuna_images/60.png",
+               "player_2_third_image": "games/multimodal_referencegame/resources/tuna_images/66.png",
+               "player_2_fourth_image": "games/multimodal_referencegame/resources/tuna_images/47.png",
+               "target_image_name": [
+                   "second",
+                   "2",
+                   "2nd"
+               ],
+               "player_1_response_pattern": "^expression:\\s(?P<content>.+)\n*(?P<remainder>.*)",
+               "player_2_response_pattern": "^answer:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
+               "player_1_response_tag": "expression:",
+               "player_2_response_tag": "answer:",
+               "human_expression": "",
+               "stimuli_id": 675.0
+           }
          ]
      }
    ]
