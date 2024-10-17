@@ -60,7 +60,7 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                 player_2_third_image = ""
                 if game_counter >= MAX_NUMBER_INSTANCES:
                     break
-                tuna_img_path = "resources/tuna_images/"
+                tuna_img_path = "games/multimodal_referencegame/resources/tuna_images/"
                 # load 3 images
                 target = instance["target"]
                 distractor1 = instance["distractor1"]
@@ -138,6 +138,7 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                 # the following two fields are no longer required, but kept for backwards compatibility with previous instance versions
                 game_instance["player_1_response_tag"] = "expression:"
                 game_instance["player_2_response_tag"] = "answer:"
+                game_instance["human_expression"] = ""
 
                 game_counter += 1
 
@@ -168,7 +169,7 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                 if game_counter >= MAX_NUMBER_INSTANCES:
                     break
 
-                three_ds_img_path = "resources/3ds_images/"
+                three_ds_img_path = "games/multimodal_referencegame/resources/3ds_images/"
 
                 # load 3 images
                 target = instance["target"]
@@ -247,6 +248,7 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                 # the following two fields are no longer required, but kept for backwards compatibility with previous instance versions
                 game_instance["player_1_response_tag"] = "expression:"
                 game_instance["player_2_response_tag"] = "answer:"
+                game_instance["human_expression"] = ""
 
                 game_counter += 1
 
