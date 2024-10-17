@@ -138,7 +138,10 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                 # the following two fields are no longer required, but kept for backwards compatibility with previous instance versions
                 game_instance["player_1_response_tag"] = "expression:"
                 game_instance["player_2_response_tag"] = "answer:"
+                # for comprehension run. Gets filled after human trials
                 game_instance["human_expression"] = ""
+                # might be needed for later analysis, better safe than sorry
+                game_instance["stimuli_id"] = instance["stimuli_id"]
 
                 game_counter += 1
 
@@ -248,7 +251,10 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                 # the following two fields are no longer required, but kept for backwards compatibility with previous instance versions
                 game_instance["player_1_response_tag"] = "expression:"
                 game_instance["player_2_response_tag"] = "answer:"
+                # for comprehension run. Gets filled after human trials
                 game_instance["human_expression"] = ""
+                # might be needed for later analysis, better safe than sorry
+                game_instance["stimuli_id"] = instance["stimuli_id"]
 
                 game_counter += 1
 
