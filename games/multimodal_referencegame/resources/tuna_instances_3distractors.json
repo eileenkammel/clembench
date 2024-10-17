@@ -1,0 +1,30 @@
+{
+    "INSTANCES": {
+        "one_attibute_id": [
+            {
+                "stimuli_id": 675.0,
+                "target": "60.png",
+                "distractor1": "65.png",
+                "distractor2": "66.png",
+                "distractor3": "47.png",
+                "id_type": "type"
+            },
+            {
+                "stimuli_id": 738.0,
+                "target": "66.png",
+                "distractor1": "59.png",
+                "distractor2": "96.png",
+                "distractor3": "63.png",
+                "id_type": "colour"
+            },
+            {
+                "stimuli_id": 71.0,
+                "target": "7.png",
+                "distractor1": "52.png",
+                "distractor2": "4.png",
+                "distractor3": "28.png",
+                "id_type": "type"
+            }
+        ]
+    }
+}
