@@ -86,10 +86,12 @@ class MultimodalReferenceGame:
         self.player_1_first_image = game_instance['player_1_first_image']
         self.player_1_second_image = game_instance['player_1_second_image']
         self.player_1_third_image = game_instance['player_1_third_image']
+        self.player_1_fourth_image = game_instance['player_1_fourth_image']
 
         self.player_2_first_image = game_instance['player_2_first_image']
         self.player_2_second_image = game_instance['player_2_second_image']
         self.player_2_third_image = game_instance['player_2_third_image']
+        self.player_2_fourth_image = game_instance['player_2_fourth_image']
 
         self.instruction_giver = InstructionGiver(player_backends[0])
         self.instruction_follower = InstructionFollower(player_backends[1])
