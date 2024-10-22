@@ -16,7 +16,7 @@ random.seed(123)
 logger = clemgame.get_logger(__name__)
 GAME_NAME = "multimodal_referencegame"
 
-MAX_NUMBER_INSTANCES = 30
+#MAX_NUMBER_INSTANCES = 30
 
 
 class ReferenceGameInstanceGenerator(GameInstanceGenerator):
@@ -25,25 +25,25 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
         super().__init__(GAME_NAME)
 
     def get_tuna_dataset(self):
-        tuna = self.load_json(
-            "resources/tuna_instances_3distractors.json"
-        )
+        tuna = self.load_json("resources/tuna_3_distractor__instances.json")
         return tuna
 
     def get_3ds_dataset(self):
-        three_ds = self.load_json(
-            "resources/3ds_instances_3distractors.json"
-        )
+        three_ds = self.load_json("resources/3ds_3_distractor_instances.json")
         return three_ds
 
     def generate_tuna_instances(self):
 
         tuna = self.get_tuna_dataset()
         game_counter = 0
-        experiment = self.add_experiment("TUNA_images")
-
         for id_type in tuna["INSTANCES"]:
+            counter = 0
             instances = tuna["INSTANCES"][id_type]
+            experiment = self.add_experiment("TUNA_" + id_type)
+
+            # shuffle them for more diverse targets
+            random.shuffle(instances)
+
             player_1_prompt_header = self.load_template(
                 "resources/initial_prompts/player_1_prompt_images.template"
             )
@@ -51,6 +51,9 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                 "resources/initial_prompts/player_2_prompt_image.template"
             )
             for instance in instances:
+                if counter >= 10:
+                    break
+                counter += 1
                 game_instance = self.add_game_instance(experiment, game_counter)
                 player_1_first_image = ""
                 player_1_second_image = ""
@@ -60,8 +63,8 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                 player_2_second_image = ""
                 player_2_third_image = ""
                 player_2_fourth_image = ""
-                if game_counter >= MAX_NUMBER_INSTANCES:
-                    break
+                # if game_counter >= MAX_NUMBER_INSTANCES:
+                #     break
                 tuna_img_path = "games/multimodal_referencegame/resources/tuna_images/"
                 # load 3 images
                 target = instance["target"]
@@ -173,16 +176,19 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
 
                 game_counter += 1
 
-                if game_counter >= MAX_NUMBER_INSTANCES:
-                    break
+                # if game_counter >= MAX_NUMBER_INSTANCES:
+                #     break
 
     def generate_3ds_instances(self):
         three_ds = self.get_3ds_dataset()
         game_counter = 0
-        experiment = self.add_experiment("3DS_images")
-
         for id_type in three_ds["INSTANCES"]:
+            counter = 0
             instances = three_ds["INSTANCES"][id_type]
+            experiment = self.add_experiment("3DS_" + id_type)
+            # shuffle them for more diverse targets
+            random.shuffle(instances)
+
             player_1_prompt_header = self.load_template(
                 "resources/initial_prompts/player_1_prompt_images.template"
             )
@@ -190,6 +196,9 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                 "resources/initial_prompts/player_2_prompt_image.template"
             )
             for instance in instances:
+                if counter >= 10:
+                    break
+                counter += 1
                 game_instance = self.add_game_instance(experiment, game_counter)
                 player_1_first_image = ""
                 player_1_second_image = ""
@@ -197,8 +206,8 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                 player_2_first_image = ""
                 player_2_second_image = ""
                 player_2_third_image = ""
-                if game_counter >= MAX_NUMBER_INSTANCES:
-                    break
+                # if game_counter >= MAX_NUMBER_INSTANCES:
+                #     break
 
                 three_ds_img_path = (
                     "games/multimodal_referencegame/resources/3ds_images/"
@@ -314,8 +323,8 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
 
                 game_counter += 1
 
-                if game_counter >= MAX_NUMBER_INSTANCES:
-                    break
+                # if game_counter >= MAX_NUMBER_INSTANCES:
+                #     break
 
     def on_generate(self):
         self.generate_tuna_instances()
