@@ -313,7 +313,7 @@ def make_stimuli_sets(distractor_count=2):
             }
         }
 
-    episode_num = 0.0
+    episode_num = 0
 
     # loop over 3DS/3ds_subset.json, image will be target
     all_img = json.load(
