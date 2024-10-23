@@ -80,6 +80,8 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                     player_1_third_image = tuna_img_path + distractor2
                     player_1_fourth_image = tuna_img_path + distractor3
 
+                    player_1_target_pos = 1
+
                     player_2_first_image = tuna_img_path + distractor1
                     player_2_second_image = tuna_img_path + target
                     player_2_third_image = tuna_img_path + distractor2
@@ -96,6 +98,8 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                     player_1_second_image = tuna_img_path + distractor1
                     player_1_third_image = tuna_img_path + target
                     player_1_fourth_image = tuna_img_path + distractor3
+
+                    player_1_target_pos = 2
 
                     player_2_first_image = tuna_img_path + distractor1
                     player_2_second_image = tuna_img_path + target
@@ -114,6 +118,8 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                     player_1_third_image = tuna_img_path + distractor1
                     player_1_fourth_image = tuna_img_path + target
 
+                    player_1_target_pos = 3
+
                     player_2_first_image = tuna_img_path + distractor2
                     player_2_second_image = tuna_img_path + distractor1
                     player_2_third_image = tuna_img_path + target
@@ -129,6 +135,8 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                     player_1_second_image = tuna_img_path + target
                     player_1_third_image = tuna_img_path + distractor3
                     player_1_fourth_image = tuna_img_path + distractor1
+
+                    player_1_target_pos = 4
 
                     player_2_first_image = tuna_img_path + distractor2
                     player_2_second_image = tuna_img_path + distractor1
@@ -146,6 +154,7 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                 game_instance["player_1_second_image"] = player_1_second_image
                 game_instance["player_1_third_image"] = player_1_third_image
                 game_instance["player_1_fourth_image"] = player_1_fourth_image
+                game_instance["player_1_target_position"] = player_1_target_pos
 
                 game_instance["player_2_prompt_header"] = player_2_prompt_header
                 game_instance["player_2_first_image"] = player_2_first_image
@@ -227,6 +236,8 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                     player_1_third_image = three_ds_img_path + distractor2
                     player_1_fourth_image = three_ds_img_path + distractor3
 
+                    player_1_target_pos = 1
+
                     player_2_first_image = three_ds_img_path + distractor1
                     player_2_second_image = three_ds_img_path + target
                     player_2_third_image = three_ds_img_path + distractor2
@@ -243,6 +254,8 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                     player_1_second_image = three_ds_img_path + distractor1
                     player_1_third_image = three_ds_img_path + target
                     player_1_fourth_image = three_ds_img_path + distractor3
+
+                    player_1_target_pos = 2
 
                     player_2_first_image = three_ds_img_path + distractor1
                     player_2_second_image = three_ds_img_path + target
@@ -261,6 +274,8 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                     player_1_third_image = three_ds_img_path + distractor1
                     player_1_fourth_image = three_ds_img_path + target
 
+                    player_1_target_pos = 3
+
                     player_2_first_image = three_ds_img_path + distractor2
                     player_2_second_image = three_ds_img_path + distractor1
                     player_2_third_image = three_ds_img_path + target
@@ -276,6 +291,8 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                     player_1_second_image = three_ds_img_path + target
                     player_1_third_image = three_ds_img_path + distractor3
                     player_1_fourth_image = three_ds_img_path + distractor1
+
+                    player_1_target_pos = 4
 
                     player_2_first_image = three_ds_img_path + distractor2
                     player_2_second_image = three_ds_img_path + distractor1
@@ -293,6 +310,7 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                 game_instance["player_1_second_image"] = player_1_second_image
                 game_instance["player_1_third_image"] = player_1_third_image
                 game_instance["player_1_fourth_image"] = player_1_fourth_image
+                game_instance["player_1_target_position"] = player_1_target_pos
 
                 game_instance["player_2_prompt_header"] = player_2_prompt_header
                 game_instance["player_2_first_image"] = player_2_first_image
