@@ -44,13 +44,13 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
             # shuffle them for more diverse targets
             random.shuffle(instances)
 
-            player_1_prompt_header = self.load_template(
-                "resources/initial_prompts/player_1_prompt_images.template"
-            )
-            player_2_prompt_header = self.load_template(
-                "resources/initial_prompts/player_2_prompt_image.template"
-            )
             for instance in instances:
+                player_1_prompt_header = self.load_template(
+                    "resources/initial_prompts/player_1_prompt_images.template"
+                )
+                player_2_prompt_header = self.load_template(
+                    "resources/initial_prompts/player_2_prompt_image.template"
+                )
                 if counter >= 10:
                     break
                 counter += 1
@@ -99,10 +99,10 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                     player_1_third_image = tuna_img_path + target
                     player_1_fourth_image = tuna_img_path + distractor3
 
-                    player_1_target_pos = 2
+                    player_1_target_pos = 3
 
-                    player_2_first_image = tuna_img_path + distractor1
-                    player_2_second_image = tuna_img_path + target
+                    player_2_first_image = tuna_img_path + target
+                    player_2_second_image = tuna_img_path + distractor1
                     player_2_third_image = tuna_img_path + distractor2
                     player_2_fourth_image = tuna_img_path + distractor3
 
@@ -118,7 +118,7 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                     player_1_third_image = tuna_img_path + distractor1
                     player_1_fourth_image = tuna_img_path + target
 
-                    player_1_target_pos = 3
+                    player_1_target_pos = 4
 
                     player_2_first_image = tuna_img_path + distractor2
                     player_2_second_image = tuna_img_path + distractor1
@@ -136,7 +136,7 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                     player_1_third_image = tuna_img_path + distractor3
                     player_1_fourth_image = tuna_img_path + distractor1
 
-                    player_1_target_pos = 4
+                    player_1_target_pos = 2
 
                     player_2_first_image = tuna_img_path + distractor2
                     player_2_second_image = tuna_img_path + distractor1
@@ -198,13 +198,13 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
             # shuffle them for more diverse targets
             random.shuffle(instances)
 
-            player_1_prompt_header = self.load_template(
-                "resources/initial_prompts/player_1_prompt_images.template"
-            )
-            player_2_prompt_header = self.load_template(
-                "resources/initial_prompts/player_2_prompt_image.template"
-            )
             for instance in instances:
+                player_1_prompt_header = self.load_template(
+                    "resources/initial_prompts/player_1_prompt_images.template"
+                )
+                player_2_prompt_header = self.load_template(
+                    "resources/initial_prompts/player_2_prompt_image.template"
+                )
                 if counter >= 10:
                     break
                 counter += 1
@@ -255,10 +255,10 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                     player_1_third_image = three_ds_img_path + target
                     player_1_fourth_image = three_ds_img_path + distractor3
 
-                    player_1_target_pos = 2
+                    player_1_target_pos = 3
 
-                    player_2_first_image = three_ds_img_path + distractor1
-                    player_2_second_image = three_ds_img_path + target
+                    player_2_first_image = three_ds_img_path + target
+                    player_2_second_image = three_ds_img_path + distractor1
                     player_2_third_image = three_ds_img_path + distractor2
                     player_2_fourth_image = three_ds_img_path + distractor3
 
@@ -274,7 +274,7 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                     player_1_third_image = three_ds_img_path + distractor1
                     player_1_fourth_image = three_ds_img_path + target
 
-                    player_1_target_pos = 3
+                    player_1_target_pos = 4
 
                     player_2_first_image = three_ds_img_path + distractor2
                     player_2_second_image = three_ds_img_path + distractor1
@@ -292,7 +292,7 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                     player_1_third_image = three_ds_img_path + distractor3
                     player_1_fourth_image = three_ds_img_path + distractor1
 
-                    player_1_target_pos = 4
+                    player_1_target_pos = 2
 
                     player_2_first_image = three_ds_img_path + distractor2
                     player_2_second_image = three_ds_img_path + distractor1
