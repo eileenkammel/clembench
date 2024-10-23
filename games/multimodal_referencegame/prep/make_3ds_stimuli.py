@@ -410,11 +410,13 @@ def delete_unused_images():
         used_images.append(instance["target"])
         used_images.append(instance["distractor1"])
         used_images.append(instance["distractor2"])
+        used_images.append(instance["distractor3"])
 
     for instance in instances["INSTANCES"]["two_attibute_id"]:
         used_images.append(instance["target"])
         used_images.append(instance["distractor1"])
         used_images.append(instance["distractor2"])
+        used_images.append(instance["distractor3"])
 
     for instance in instances["INSTANCES"]["three_attibute_id"]:
         used_images.append(instance["target"])
