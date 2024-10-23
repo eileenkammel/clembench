@@ -238,7 +238,7 @@ def make_stimuli_sets(distractor_count):
             }
         }
 
-    episode_num = 0.0
+    episode_num = 0
 
     # loop over all_img.json, image will be target
     all_img = json.load(open("games/multimodal_referencegame/prep/tuna/all_imgs.json", "r"))
