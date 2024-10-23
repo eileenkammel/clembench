@@ -1,10 +1,6 @@
-"""
-Generate instances for the referencegame
-Version 1.6 (strict regex parsing)
-
-Reads grids_v1.5.json from resources/ (grids don't change in this version)
-Creates instances.json in instances/
-"""
+# -*-coding:utf-8 -*-
+# Author: Eileen Kammel, 811770
+# Date: 2024-10-23 13:17:58
 
 import random
 import clemgame
@@ -16,7 +12,7 @@ random.seed(123)
 logger = clemgame.get_logger(__name__)
 GAME_NAME = "multimodal_referencegame"
 
-#MAX_NUMBER_INSTANCES = 30
+# MAX_NUMBER_INSTANCES = 30
 
 
 class ReferenceGameInstanceGenerator(GameInstanceGenerator):
@@ -25,11 +21,15 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
         super().__init__(GAME_NAME)
 
     def get_tuna_dataset(self):
-        tuna = self.load_json("resources/tuna_3_distractor__instances.json")
+        tuna = self.load_json(
+            "prep/tuna/tuna_3_distractor_stimuli.json"
+        )
         return tuna
 
     def get_3ds_dataset(self):
-        three_ds = self.load_json("resources/3ds_3_distractor_instances.json")
+        three_ds = self.load_json(
+            "prep/3DS/3ds_3_distractor_instances.json"
+        )
         return three_ds
 
     def generate_tuna_instances(self):
