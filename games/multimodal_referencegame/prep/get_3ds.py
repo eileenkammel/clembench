@@ -217,9 +217,9 @@ def refine_3ds():
                 "@ID": i,
                 "@FILENAME": filename,
                 "ATTRIBUTE": {
-                    "floor_hue": hues[label[0]],
-                    "wall_hue": hues[label[1]],
-                    "object_hue": hues[label[2]],
+                    "floorHue": hues[label[0]],
+                    "wallHue": hues[label[1]],
+                    "objectHue": hues[label[2]],
                     "scale": scale[label[3]],
                     "shape": shape[label[4]],
                     "orientation": orientation[label[5]],

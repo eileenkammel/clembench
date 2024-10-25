@@ -12,30 +12,33 @@ from bs4 import BeautifulSoup
 import base64
 
 
-def get_id_type(set_name, id):
-    tuna_stimuli = json.load(open("games/multimodal_referencegame/prep/tuna/tuna_3_distractor_stimuli.json"))
-    threeds_stimuli = json.load(open("games/multimodal_referencegame/prep/3DS/3ds_3_distractor_instances.json"))
-    if set_name == "tuna":
-        for experiment in tuna_stimuli["INSTANCES"]:
-            for stimulus in tuna_stimuli["INSTANCES"][experiment]:
-                if stimulus["stimuli_id"] == id:
-                    return stimulus["id_type"]
-    elif set_name == "3ds":
-        for experiment in threeds_stimuli["INSTANCES"]:
-            for stimulus in threeds_stimuli["INSTANCES"][experiment]:
-                if stimulus["stimuli_id"] == id:
-                    return stimulus["id_type"]
+def get_id_type_name(set_name, id):
+    tuna_stimuli = json.load(
+        open("games/multimodal_referencegame/prep/tuna/tuna_3_distractor_stimuli.json")
+    )
+    threeds_stimuli = json.load(
+        open("games/multimodal_referencegame/prep/3DS/3ds_3_distractor_instances.json")
+    )
+    stimuli = tuna_stimuli if set_name == "tuna" else threeds_stimuli
+    for experiment in stimuli["INSTANCES"]:
+        for stimulus in stimuli["INSTANCES"][experiment]:
+            if stimulus["stimuli_id"] == id:
+                type = stimulus["id_type"]
+                attributes = stimulus["id_attributes"]
+                return type, attributes
 
 
 def visualize_instances():
     # load my instances
-    instances = json.load(open("games/multimodal_referencegame/in/my_instances_3distractors.json"))
-    csv_header = ["Target", "D1", "D2", "D3", "id_type"]
+    instances = json.load(
+        open("games/multimodal_referencegame/in/my_instances_3distractors.json")
+    )
+    csv_header = ["Target", "D1", "D2", "D3", "id_type", "id_attributes"]
     csv_data = []
 
     for experiment in instances["experiments"]:
 
-        experiment_name = "tuna" if "TUNA" in experiment["name"] else "3ds"
+        experiment_name = "tuna" if "TUNA" in experiment["name"] else "threeds"
 
         for episode in experiment["game_instances"]:
 
@@ -61,8 +64,8 @@ def visualize_instances():
                 d2 = episode["player_1_second_image"]
                 d3 = episode["player_1_third_image"]
                 target = episode["player_1_fourth_image"]
-            id_type = get_id_type(experiment_name, stimuli_id)
-            csv_data.append([target, d1, d2, d3, id_type])
+            id_type, id_ttributes = get_id_type_name(experiment_name, stimuli_id)
+            csv_data.append([target, d1, d2, d3, id_type, id_ttributes])
     with open("games/multimodal_referencegame/prep/instances.csv", "w") as f:
         writer = csv.writer(f)
         writer.writerow(csv_header)
@@ -111,7 +114,6 @@ def create_html_with_img():
     with open("games/multimodal_referencegame/prep/instances_img.html", "w") as f:
         f.write(str(soup))
     print("HTML table with images generated")
-
 
 
 if __name__ == "__main__":
