@@ -65,7 +65,9 @@ def get_image_numbers(images):
 
 def find_distractors(target, target_attributes, target_id, distractor_count):
     # Return two distractors that fit the target_id
-    all_img = json.load(open("games/multimodal_referencegame/prep/tuna/all_imgs.json", "r"))
+    all_img = json.load(
+        open("games/multimodal_referencegame/prep/tuna/all_imgs.json", "r")
+    )
     attribute_idx = set([0, 1, 2, 3])
     target_id = set(target_id)
     if len(target_id) == 1:
@@ -216,7 +218,9 @@ def find_distractors(target, target_attributes, target_id, distractor_count):
             possible_distractors1 = random.sample(possible_distractors1, 1)
             possible_distractors2 = random.sample(possible_distractors2, 1)
             possible_distractors3 = random.sample(possible_distractors3, 1)
-            distractors = possible_distractors1 + possible_distractors2 + possible_distractors3
+            distractors = (
+                possible_distractors1 + possible_distractors2 + possible_distractors3
+            )
             return distractors if len(distractors) == 3 else None
         except ValueError:
             print("Not enough distractors found!")
@@ -241,7 +245,9 @@ def make_stimuli_sets(distractor_count):
     episode_num = 0
 
     # loop over all_img.json, image will be target
-    all_img = json.load(open("games/multimodal_referencegame/prep/tuna/all_imgs.json", "r"))
+    all_img = json.load(
+        open("games/multimodal_referencegame/prep/tuna/all_imgs.json", "r")
+    )
 
     for img in all_img["IMAGES"]:
         t_filename = img["@IMAGE"]
@@ -258,6 +264,9 @@ def make_stimuli_sets(distractor_count):
             ids = define_id(i)
             # get distractors for all ids
             for id in ids:
+
+                id_attributes = [all_attributes[idx] for idx in id]
+                id_attributes = ",".join(id_attributes).strip(",")
                 distractors = find_distractors(
                     t_filename, all_attributes, id, distractor_count
                 )
@@ -271,6 +280,7 @@ def make_stimuli_sets(distractor_count):
                             "distractor1": distractor1,
                             "distractor2": distractor2,
                             "id_type": determine_id_style(id),
+                            "id_attributes": id_attributes,
                         }
                         if i == 1:
                             json_instances["INSTANCES"]["one_attibute_id"].append(
@@ -293,6 +303,7 @@ def make_stimuli_sets(distractor_count):
                             "distractor2": distractor2,
                             "distractor3": distractor3,
                             "id_type": determine_id_style(id),
+                            "id_attributes": id_attributes,
                         }
                         if i == 1:
                             json_instances["INSTANCES"]["one_attibute_id"].append(
@@ -310,7 +321,8 @@ def make_stimuli_sets(distractor_count):
                         episode_num += 1
 
     with open(
-        f"games/multimodal_referencegame/prep/tuna/tuna_{distractor_count}_distractor_stimuli.json", "w"
+        f"games/multimodal_referencegame/prep/tuna/tuna_{distractor_count}_distractor_stimuli.json",
+        "w",
     ) as json_file:
         json.dump(json_instances, json_file, indent=4)
     print("All instances saved successfully!")
