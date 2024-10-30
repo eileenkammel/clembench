@@ -192,3 +192,5 @@ cython_debug/
 #.idea/
 /venv_hf/
 /venv_llamacpp/
+games/multimodal_referencegame/prep/exp.template
+games/multimodal_referencegame/prep/sluk_id.json
