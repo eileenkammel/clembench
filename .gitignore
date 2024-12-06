@@ -194,3 +194,4 @@ cython_debug/
 /venv_llamacpp/
 games/multimodal_referencegame/prep/exp.template
 games/multimodal_referencegame/prep/sluk_id.json
+games/multimodal_referencegame/prep/rndm.py
