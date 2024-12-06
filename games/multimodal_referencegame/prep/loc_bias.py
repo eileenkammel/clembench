@@ -60,6 +60,7 @@ def anti_loc_bias(file_path):
 
         # Add new instances back to experiment"s instances
         experiment["game_instances"].extend(new_instances)
+        experiment["game_instances"].sort(key=lambda x: x["game_id"])
 
     # Save the updated file
     updated_file_path = "games/multimodal_referencegame/in/updated_my_instances_3distractors.json"
