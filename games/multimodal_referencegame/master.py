@@ -48,6 +48,7 @@ class MultimodalReferenceGameMaster(GameMaster):
         # generate referring expression - Player 1 side
         self.game.given_instruction.add_user_message(
             self.game.player_1_prompt_header,
+            self.game.stimuli_id,
             images=[
                 self.game.player_1_first_image,
                 self.game.player_1_second_image,
@@ -108,6 +109,7 @@ class MultimodalReferenceGameMaster(GameMaster):
             self.game.player_2_prompt_header.replace(
                 "TARGET_EXPRESSION", player_1_response_text
             ),
+            self.game.stimuli_id,
             images=[
                 self.game.player_2_first_image,
                 self.game.player_2_second_image,
