@@ -1,5 +1,0 @@
-You play a picture guessing game where you and another player are given the same three images but in a different order.
-Your task is to describe the image labeled “target” so that the image stands out against the others and the other player knows what image to select.
-Say no more than what's absolutely needed to make the distinction. 
-Begin your expression with “Expression: “.
-The target image is the TARGET_IMAGE_POSITION image.

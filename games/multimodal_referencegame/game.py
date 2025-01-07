@@ -1,4 +1,5 @@
 import random
+import json
 from typing import Dict, List
 
 from clemgame.clemgame import Player
@@ -10,8 +11,8 @@ class Instruction:
         self.user_messages = []
         self.system_messages = []
 
-    def add_user_message(self, message, images:list):
-        self.user_messages.append({"role": "user", "content": message, "image": images})
+    def add_user_message(self, message, stimuli_id, images:list):
+        self.user_messages.append({"role": "user", "content": message, "stimuli_id": stimuli_id, "image": images})
 
     def add_system_message(self, message):
         self.system_messages.append(message)
@@ -66,8 +67,17 @@ class InstructionGiver(Player):
     def __call__(self, instruction: Instruction, turn_idx):
         return super().__call__(instruction.convert_to_query_messages(), turn_idx)
 
+    def _get_human_expression(self, stimuli_id):
+        with open("games/multimodal_referencegame_comprehension/in/instances.json", "r") as f:
+            instances = json.load(f)
+            for eperiment in instances["experiments"]:
+                for game in eperiment["game_instances"]:
+                    if game["stimuli_id"] == stimuli_id:
+                        return game["human_expression"]
+
     def _custom_response(self, messages, turn_idx):
-        return "Expression: The one that looks like the target."
+        expression = self._get_human_expression(messages[-1]['stimuli_id'])
+        return f"Expression: {expression}"
 
 
 class MultimodalReferenceGame:
@@ -75,6 +85,7 @@ class MultimodalReferenceGame:
     def __init__(self, game_instance: Dict, player_backends: List[str]):
         self.player_backends = player_backends
         self.game_id = game_instance['game_id']
+        self.stimuli_id = game_instance['stimuli_id']
         self.player_1_prompt_header = game_instance['player_1_prompt_header']
         self.player_2_prompt_header = game_instance['player_2_prompt_header']
         self.target_image_name = game_instance['target_image_name']
@@ -87,6 +98,7 @@ class MultimodalReferenceGame:
         self.player_1_second_image = game_instance['player_1_second_image']
         self.player_1_third_image = game_instance['player_1_third_image']
         self.player_1_fourth_image = game_instance['player_1_fourth_image']
+        self.player_1_human_expression = game_instance['human_expression']
 
         self.player_2_first_image = game_instance['player_2_first_image']
         self.player_2_second_image = game_instance['player_2_second_image']
