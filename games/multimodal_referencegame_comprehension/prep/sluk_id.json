@@ -1,0 +1,120 @@
+[
+    {
+        "experiment_id": 0,
+        "game_instances": [
+            {
+                "game_id": 0,
+                "id_type": "str",
+                "id_attributes": "str",
+                "palyer_1_first_image": "str",
+                "player_1_second_image": "str",
+                "player_1_third_image": "str",
+                "player_1_fourth_image": "str",
+                "player_1_target_position": "str",
+                "player_2_first_image": "str",
+                "player_2_second_image": "str",
+                "player_2_third_image": "str",
+                "player_2_fourth_image": "str",
+                "player_2_target_position": "str",
+                "stimuli_id": 123
+            },
+            {
+                "game_id": 1,
+                "id_type": "str",
+                "id_attributes": "str",
+                "palyer_1_first_image": "str",
+                "player_1_second_image": "str",
+                "player_1_third_image": "str",
+                "player_1_fourth_image": "str",
+                "player_1_target_position": "str",
+                "player_2_first_image": "str",
+                "player_2_second_image": "str",
+                "player_2_third_image": "str",
+                "player_2_fourth_image": "str",
+                "player_2_target_position": "str",
+                "stimuli_id": 234
+            }
+        ]
+    }
+]
+
+{
+    "experiments": [
+        {
+            "name": "Tuna",
+            "experiment_instances": [
+                {
+                    "experiment_id": 1,
+                    "game_instances": [
+                    "game_id": 0,
+                    "id_type": "str",
+                    "id_attributes": "str",
+                    "palyer_1_first_image": "str",
+                    "player_1_second_image": "str",
+                    "player_1_third_image": "str",
+                    "player_1_fourth_image": "str",
+                    "player_1_target_position": "str",
+                    "player_2_first_image": "str",
+                    "player_2_second_image": "str",
+                    "player_2_third_image": "str",
+                    "player_2_fourth_image": "str",
+                    "player_2_target_position": "str",
+                    "stimuli_id": 123
+                },
+                {
+                    "game_id": 1,
+                    "id_type": "str",
+                    "id_attributes": "str",
+                    "palyer_1_first_image": "str",
+                    "player_1_second_image": "str",
+                    "player_1_third_image": "str",
+                    "player_1_fourth_image": "str",
+                    "player_1_target_position": "str",
+                    "player_2_first_image": "str",
+                    "player_2_second_image": "str",
+                    "player_2_third_image": "str",
+                    "player_2_fourth_image": "str",
+                    "player_2_target_position": "str",
+                    "stimuli_id": 234
+                }
+            ]
+        },
+        {
+            "name": "3ds",
+            "experiment_instances": [
+                {
+                    "game_id": 0,
+                    "id_type": "str",
+                    "id_attributes": "str",
+                    "palyer_1_first_image": "str",
+                    "player_1_second_image": "str",
+                    "player_1_third_image": "str",
+                    "player_1_fourth_image": "str",
+                    "player_1_target_position": "str",
+                    "player_2_first_image": "str",
+                    "player_2_second_image": "str",
+                    "player_2_third_image": "str",
+                    "player_2_fourth_image": "str",
+                    "player_2_target_position": "str",
+                    "stimuli_id": 345
+                },
+                {
+                    "game_id": 1,
+                    "id_type": "str",
+                    "id_attributes": "str",
+                    "palyer_1_first_image": "str",
+                    "player_1_second_image": "str",
+                    "player_1_third_image": "str",
+                    "player_1_fourth_image": "str",
+                    "player_1_target_position": "str",
+                    "player_2_first_image": "str",
+                    "player_2_second_image": "str",
+                    "player_2_third_image": "str",
+                    "player_2_fourth_image": "str",
+                    "player_2_target_position": "str",
+                    "stimuli_id": 456
+                }
+            ]
+        }
+    ]
+}
