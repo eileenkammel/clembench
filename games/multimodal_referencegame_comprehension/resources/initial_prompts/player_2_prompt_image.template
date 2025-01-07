@@ -1,0 +1,5 @@
+
+You play a picture guessing game where you and another player are given the same three images but in a different order. You will also see an expression made by the other player describing one of the images. Your task is to identify the image the expression is referring to.
+Begin your expression with “Answer: ” Say only the number of your selected image (first, second, third, fourth). No need to explain your reasoning.
+Expression: EXPRESSION
+What picture is the expression referring to?
