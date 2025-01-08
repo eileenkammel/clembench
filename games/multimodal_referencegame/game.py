@@ -56,7 +56,7 @@ class InstructionFollower(Player):
 
     def _custom_response(self, messages, turn_idx):
         answer = random.choice(["first", "second", "third"])
-        return f"Answer: {answer}"
+        return f"Selection: {answer}"
 
 
 class InstructionGiver(Player):
@@ -68,7 +68,7 @@ class InstructionGiver(Player):
         return super().__call__(instruction.convert_to_query_messages(), turn_idx)
 
     def _get_human_expression(self, stimuli_id):
-        with open("games/multimodal_referencegame_comprehension/in/instances.json", "r") as f:
+        with open("games/multimodal_referencegame/in/instances.json", "r") as f:
             instances = json.load(f)
             for eperiment in instances["experiments"]:
                 for game in eperiment["game_instances"]:
@@ -77,7 +77,7 @@ class InstructionGiver(Player):
 
     def _custom_response(self, messages, turn_idx):
         expression = self._get_human_expression(messages[-1]['stimuli_id'])
-        return f"Expression: {expression}"
+        return f"Description: {expression}"
 
 
 class MultimodalReferenceGame:

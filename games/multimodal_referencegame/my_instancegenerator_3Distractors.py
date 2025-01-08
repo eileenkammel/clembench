@@ -163,21 +163,21 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                 game_instance["player_2_fourth_image"] = player_2_fourth_image
                 game_instance["target_image_name"] = player_2_target_name
                 game_instance["player_1_response_pattern"] = (
-                    "^expression:\s(?P<content>.+)\n*(?P<remainder>.*)"
+                    "^description:\s(?P<content>.+)\n*(?P<remainder>.*)"
                 )
 
                 # named groups:
                 # 'content' captures only the generated referring expression
                 # 'remainder' should be empty (if models followed the instructions)
                 game_instance["player_2_response_pattern"] = (
-                    "^answer:\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)"
+                    "^selection:\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)"
                 )
                 # 'content' can directly be compared to gold answer
                 # 'remainder' should be empty (if models followed the instructions)
 
                 # the following two fields are no longer required, but kept for backwards compatibility with previous instance versions
-                game_instance["player_1_response_tag"] = "expression:"
-                game_instance["player_2_response_tag"] = "answer:"
+                game_instance["player_1_response_tag"] = "description:"
+                game_instance["player_2_response_tag"] = "selection:"
                 # for comprehension run. Gets filled after human trials
                 game_instance["human_expression"] = ""
                 # might be needed for later analysis, better safe than sorry
@@ -319,21 +319,21 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
                 game_instance["player_2_fourth_image"] = player_2_fourth_image
                 game_instance["target_image_name"] = player_2_target_name
                 game_instance["player_1_response_pattern"] = (
-                    "^expression:\s(?P<content>.+)\n*(?P<remainder>.*)"
+                    "^description:\s(?P<content>.+)\n*(?P<remainder>.*)"
                 )
 
                 # named groups:
                 # 'content' captures only the generated referring expression
                 # 'remainder' should be empty (if models followed the instructions)
                 game_instance["player_2_response_pattern"] = (
-                    "^answer:\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)"
+                    "^selection:\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)"
                 )
                 # 'content' can directly be compared to gold answer
                 # 'remainder' should be empty (if models followed the instructions)
 
                 # the following two fields are no longer required, but kept for backwards compatibility with previous instance versions
-                game_instance["player_1_response_tag"] = "expression:"
-                game_instance["player_2_response_tag"] = "answer:"
+                game_instance["player_1_response_tag"] = "description:"
+                game_instance["player_2_response_tag"] = "selection:"
                 # for comprehension run. Gets filled after human trials
                 game_instance["human_expression"] = ""
                 # might be needed for later analysis, better safe than sorry
