@@ -51,7 +51,9 @@ def analyze_id_types(id_types):
     # make dicts from pairs
     id_type_dict = dict(pairs)
     # sort dict by value
-    id_type_dict = dict(sorted(id_type_dict.items(), key=lambda item: item[1], reverse=True))
+    id_type_dict = dict(
+        sorted(id_type_dict.items(), key=lambda item: item[1], reverse=True)
+    )
     return id_type_dict
 
 
@@ -82,8 +84,12 @@ def print_report():
             threeds_instances += len(experiment["game_instances"])
             threeds_stimuli_count += unique_stimuli_count
             threeds_stimuli.update(unique_stimuli)
-    used_tuna_images, tuna_targets, tuna_id_types = get_stimuli_info("tuna", tuna_stimuli)
-    used_3ds_images, threeds_targets, threeds_id_types = get_stimuli_info("3DS", threeds_stimuli)
+    used_tuna_images, tuna_targets, tuna_id_types = get_stimuli_info(
+        "tuna", tuna_stimuli
+    )
+    used_3ds_images, threeds_targets, threeds_id_types = get_stimuli_info(
+        "3DS", threeds_stimuli
+    )
 
     # furter analyze id types
     tuna_id_types = analyze_id_types(tuna_id_types)
@@ -99,6 +105,7 @@ def print_report():
     print("Number of unique targets: ", len(set(tuna_targets)))
     print("Number of different ID types: ", len(tuna_id_types))
     print("ID types: ", tuna_id_types)
+    print("Tuna Targets: ", tuna_targets)
     print("\n")
     print("3DS")
     print("Number of instances: ", threeds_instances)
@@ -108,6 +115,7 @@ def print_report():
     print("Number of unique targets: ", len(set(threeds_targets)))
     print("Number of different ID types: ", len(threeds_id_types))
     print("ID types: ", threeds_id_types)
+    print("3DS Targets: ", threeds_targets)
     print("\n")
 
 
