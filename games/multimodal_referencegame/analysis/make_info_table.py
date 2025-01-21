@@ -3,8 +3,6 @@
 # Date: 2025-01-14 16:57:21
 
 import pandas as pd
-import numpy as np
-import os
 import json
 
 
@@ -193,9 +191,9 @@ def write_info_table():
         ]
     complete_data = pd.concat([tuna_data, three_ds_data])
 
-    tuna_data.to_csv("tuna_info_table.csv", index=False)
-    three_ds_data.to_csv("three_ds_info_table.csv", index=False)
-    complete_data.to_csv("info_table.csv", index=False)
+    tuna_data.to_csv("games/multimodal_referencegame/analysis/tuna_info_table.csv", index=False)
+    three_ds_data.to_csv("games/multimodal_referencegame/analysis/three_ds_info_table.csv", index=False)
+    complete_data.to_csv("games/multimodal_referencegame/analysis/info_table.csv", index=False)
 
 if __name__ == "__main__":
     write_info_table()
