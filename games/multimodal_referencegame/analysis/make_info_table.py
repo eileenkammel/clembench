@@ -118,9 +118,20 @@ def load_raw_stimuli_info(data_set_name, stimuli_id):
                     )
 
 
-def load_ground_truth(t):
+def load_ground_truth(data_set_name, target):
     """Will return ground_truth"""
-    return None
+    with open("games/multimodal_referencegame/analysis/ground_truth.json", "r") as f:
+        ground_truth = json.load(f)
+    if data_set_name == "tuna":
+        try:
+            return ground_truth["tuna"][target]
+        except KeyError:
+            return None
+    if data_set_name == "3ds":
+        try:
+            return ground_truth["3ds"][target]
+        except KeyError:
+            return None
 
 
 def load_human_expression(experiment_name, stimuli_id):
@@ -157,7 +168,7 @@ def write_info_table():
     three_ds_data = pd.DataFrame(columns=header)
     for id in TUNA_STIMULI_IDS:
         t, D1, D2, D3, id_type, minimal_expression = load_raw_stimuli_info("tuna", id)
-        ground_truth = load_ground_truth(t)
+        ground_truth = load_ground_truth("tuna", t)
         human_expression = load_human_expression("tuna", id)
         model_expressions = load_model_expressions(id)
         tuna_data.loc[len(tuna_data)] = [
@@ -174,7 +185,7 @@ def write_info_table():
         ]
     for id in THREEDS_STIMULI_IDS:
         t, D1, D2, D3, id_type, minimal_expression = load_raw_stimuli_info("3ds", id)
-        ground_truth = load_ground_truth(t)
+        ground_truth = load_ground_truth("3ds", t)
         human_expression = load_human_expression("3ds", id)
         model_expressions = load_model_expressions(id)
         three_ds_data.loc[len(three_ds_data)] = [
