@@ -119,6 +119,7 @@ def print_report():
     print("ID types: ", threeds_id_types)
     print("3DS Targets: ", threeds_targets)
     print("\n")
+    print("Overlap between TUNA stimuli idas and 3DS stimuli ids: ", tuna_stimuli.intersection(threeds_stimuli))
 
 
 if __name__ == "__main__":
