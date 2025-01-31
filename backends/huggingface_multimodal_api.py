@@ -247,7 +247,7 @@ class HuggingfaceMultimodalModel(backends.Model):
         super().__init__(model_spec)
 
         # Load instance variable used for evey model
-        self.device = "mps"
+        self.device = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
         self.model_type = model_spec['model_type']
         self.model_name = model_spec['model_name']
         self.processor = load_processor(model_spec)
