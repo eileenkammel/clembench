@@ -9,6 +9,7 @@ import os
 def parse_game_log(logfile):
     with open(logfile, "r") as data:
         game_style = []
+        current_game_style = False
         game_log = data.readlines()
         all_data = []
         only_successful = []
@@ -18,19 +19,21 @@ def parse_game_log(logfile):
         target = None
         for line in game_log:
             line_json = json.loads(line)
-            if "pictures" in line_json["event"]:
-                if "tuna" in line_json["data"]["content"][0]:
+            if "pictures" in line_json["event"] and not current_game_style:
+                if "tuna" in line_json["data"]["content"]:
                     game_style.append("tuna")
+                    current_game_style = True
                 else:
                     game_style.append("3ds")
-            if line_json["event"] == "stimuli_id":
+                    current_game_style = True
+            if line_json["event"] == "stimuli_id" and stimuli_id is None:
                 stimuli_id = line_json["data"]["content"]
-            if line_json["event"] == "clue":
+            if line_json["event"] == "clue" and clue is None:
                 clue = line_json["data"]["content"]
             if (
                 line_json["event"] == "correct guess"
                 or line_json["event"] == "false guess"
-            ):
+            ) and stimuli_id is not None:
                 target = find_target(int(stimuli_id), game_style[-1])
                 correct = True if line_json["event"] == "correct guess" else False
                 all_data.append(
@@ -53,6 +56,8 @@ def parse_game_log(logfile):
                 stimuli_id = None
                 clue = None
                 correct = None
+                current_game_style = False
+                target = None
         game_style = set(game_style)
         game_style = list(game_style)[0] if len(game_style) == 1 else "mixed"
 
@@ -107,7 +112,9 @@ def parse_all_logs(log_folder):
             all_games[game_style].extend(all_logs)
             successful_games[game_style].extend(successful_logs)
     # make json file from games dict
-    with open("games/multimodal_referencegame/analysis/all_human_expressions.json", "w") as f:
+    with open(
+        "games/multimodal_referencegame/analysis/all_human_expressions.json", "w"
+    ) as f:
         json.dump(all_games, f)
     with open(
         "games/multimodal_referencegame/analysis/successful_human_expressions.json", "w"
