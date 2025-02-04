@@ -350,4 +350,4 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
 
 
 if __name__ == "__main__":
-    ReferenceGameInstanceGenerator().generate(filename="my_instances_3distractors.json")
+    ReferenceGameInstanceGenerator().generate(filename="instances.json")
