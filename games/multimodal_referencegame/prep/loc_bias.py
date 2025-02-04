@@ -63,11 +63,11 @@ def anti_loc_bias(file_path):
         experiment["game_instances"].sort(key=lambda x: x["game_id"])
 
     # Save the updated file
-    updated_file_path = "games/multimodal_referencegame/in/updated_my_instances_3distractors.json"
+    updated_file_path = "games/multimodal_referencegame/in/instances.json"
     with open(updated_file_path, "w") as f:
         json.dump(data, f, indent=4)
 
     print(f"Updated file saved to: {updated_file_path}")
 
 if __name__ == "__main__":
-    anti_loc_bias("games/multimodal_referencegame/in/my_instances_3distractors.json")
+    anti_loc_bias("games/multimodal_referencegame/in/instances.json")
