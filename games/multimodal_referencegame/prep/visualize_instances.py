@@ -31,7 +31,7 @@ def get_id_type_name(set_name, id):
 def visualize_instances():
     # load my instances
     instances = json.load(
-        open("games/multimodal_referencegame/in/updated_my_instances_3distractors.json")
+        open("games/multimodal_referencegame/in/instances.json")
     )
     csv_header = ["Target", "D1", "D2", "D3", "id_type", "id_attributes"]
     csv_data = []
@@ -66,17 +66,17 @@ def visualize_instances():
                 target = episode["player_1_fourth_image"]
             id_type, id_ttributes = get_id_type_name(experiment_name, stimuli_id)
             csv_data.append([target, d1, d2, d3, id_type, id_ttributes])
-    with open("games/multimodal_referencegame/prep/updated_instances.csv", "w") as f:
+    with open("games/multimodal_referencegame/prep/instances.csv", "w") as f:
         writer = csv.writer(f)
         writer.writerow(csv_header)
         writer.writerows(csv_data)
 
 
 def create_html():
-    instances_df = pd.read_csv("games/multimodal_referencegame/prep/updated_instances.csv")
+    instances_df = pd.read_csv("games/multimodal_referencegame/prep/instances.csv")
     instances_html = instances_df.to_html(index=False)
 
-    with open("games/multimodal_referencegame/prep/updated_instances.html", "w") as f:
+    with open("games/multimodal_referencegame/prep/instances.html", "w") as f:
         f.write(instances_html)
     print("HTML table generated")
 
@@ -89,7 +89,7 @@ def img_to_base64(img_path):
 def create_html_with_img():
     tuna_path = "/Users/eileen/Desktop/clembench/games/multimodal_referencegame/resources/tuna_images"
     threeds_path = "/Users/eileen/Desktop/clembench/games/multimodal_referencegame/resources/3ds_images"
-    with open("games/multimodal_referencegame/prep/updated_instances.html", "r") as f:
+    with open("games/multimodal_referencegame/prep/instances.html", "r") as f:
         soup = BeautifulSoup(f, "html.parser")
     table = soup.find("table")
     for cell in table.find_all("td"):
@@ -111,7 +111,7 @@ def create_html_with_img():
                 img_tag["src"] = f"data:image/png;base64,{img_base64}"
                 cell.clear()
                 cell.append(img_tag)
-    with open("games/multimodal_referencegame/prep/updated_instances_img.html", "w") as f:
+    with open("games/multimodal_referencegame/prep/instances_img.html", "w") as f:
         f.write(str(soup))
     print("HTML table with images generated")
 
