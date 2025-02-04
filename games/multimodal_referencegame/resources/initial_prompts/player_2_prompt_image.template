@@ -1,5 +1,8 @@
+You play a game where you and another player see the same four images but in different orders. You also get a description from the other player describing one of the images. 
+You both win if you pick the correct image based on the other player's description.
 
-You play a picture guessing game where you and another player are given the same three images but in a different order. You will also see an expression made by the other player describing one of the images. Your task is to identify the image the expression is referring to.
-Begin your expression with “Answer: ” Say only the number of your selected image (first, second, third). No need to explain your reasoning.
-Expression: EXPRESSION
-What picture is the expression referring to?
+Here is the description:
+TARGET_EXPRESSION
+Which image fits the description?
+
+Begin your selection with "Selection: ". Say only the number of your selected image (first, second, third, fourth). There is no need to explain your reasoning.
