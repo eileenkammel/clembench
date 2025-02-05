@@ -22,4 +22,6 @@ instances_img.html
 instances.csv
 instances.html
 missing_ids.py
+slurk_instances.json
+reduced_slurk_instances.json
 
