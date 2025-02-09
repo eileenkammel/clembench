@@ -156,9 +156,7 @@ def load_human_expression(data_set_name, stimuli_id):
     """Will return all human expressions from slurk_logs for a given stimuli_id.
     Different expressions will be separated by a $.
     """
-    with open(
-        "games/multimodal_referencegame/analysis/successful_human_expressions.json", "r"
-    ) as f:
+    with open("games/multimodal_referencegame/analysis/selected_he.json", "r") as f:
         all_human_expressions = json.load(f)
     expressions = ""
     if data_set_name == "tuna":
@@ -255,13 +253,23 @@ def make_html_table():
         info_table[col] = info_table.apply(
             lambda row: image_loader(row, row[col]), axis=1
         )
-    info_table[description_column] = info_table[description_column].str.replace("ü", "&uuml;")
-    info_table[description_column] = info_table[description_column].str.replace("ä", "&auml;")
-    info_table[description_column] = info_table[description_column].str.replace("ö", "&ouml;")
-    info_table[description_column] = info_table[description_column].str.replace("ß", "&szlig;")
+    info_table[description_column] = info_table[description_column].str.replace(
+        "ü", "&uuml;"
+    )
+    info_table[description_column] = info_table[description_column].str.replace(
+        "ä", "&auml;"
+    )
+    info_table[description_column] = info_table[description_column].str.replace(
+        "ö", "&ouml;"
+    )
+    info_table[description_column] = info_table[description_column].str.replace(
+        "ß", "&szlig;"
+    )
 
     table_html = info_table.to_html(escape=False, index=False)
-    with open("games/multimodal_referencegame/analysis/experiment_overview.html", "w") as f:
+    with open(
+        "games/multimodal_referencegame/analysis/experiment_overview.html", "w"
+    ) as f:
         f.write(
             """
         <html>
