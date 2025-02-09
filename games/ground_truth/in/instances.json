@@ -11,367 +11,127 @@
                 {
                     "game_id": 1,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/63.png"
+                    "image": "games/ground_truth/recources/tuna_images/89.png"
                 },
                 {
                     "game_id": 2,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/76.png"
+                    "image": "games/ground_truth/recources/tuna_images/60.png"
                 },
                 {
                     "game_id": 3,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/89.png"
+                    "image": "games/ground_truth/recources/tuna_images/71.png"
                 },
                 {
                     "game_id": 4,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/60.png"
+                    "image": "games/ground_truth/recources/tuna_images/70.png"
                 },
                 {
                     "game_id": 5,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/74.png"
+                    "image": "games/ground_truth/recources/tuna_images/64.png"
                 },
                 {
                     "game_id": 6,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/49.png"
+                    "image": "games/ground_truth/recources/tuna_images/9.png"
                 },
                 {
                     "game_id": 7,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/75.png"
+                    "image": "games/ground_truth/recources/tuna_images/15.png"
                 },
                 {
                     "game_id": 8,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/61.png"
+                    "image": "games/ground_truth/recources/tuna_images/12.png"
                 },
                 {
                     "game_id": 9,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/59.png"
+                    "image": "games/ground_truth/recources/tuna_images/11.png"
                 },
                 {
                     "game_id": 10,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/65.png"
+                    "image": "games/ground_truth/recources/tuna_images/10.png"
                 },
                 {
                     "game_id": 11,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/71.png"
+                    "image": "games/ground_truth/recources/tuna_images/20.png"
                 },
                 {
                     "game_id": 12,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/70.png"
+                    "image": "games/ground_truth/recources/tuna_images/22.png"
                 },
                 {
                     "game_id": 13,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/64.png"
+                    "image": "games/ground_truth/recources/tuna_images/27.png"
                 },
                 {
                     "game_id": 14,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/58.png"
+                    "image": "games/ground_truth/recources/tuna_images/95.png"
                 },
                 {
                     "game_id": 15,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/8.png"
+                    "image": "games/ground_truth/recources/tuna_images/4.png"
                 },
                 {
                     "game_id": 16,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/72.png"
+                    "image": "games/ground_truth/recources/tuna_images/57.png"
                 },
                 {
                     "game_id": 17,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/66.png"
+                    "image": "games/ground_truth/recources/tuna_images/96.png"
                 },
                 {
                     "game_id": 18,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/67.png"
+                    "image": "games/ground_truth/recources/tuna_images/40.png"
                 },
                 {
                     "game_id": 19,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/9.png"
+                    "image": "games/ground_truth/recources/tuna_images/44.png"
                 },
                 {
                     "game_id": 20,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/14.png"
+                    "image": "games/ground_truth/recources/tuna_images/51.png"
                 },
                 {
                     "game_id": 21,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/29.png"
+                    "image": "games/ground_truth/recources/tuna_images/79.png"
                 },
                 {
                     "game_id": 22,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/15.png"
+                    "image": "games/ground_truth/recources/tuna_images/53.png"
                 },
                 {
                     "game_id": 23,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/16.png"
+                    "image": "games/ground_truth/recources/tuna_images/52.png"
                 },
                 {
                     "game_id": 24,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/12.png"
+                    "image": "games/ground_truth/recources/tuna_images/0.png"
                 },
                 {
                     "game_id": 25,
                     "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/13.png"
-                },
-                {
-                    "game_id": 26,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/39.png"
-                },
-                {
-                    "game_id": 27,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/11.png"
-                },
-                {
-                    "game_id": 28,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/10.png"
-                },
-                {
-                    "game_id": 29,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/38.png"
-                },
-                {
-                    "game_id": 30,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/20.png"
-                },
-                {
-                    "game_id": 31,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/34.png"
-                },
-                {
-                    "game_id": 32,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/22.png"
-                },
-                {
-                    "game_id": 33,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/23.png"
-                },
-                {
-                    "game_id": 34,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/27.png"
-                },
-                {
-                    "game_id": 35,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/32.png"
-                },
-                {
-                    "game_id": 36,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/26.png"
-                },
-                {
-                    "game_id": 37,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/18.png"
-                },
-                {
-                    "game_id": 38,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/24.png"
-                },
-                {
-                    "game_id": 39,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/31.png"
-                },
-                {
-                    "game_id": 40,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/95.png"
-                },
-                {
-                    "game_id": 41,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/81.png"
-                },
-                {
-                    "game_id": 42,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/4.png"
-                },
-                {
-                    "game_id": 43,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/56.png"
-                },
-                {
-                    "game_id": 44,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/42.png"
-                },
-                {
-                    "game_id": 45,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/57.png"
-                },
-                {
-                    "game_id": 46,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/80.png"
-                },
-                {
-                    "game_id": 47,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/94.png"
-                },
-                {
-                    "game_id": 48,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/82.png"
-                },
-                {
-                    "game_id": 49,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/96.png"
-                },
-                {
-                    "game_id": 50,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/41.png"
-                },
-                {
-                    "game_id": 51,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/55.png"
-                },
-                {
-                    "game_id": 52,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/7.png"
-                },
-                {
-                    "game_id": 53,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/69.png"
-                },
-                {
-                    "game_id": 54,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/68.png"
-                },
-                {
-                    "game_id": 55,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/54.png"
-                },
-                {
-                    "game_id": 56,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/40.png"
-                },
-                {
-                    "game_id": 57,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/83.png"
-                },
-                {
-                    "game_id": 58,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/87.png"
-                },
-                {
-                    "game_id": 59,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/78.png"
-                },
-                {
-                    "game_id": 60,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/44.png"
-                },
-                {
-                    "game_id": 61,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/50.png"
-                },
-                {
-                    "game_id": 62,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/3.png"
-                },
-                {
-                    "game_id": 63,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/51.png"
-                },
-                {
-                    "game_id": 64,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/79.png"
-                },
-                {
-                    "game_id": 65,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/86.png"
-                },
-                {
-                    "game_id": 66,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/90.png"
-                },
-                {
-                    "game_id": 67,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/53.png"
-                },
-                {
-                    "game_id": 68,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/1.png"
-                },
-                {
-                    "game_id": 69,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/47.png"
-                },
-                {
-                    "game_id": 70,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/52.png"
-                },
-                {
-                    "game_id": 71,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/0.png"
-                },
-                {
-                    "game_id": 72,
-                    "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/tuna_images/85.png"
-                },
-                {
-                    "game_id": 73,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/tuna_images/91.png"
                 }
             ]
         },
@@ -379,582 +139,137 @@
             "name": "3ds",
             "game_instances": [
                 {
-                    "game_id": 74,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/6825.png"
-                },
-                {
-                    "game_id": 75,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/14755.png"
-                },
-                {
-                    "game_id": 76,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/15310.png"
-                },
-                {
-                    "game_id": 77,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/3380.png"
-                },
-                {
-                    "game_id": 78,
+                    "game_id": 26,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/12084.png"
                 },
                 {
-                    "game_id": 79,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/1393.png"
-                },
-                {
-                    "game_id": 80,
+                    "game_id": 27,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/1387.png"
                 },
                 {
-                    "game_id": 81,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/17317.png"
-                },
-                {
-                    "game_id": 82,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/13603.png"
-                },
-                {
-                    "game_id": 83,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/13011.png"
-                },
-                {
-                    "game_id": 84,
+                    "game_id": 28,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/4610.png"
                 },
                 {
-                    "game_id": 85,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/8771.png"
-                },
-                {
-                    "game_id": 86,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/1027.png"
-                },
-                {
-                    "game_id": 87,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/12656.png"
-                },
-                {
-                    "game_id": 88,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/17470.png"
-                },
-                {
-                    "game_id": 89,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/1386.png"
-                },
-                {
-                    "game_id": 90,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/11940.png"
-                },
-                {
-                    "game_id": 91,
+                    "game_id": 29,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/12905.png"
                 },
                 {
-                    "game_id": 92,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/7287.png"
-                },
-                {
-                    "game_id": 93,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/12093.png"
-                },
-                {
-                    "game_id": 94,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/1157.png"
-                },
-                {
-                    "game_id": 95,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/1396.png"
-                },
-                {
-                    "game_id": 96,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/12242.png"
-                },
-                {
-                    "game_id": 97,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/15698.png"
-                },
-                {
-                    "game_id": 98,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/12135.png"
-                },
-                {
-                    "game_id": 99,
+                    "game_id": 30,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/8774.png"
                 },
                 {
-                    "game_id": 100,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/13607.png"
-                },
-                {
-                    "game_id": 101,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/2885.png"
-                },
-                {
-                    "game_id": 102,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/11945.png"
-                },
-                {
-                    "game_id": 103,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/13405.png"
-                },
-                {
-                    "game_id": 104,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/1195.png"
-                },
-                {
-                    "game_id": 105,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/1815.png"
-                },
-                {
-                    "game_id": 106,
+                    "game_id": 31,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/1550.png"
                 },
                 {
-                    "game_id": 107,
+                    "game_id": 32,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/3435.png"
                 },
                 {
-                    "game_id": 108,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/4818.png"
-                },
-                {
-                    "game_id": 109,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/6564.png"
-                },
-                {
-                    "game_id": 110,
+                    "game_id": 33,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/15301.png"
                 },
                 {
-                    "game_id": 111,
+                    "game_id": 34,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/13604.png"
                 },
                 {
-                    "game_id": 112,
+                    "game_id": 35,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/5496.png"
                 },
                 {
-                    "game_id": 113,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/11855.png"
-                },
-                {
-                    "game_id": 114,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/16874.png"
-                },
-                {
-                    "game_id": 115,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/4466.png"
-                },
-                {
-                    "game_id": 116,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/4664.png"
-                },
-                {
-                    "game_id": 117,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/4881.png"
-                },
-                {
-                    "game_id": 118,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/4665.png"
-                },
-                {
-                    "game_id": 119,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/9551.png"
-                },
-                {
-                    "game_id": 120,
+                    "game_id": 36,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/6528.png"
                 },
                 {
-                    "game_id": 121,
+                    "game_id": 37,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/4667.png"
                 },
                 {
-                    "game_id": 122,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/2175.png"
-                },
-                {
-                    "game_id": 123,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/10803.png"
-                },
-                {
-                    "game_id": 124,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/7551.png"
-                },
-                {
-                    "game_id": 125,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/15994.png"
-                },
-                {
-                    "game_id": 126,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/2159.png"
-                },
-                {
-                    "game_id": 127,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/1478.png"
-                },
-                {
-                    "game_id": 128,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/1915.png"
-                },
-                {
-                    "game_id": 129,
+                    "game_id": 38,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/17761.png"
                 },
                 {
-                    "game_id": 130,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/17760.png"
-                },
-                {
-                    "game_id": 131,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/4887.png"
-                },
-                {
-                    "game_id": 132,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/8273.png"
-                },
-                {
-                    "game_id": 133,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/3332.png"
-                },
-                {
-                    "game_id": 134,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/12397.png"
-                },
-                {
-                    "game_id": 135,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/11501.png"
-                },
-                {
-                    "game_id": 136,
+                    "game_id": 39,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/15997.png"
                 },
                 {
-                    "game_id": 137,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/2211.png"
-                },
-                {
-                    "game_id": 138,
+                    "game_id": 40,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/4890.png"
                 },
                 {
-                    "game_id": 139,
+                    "game_id": 41,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/12800.png"
                 },
                 {
-                    "game_id": 140,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/4502.png"
-                },
-                {
-                    "game_id": 141,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/5152.png"
-                },
-                {
-                    "game_id": 142,
+                    "game_id": 42,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/11500.png"
                 },
                 {
-                    "game_id": 143,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/1852.png"
-                },
-                {
-                    "game_id": 144,
+                    "game_id": 43,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/6132.png"
                 },
                 {
-                    "game_id": 145,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/16854.png"
-                },
-                {
-                    "game_id": 146,
+                    "game_id": 44,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/2157.png"
                 },
                 {
-                    "game_id": 147,
+                    "game_id": 45,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/12985.png"
                 },
                 {
-                    "game_id": 148,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/3075.png"
-                },
-                {
-                    "game_id": 149,
+                    "game_id": 46,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/16856.png"
                 },
                 {
-                    "game_id": 150,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/3698.png"
-                },
-                {
-                    "game_id": 151,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/11491.png"
-                },
-                {
-                    "game_id": 152,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/15806.png"
-                },
-                {
-                    "game_id": 153,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/3316.png"
-                },
-                {
-                    "game_id": 154,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/15386.png"
-                },
-                {
-                    "game_id": 155,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/12994.png"
-                },
-                {
-                    "game_id": 156,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/6134.png"
-                },
-                {
-                    "game_id": 157,
+                    "game_id": 47,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/8093.png"
                 },
                 {
-                    "game_id": 158,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/6519.png"
-                },
-                {
-                    "game_id": 159,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/6135.png"
-                },
-                {
-                    "game_id": 160,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/12995.png"
-                },
-                {
-                    "game_id": 161,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/12798.png"
-                },
-                {
-                    "game_id": 162,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/15961.png"
-                },
-                {
-                    "game_id": 163,
+                    "game_id": 48,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/15752.png"
                 },
                 {
-                    "game_id": 164,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/6123.png"
-                },
-                {
-                    "game_id": 165,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/7639.png"
-                },
-                {
-                    "game_id": 166,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/8091.png"
-                },
-                {
-                    "game_id": 167,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/12941.png"
-                },
-                {
-                    "game_id": 168,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/12799.png"
-                },
-                {
-                    "game_id": 169,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/5672.png"
-                },
-                {
-                    "game_id": 170,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/8791.png"
-                },
-                {
-                    "game_id": 171,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/5505.png"
-                },
-                {
-                    "game_id": 172,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/3174.png"
-                },
-                {
-                    "game_id": 173,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/7306.png"
-                },
-                {
-                    "game_id": 174,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/12927.png"
-                },
-                {
-                    "game_id": 175,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/12931.png"
-                },
-                {
-                    "game_id": 176,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/2283.png"
-                },
-                {
-                    "game_id": 177,
+                    "game_id": 49,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/10713.png"
                 },
                 {
-                    "game_id": 178,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/7098.png"
-                },
-                {
-                    "game_id": 179,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/10716.png"
-                },
-                {
-                    "game_id": 180,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/8768.png"
-                },
-                {
-                    "game_id": 181,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/7300.png"
-                },
-                {
-                    "game_id": 182,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/11782.png"
-                },
-                {
-                    "game_id": 183,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/14605.png"
-                },
-                {
-                    "game_id": 184,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/2939.png"
-                },
-                {
-                    "game_id": 185,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/1559.png"
-                },
-                {
-                    "game_id": 186,
+                    "game_id": 50,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/10067.png"
                 },
                 {
-                    "game_id": 187,
+                    "game_id": 51,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/7303.png"
                 },
                 {
-                    "game_id": 188,
-                    "prompt": "Please describe this image.",
-                    "image": "games/ground_truth/recources/3ds_images/12261.png"
-                },
-                {
-                    "game_id": 189,
+                    "game_id": 52,
                     "prompt": "Please describe this image.",
                     "image": "games/ground_truth/recources/3ds_images/11783.png"
                 }
