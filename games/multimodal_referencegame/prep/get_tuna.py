@@ -13,7 +13,7 @@ import shutil
 
 
 def download_tuna():
-    url = "http://www.abdn.ac.uk/ncs/documents/corpus.zip"
+    url = "https://www.abdn.ac.uk/media/site/ncs/documents/corpus.zip"
     tuna = requests.get(url)
     tuna.raise_for_status()
     with open("corpus.zip", "wb") as f:
