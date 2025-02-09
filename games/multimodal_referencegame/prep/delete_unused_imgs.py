@@ -11,7 +11,7 @@ import json
 def get_all_used_images():
     # get set of images used in my_instances_3distractors.json
     with open(
-        "games/multimodal_referencegame/in/my_instances_3distractors.json"
+        "games/multimodal_referencegame/in/instances.json"
     ) as f:
         data = json.load(f)
     used_images = set()
