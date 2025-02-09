@@ -1,0 +1,710 @@
+{
+    "tuna": [
+        {
+            "stimuli_id": 55,
+            "target": "4.png",
+            "human_expression": "small red desk",
+            "success": true
+        },
+        {
+            "stimuli_id": 96,
+            "target": "9.png",
+            "human_expression": "blue fan",
+            "success": true
+        },
+        {
+            "stimuli_id": 123,
+            "target": "11.png",
+            "human_expression": "a smaller green couch, viewed from a slightly angled perspective (not the front)",
+            "success": true
+        },
+        {
+            "stimuli_id": 123,
+            "target": "11.png",
+            "human_expression": "small green sofa facing left",
+            "success": true
+        },
+        {
+            "stimuli_id": 127,
+            "target": "12.png",
+            "human_expression": "a grey sofa viewed from the back",
+            "success": true
+        },
+        {
+            "stimuli_id": 127,
+            "target": "12.png",
+            "human_expression": "grey couch backwards",
+            "success": true
+        },
+        {
+            "stimuli_id": 164,
+            "target": "15.png",
+            "human_expression": "the black fan with it's back to me",
+            "success": true
+        },
+        {
+            "stimuli_id": 220,
+            "target": "20.png",
+            "human_expression": "red couch",
+            "success": true
+        },
+        {
+            "stimuli_id": 307,
+            "target": "27.png",
+            "human_expression": "it is green and facing to the right, the picture is small",
+            "success": true
+        },
+        {
+            "stimuli_id": 454,
+            "target": "40.png",
+            "human_expression": "blue chair facing right",
+            "success": true
+        },
+        {
+            "stimuli_id": 501,
+            "target": "44.png",
+            "human_expression": "a smaller blue fan",
+            "success": true
+        },
+        {
+            "stimuli_id": 501,
+            "target": "44.png",
+            "human_expression": "small blue fan",
+            "success": true
+        },
+        {
+            "stimuli_id": 567,
+            "target": "51.png",
+            "human_expression": "a green fan",
+            "success": true
+        },
+        {
+            "stimuli_id": 567,
+            "target": "51.png",
+            "human_expression": "green fan",
+            "success": true
+        },
+        {
+            "stimuli_id": 580,
+            "target": "52.png",
+            "human_expression": "it is red, facing you and you can sit on it",
+            "success": true
+        },
+        {
+            "stimuli_id": 588,
+            "target": "52.png",
+            "human_expression": "small red chair facing straight",
+            "success": true
+        },
+        {
+            "stimuli_id": 593,
+            "target": "53.png",
+            "human_expression": "a red fan ",
+            "success": true
+        },
+        {
+            "stimuli_id": 593,
+            "target": "53.png",
+            "human_expression": "red fan",
+            "success": true
+        },
+        {
+            "stimuli_id": 642,
+            "target": "57.png",
+            "human_expression": "red chair, facing straight",
+            "success": true
+        },
+        {
+            "stimuli_id": 675,
+            "target": "60.png",
+            "human_expression": "Blue chair",
+            "success": true
+        },
+        {
+            "stimuli_id": 675,
+            "target": "60.png",
+            "human_expression": "blue chair",
+            "success": true
+        },
+        {
+            "stimuli_id": 675,
+            "target": "60.png",
+            "human_expression": "a blue chair",
+            "success": true
+        },
+        {
+            "stimuli_id": 675,
+            "target": "60.png",
+            "human_expression": "blue chair",
+            "success": true
+        },
+        {
+            "stimuli_id": 678,
+            "target": "60.png",
+            "human_expression": "blue chair, turned to the left",
+            "success": true
+        },
+        {
+            "stimuli_id": 719,
+            "target": "64.png",
+            "human_expression": "fan facing you",
+            "success": true
+        },
+        {
+            "stimuli_id": 784,
+            "target": "70.png",
+            "human_expression": "it's grey and faces you, so you could push a chair straight underneath it",
+            "success": true
+        },
+        {
+            "stimuli_id": 793,
+            "target": "70.png",
+            "human_expression": "large grey desk facing you",
+            "success": true
+        },
+        {
+            "stimuli_id": 799,
+            "target": "71.png",
+            "human_expression": "green desk",
+            "success": true
+        },
+        {
+            "stimuli_id": 878,
+            "target": "79.png",
+            "human_expression": "a white chair",
+            "success": true
+        },
+        {
+            "stimuli_id": 878,
+            "target": "79.png",
+            "human_expression": "grey chair",
+            "success": true
+        },
+        {
+            "stimuli_id": 932,
+            "target": "85.png",
+            "human_expression": "grey chair",
+            "success": true
+        },
+        {
+            "stimuli_id": 965,
+            "target": "88.png",
+            "human_expression": "small blue desk",
+            "success": true
+        },
+        {
+            "stimuli_id": 975,
+            "target": "89.png",
+            "human_expression": "my object is turquoise, you can sit on it and it's cosy",
+            "success": true
+        },
+        {
+            "stimuli_id": 977,
+            "target": "89.png",
+            "human_expression": "a green sofa",
+            "success": true
+        },
+        {
+            "stimuli_id": 977,
+            "target": "89.png",
+            "human_expression": "green sofa",
+            "success": true
+        },
+        {
+            "stimuli_id": 1047,
+            "target": "95.png",
+            "human_expression": "a smaller grey couch",
+            "success": true
+        },
+        {
+            "stimuli_id": 1047,
+            "target": "95.png",
+            "human_expression": "small grey couch",
+            "success": true
+        },
+        {
+            "stimuli_id": 1060,
+            "target": "95.png",
+            "human_expression": "the larger grey sofa",
+            "success": true
+        }
+    ],
+    "3ds": [
+        {
+            "stimuli_id": 453,
+            "target": "8093.png",
+            "human_expression": "green cube, facing towards the left, long shadow, cyan walls",
+            "success": true
+        },
+        {
+            "stimuli_id": 453,
+            "target": "8093.png",
+            "human_expression": "the green cube with the corner to the left",
+            "success": true
+        },
+        {
+            "stimuli_id": 491,
+            "target": "5496.png",
+            "human_expression": "red wall small left ball",
+            "success": true
+        },
+        {
+            "stimuli_id": 491,
+            "target": "5496.png",
+            "human_expression": "small pink sphere red walls",
+            "success": true
+        },
+        {
+            "stimuli_id": 491,
+            "target": "5496.png",
+            "human_expression": "small pink sphere, red wall. ",
+            "success": true
+        },
+        {
+            "stimuli_id": 640,
+            "target": "1550.png",
+            "human_expression": "roter boden",
+            "success": true
+        },
+        {
+            "stimuli_id": 640,
+            "target": "1550.png",
+            "human_expression": "blue cube, red floor",
+            "success": true
+        },
+        {
+            "stimuli_id": 640,
+            "target": "1550.png",
+            "human_expression": "Do we talk here?",
+            "success": true
+        },
+        {
+            "stimuli_id": 654,
+            "target": "1550.png",
+            "human_expression": "pink wall. corner on the left. red floor. small dark-blue cube",
+            "success": true
+        },
+        {
+            "stimuli_id": 654,
+            "target": "1550.png",
+            "human_expression": "small blue cube",
+            "success": true
+        },
+        {
+            "stimuli_id": 684,
+            "target": "12800.png",
+            "human_expression": "orange wall. corner on the left-hand side. pink cube",
+            "success": true
+        },
+        {
+            "stimuli_id": 684,
+            "target": "12800.png",
+            "human_expression": "purple cube with left corner",
+            "success": true
+        },
+        {
+            "stimuli_id": 686,
+            "target": "12800.png",
+            "human_expression": "A purple cube on a blue ground. Behind it is a orange wall. Also you can see a blue sky",
+            "success": true
+        },
+        {
+            "stimuli_id": 686,
+            "target": "12800.png",
+            "human_expression": "dark-blue floor. pink cube. wall corner on the left",
+            "success": true
+        },
+        {
+            "stimuli_id": 686,
+            "target": "12800.png",
+            "human_expression": "purple cube blue floor",
+            "success": true
+        },
+        {
+            "stimuli_id": 802,
+            "target": "15752.png",
+            "human_expression": "green cube",
+            "success": true
+        },
+        {
+            "stimuli_id": 802,
+            "target": "15752.png",
+            "human_expression": "the green cube",
+            "success": true
+        },
+        {
+            "stimuli_id": 802,
+            "target": "15752.png",
+            "human_expression": "This time the cylinder is green and the wall in the back is purple. There is also a blue sky above.",
+            "success": true
+        },
+        {
+            "stimuli_id": 1224,
+            "target": "12985.png",
+            "human_expression": "smaller purple sphere with blue floor",
+            "success": true
+        },
+        {
+            "stimuli_id": 1224,
+            "target": "12985.png",
+            "human_expression": "the small purple ball on the blue floor",
+            "success": true
+        },
+        {
+            "stimuli_id": 1224,
+            "target": "12985.png",
+            "human_expression": "Pink small ball, blue ground, yellow wall, light blue sky.",
+            "success": true
+        },
+        {
+            "stimuli_id": 1276,
+            "target": "4890.png",
+            "human_expression": "big green cylinder",
+            "success": true
+        },
+        {
+            "stimuli_id": 1276,
+            "target": "4890.png",
+            "human_expression": "big green cylinder ",
+            "success": true
+        },
+        {
+            "stimuli_id": 1389,
+            "target": "13604.png",
+            "human_expression": "A yellow cylindrical shape on a blue ground. Behin it is a blue wall and you can see a edge in the wall.",
+            "success": true
+        },
+        {
+            "stimuli_id": 1389,
+            "target": "13604.png",
+            "human_expression": "wall corner on the left. blue floor. yellow tube",
+            "success": true
+        },
+        {
+            "stimuli_id": 1389,
+            "target": "13604.png",
+            "human_expression": "yellow cylinder blue floor left corner",
+            "success": true
+        },
+        {
+            "stimuli_id": 1403,
+            "target": "8774.png",
+            "human_expression": "sphere",
+            "success": true
+        },
+        {
+            "stimuli_id": 1403,
+            "target": "8774.png",
+            "human_expression": "Yellow sphere",
+            "success": true
+        },
+        {
+            "stimuli_id": 1559,
+            "target": "1387.png",
+            "human_expression": "small panel with 2d view of the wall",
+            "success": true
+        },
+        {
+            "stimuli_id": 1559,
+            "target": "1387.png",
+            "human_expression": "small cube face on",
+            "success": true
+        },
+        {
+            "stimuli_id": 1559,
+            "target": "1387.png",
+            "human_expression": "small purple cube, straight on, no corner in the background. ",
+            "success": true
+        },
+        {
+            "stimuli_id": 1856,
+            "target": "16856.png",
+            "human_expression": "A lightblue ball laying on a pink ground. Behind it is a green wall.",
+            "success": true
+        },
+        {
+            "stimuli_id": 1856,
+            "target": "16856.png",
+            "human_expression": "green wall. corner on the left. light-coloured sphere. pink/red floor",
+            "success": true
+        },
+        {
+            "stimuli_id": 1856,
+            "target": "16856.png",
+            "human_expression": "turquoise ball left corner",
+            "success": true
+        },
+        {
+            "stimuli_id": 2418,
+            "target": "11500.png",
+            "human_expression": "bigger green sphere with straight green walls",
+            "success": true
+        },
+        {
+            "stimuli_id": 2418,
+            "target": "11500.png",
+            "human_expression": "bigger green ball, wall without a corner",
+            "success": true
+        },
+        {
+            "stimuli_id": 2418,
+            "target": "11500.png",
+            "human_expression": "Green ball, blue ground, green wall. There are 2 other similar pictures which are different: one were there is a corner of the walls on the left side (has a different angle), the other where the green ball is smaller (with the same angle as the one we are looking for).",
+            "success": true
+        },
+        {
+            "stimuli_id": 2482,
+            "target": "12905.png",
+            "human_expression": "green sphere",
+            "success": true
+        },
+        {
+            "stimuli_id": 2482,
+            "target": "12905.png",
+            "human_expression": "the green ball",
+            "success": true
+        },
+        {
+            "stimuli_id": 2482,
+            "target": "12905.png",
+            "human_expression": "A green ball, blue ground, yellow wall.",
+            "success": true
+        },
+        {
+            "stimuli_id": 2671,
+            "target": "10713.png",
+            "human_expression": "red wall. yellow/orange tube",
+            "success": true
+        },
+        {
+            "stimuli_id": 2671,
+            "target": "10713.png",
+            "human_expression": "orange cylinder red background",
+            "success": true
+        },
+        {
+            "stimuli_id": 2693,
+            "target": "2157.png",
+            "human_expression": "green wall right dark green left light green",
+            "success": true
+        },
+        {
+            "stimuli_id": 2693,
+            "target": "2157.png",
+            "human_expression": "yellow walls further away, smaller shadow",
+            "success": true
+        },
+        {
+            "stimuli_id": 2693,
+            "target": "2157.png",
+            "human_expression": "orange sphere, yellow wall, wall corner is closer to the right hand side.",
+            "success": true
+        },
+        {
+            "stimuli_id": 2761,
+            "target": "3435.png",
+            "human_expression": "A green ball in the middle on orange ground with a pink wall behind it and a blue sky",
+            "success": true
+        },
+        {
+            "stimuli_id": 2761,
+            "target": "3435.png",
+            "human_expression": "pink background. orange floor",
+            "success": true
+        },
+        {
+            "stimuli_id": 2761,
+            "target": "3435.png",
+            "human_expression": "yellow ball pink background",
+            "success": true
+        },
+        {
+            "stimuli_id": 2999,
+            "target": "6132.png",
+            "human_expression": "bigger green cylinder with wall corner towards the right",
+            "success": true
+        },
+        {
+            "stimuli_id": 2999,
+            "target": "6132.png",
+            "human_expression": "bigger green cylinder with corner to the right",
+            "success": true
+        },
+        {
+            "stimuli_id": 2999,
+            "target": "6132.png",
+            "human_expression": "large cylinder, everything is green but different tones, there is a corner on the right side of the wall in the background.",
+            "success": true
+        },
+        {
+            "stimuli_id": 3014,
+            "target": "6528.png",
+            "human_expression": "bigger blue cylinder",
+            "success": true
+        },
+        {
+            "stimuli_id": 3014,
+            "target": "6528.png",
+            "human_expression": "the bigger blue cylinder",
+            "success": true
+        },
+        {
+            "stimuli_id": 3014,
+            "target": "6528.png",
+            "human_expression": "Green ground, blue cylinder, blue wall. The cylinder is close to the camera (there is another similar picture where it is smaller, which is not the one we are looking for)",
+            "success": true
+        },
+        {
+            "stimuli_id": 3123,
+            "target": "7303.png",
+            "human_expression": "der pinke Zylinder ",
+            "success": true
+        },
+        {
+            "stimuli_id": 3123,
+            "target": "7303.png",
+            "human_expression": "pink cylinder",
+            "success": true
+        },
+        {
+            "stimuli_id": 3123,
+            "target": "7303.png",
+            "human_expression": "pink cylinder",
+            "success": true
+        },
+        {
+            "stimuli_id": 3160,
+            "target": "10067.png",
+            "human_expression": "the floor is red",
+            "success": true
+        },
+        {
+            "stimuli_id": 3160,
+            "target": "10067.png",
+            "human_expression": "a turquoise cylinder on a turquoise floor",
+            "success": true
+        },
+        {
+            "stimuli_id": 3160,
+            "target": "10067.png",
+            "human_expression": "There are only 2 colors (turquoise and blue) in the image, with a cylinder (turquoise) in front and a wall (blue) in the back.",
+            "success": true
+        },
+        {
+            "stimuli_id": 3367,
+            "target": "15301.png",
+            "human_expression": "Small pink cube on a pink base",
+            "success": true
+        },
+        {
+            "stimuli_id": 3367,
+            "target": "15301.png",
+            "human_expression": "small pink cube on pink floor",
+            "success": true
+        },
+        {
+            "stimuli_id": 3367,
+            "target": "15301.png",
+            "human_expression": "small purple cube, purple floor ",
+            "success": true
+        },
+        {
+            "stimuli_id": 3544,
+            "target": "12084.png",
+            "human_expression": "blue floor. pink SMALL ball",
+            "success": true
+        },
+        {
+            "stimuli_id": 3544,
+            "target": "12084.png",
+            "human_expression": "small pink ball blue floor",
+            "success": true
+        },
+        {
+            "stimuli_id": 3589,
+            "target": "4667.png",
+            "human_expression": "Yellow cylinder on yellow base, right wall sleeve is light blue, left is dark blue",
+            "success": true
+        },
+        {
+            "stimuli_id": 3589,
+            "target": "4667.png",
+            "human_expression": "yellow cylinder, yellow floor, shadow forward",
+            "success": true
+        },
+        {
+            "stimuli_id": 3589,
+            "target": "4667.png",
+            "human_expression": "yellow cylinder, yellow floor, corner is on the left. ",
+            "success": true
+        },
+        {
+            "stimuli_id": 3762,
+            "target": "4610.png",
+            "human_expression": "pink/red small cube. wall corner on the left-hand side. greenish-blue wall",
+            "success": true
+        },
+        {
+            "stimuli_id": 3762,
+            "target": "4610.png",
+            "human_expression": "pink cube",
+            "success": true
+        },
+        {
+            "stimuli_id": 3991,
+            "target": "15997.png",
+            "human_expression": "blue cylinder with purple wall",
+            "success": true
+        },
+        {
+            "stimuli_id": 3991,
+            "target": "15997.png",
+            "human_expression": "blue cylinder with pink wall",
+            "success": true
+        },
+        {
+            "stimuli_id": 3991,
+            "target": "15997.png",
+            "human_expression": "large blue cylinder, purple ground, pink wall, blue sky.",
+            "success": true
+        }
+    ],
+    "mixed": [
+        {
+            "stimuli_id": 9,
+            "target": "0.png",
+            "human_expression": "red desk, front facing",
+            "success": true
+        },
+        {
+            "stimuli_id": 101,
+            "target": "10.png",
+            "human_expression": "grey sofa",
+            "success": true
+        },
+        {
+            "stimuli_id": 244,
+            "target": "22.png",
+            "human_expression": "Couch facing right ",
+            "success": true
+        },
+        {
+            "stimuli_id": 1129,
+            "target": "17761.png",
+            "human_expression": "turquoise cylinder, wall and floor are pink, the wall is straight",
+            "success": true
+        },
+        {
+            "stimuli_id": 2682,
+            "target": "2157.png",
+            "human_expression": "orange ball",
+            "success": true
+        },
+        {
+            "stimuli_id": 3512,
+            "target": "11783.png",
+            "human_expression": "Red square, left, light blue",
+            "success": true
+        }
+    ]
+}
