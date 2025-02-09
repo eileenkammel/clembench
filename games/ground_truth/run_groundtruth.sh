@@ -17,14 +17,24 @@ game_runs=(
   "ground_truth InternVL2-8B"
 )
 
-total_runs=${#game_runs[@]}
-echo "Number of refgame runs: $total_runs"
-current_runs=1
-for run_args in "${game_runs[@]}"; do
-  echo "Run $current_runs of $total_runs: $run_args"
-  bash -c "./run.sh ${run_args}"
-  ((current_runs++))
-done
+echo
+echo "==================================================="
+echo "STARTING COMMERCIAL MODEL RUNS"
+echo "==================================================="
+echo
+python scripts/cli.py run -g ground_truth -m gpt-4o-2024-08-06
+python scripts/cli.py run -g ground_truth -m claude-3-5-sonnet-20240620
+python scripts/cli.py run -g ground_truth -m gemini-2.0-flash-exp
+echo
+echo "==================================================="
+echo "STARTING OPEN WEIGHT MODEL RUNS"
+echo "==================================================="
+echo
+python scripts/cli.py run -g ground_truth -m idefics-80b-instruct
+python scripts/cli.py run -g ground_truth -m InternVL2-Llama3-76B
+python scripts/cli.py run -g ground_truth -m InternVL2-40B
+python scripts/cli.py run -g ground_truth -m InternVL2-8B
+
 echo "==================================================="
 echo "ALL GROUND TRUTH GAME RUNS COMPLETED"
 echo "==================================================="
