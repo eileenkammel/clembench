@@ -8,9 +8,7 @@ import json
 
 
 def load_he():
-    with open(
-        "games/multimodal_referencegame/analysis/successful_human_expressions.json"
-    ) as f:
+    with open("games/multimodal_referencegame/analysis/selected_he.json.json") as f:
         return json.load(f)
 
 
