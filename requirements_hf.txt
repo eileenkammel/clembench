@@ -1,5 +1,5 @@
 # Local Backends
-torch==2.4.1
+torch==2.6.0
 transformers==4.43.1 # Huggingface
 sentencepiece==0.1.99 # FLAN model
 accelerate==0.25.0 # FLAN model
@@ -7,5 +7,5 @@ einops==0.6.1 # FALCON model
 protobuf==4.21.6
 bitsandbytes==0.39.0
 imageio==2.34.1 # MM Mapworld game
-torchvision==0.16.1 # InternVL2
+torchvision==0.21.0 # InternVL2
 timm==1.0.11 # InternVL2
