@@ -25,7 +25,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "grey chair",
                     "stimuli_id": 878
                 },
                 {
@@ -50,7 +50,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "grey chair",
                     "stimuli_id": 878
                 },
                 {
@@ -75,7 +75,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "grey chair",
                     "stimuli_id": 878
                 },
                 {
@@ -100,7 +100,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "grey chair",
                     "stimuli_id": 878
                 },
                 {
@@ -125,7 +125,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red chair, facing straight",
                     "stimuli_id": 642
                 },
                 {
@@ -150,7 +150,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red chair, facing straight",
                     "stimuli_id": 642
                 },
                 {
@@ -175,7 +175,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red chair, facing straight",
                     "stimuli_id": 642
                 },
                 {
@@ -200,7 +200,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red chair, facing straight",
                     "stimuli_id": 642
                 },
                 {
@@ -225,7 +225,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "my object is turquoise, you can sit on it and it's cosy",
                     "stimuli_id": 975
                 },
                 {
@@ -250,7 +250,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "my object is turquoise, you can sit on it and it's cosy",
                     "stimuli_id": 975
                 },
                 {
@@ -275,7 +275,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "my object is turquoise, you can sit on it and it's cosy",
                     "stimuli_id": 975
                 },
                 {
@@ -300,7 +300,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "my object is turquoise, you can sit on it and it's cosy",
                     "stimuli_id": 975
                 },
                 {
@@ -325,7 +325,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue chair",
                     "stimuli_id": 675
                 },
                 {
@@ -350,7 +350,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue chair",
                     "stimuli_id": 675
                 },
                 {
@@ -375,7 +375,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue chair",
                     "stimuli_id": 675
                 },
                 {
@@ -400,7 +400,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue chair",
                     "stimuli_id": 675
                 },
                 {
@@ -425,7 +425,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue fan",
                     "stimuli_id": 96
                 },
                 {
@@ -450,7 +450,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue fan",
                     "stimuli_id": 96
                 },
                 {
@@ -475,7 +475,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue fan",
                     "stimuli_id": 96
                 },
                 {
@@ -500,7 +500,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue fan",
                     "stimuli_id": 96
                 },
                 {
@@ -525,7 +525,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "fan facing you",
                     "stimuli_id": 719
                 },
                 {
@@ -550,7 +550,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "fan facing you",
                     "stimuli_id": 719
                 },
                 {
@@ -575,7 +575,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "fan facing you",
                     "stimuli_id": 719
                 },
                 {
@@ -600,7 +600,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "fan facing you",
                     "stimuli_id": 719
                 },
                 {
@@ -625,7 +625,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red couch",
                     "stimuli_id": 220
                 },
                 {
@@ -650,7 +650,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red couch",
                     "stimuli_id": 220
                 },
                 {
@@ -675,7 +675,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red couch",
                     "stimuli_id": 220
                 },
                 {
@@ -700,7 +700,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red couch",
                     "stimuli_id": 220
                 },
                 {
@@ -725,7 +725,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "grey sofa",
                     "stimuli_id": 101
                 },
                 {
@@ -750,7 +750,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "grey sofa",
                     "stimuli_id": 101
                 },
                 {
@@ -775,7 +775,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "grey sofa",
                     "stimuli_id": 101
                 },
                 {
@@ -800,7 +800,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "grey sofa",
                     "stimuli_id": 101
                 },
                 {
@@ -825,7 +825,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "it's grey and faces you, so you could push a chair straight underneath it",
                     "stimuli_id": 784
                 },
                 {
@@ -850,7 +850,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "it's grey and faces you, so you could push a chair straight underneath it",
                     "stimuli_id": 784
                 },
                 {
@@ -875,7 +875,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "it's grey and faces you, so you could push a chair straight underneath it",
                     "stimuli_id": 784
                 },
                 {
@@ -900,7 +900,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "it's grey and faces you, so you could push a chair straight underneath it",
                     "stimuli_id": 784
                 },
                 {
@@ -925,7 +925,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "grey couch backwards",
                     "stimuli_id": 127
                 },
                 {
@@ -950,7 +950,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "grey couch backwards",
                     "stimuli_id": 127
                 },
                 {
@@ -975,7 +975,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "grey couch backwards",
                     "stimuli_id": 127
                 },
                 {
@@ -1000,7 +1000,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "grey couch backwards",
                     "stimuli_id": 127
                 }
             ]
@@ -1030,7 +1030,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "grey chair",
                     "stimuli_id": 932
                 },
                 {
@@ -1055,7 +1055,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "grey chair",
                     "stimuli_id": 932
                 },
                 {
@@ -1080,7 +1080,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "grey chair",
                     "stimuli_id": 932
                 },
                 {
@@ -1105,7 +1105,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "grey chair",
                     "stimuli_id": 932
                 },
                 {
@@ -1130,7 +1130,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red fan",
                     "stimuli_id": 593
                 },
                 {
@@ -1155,7 +1155,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red fan",
                     "stimuli_id": 593
                 },
                 {
@@ -1180,7 +1180,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red fan",
                     "stimuli_id": 593
                 },
                 {
@@ -1205,7 +1205,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red fan",
                     "stimuli_id": 593
                 },
                 {
@@ -1230,7 +1230,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "Couch facing right ",
                     "stimuli_id": 244
                 },
                 {
@@ -1255,7 +1255,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "Couch facing right ",
                     "stimuli_id": 244
                 },
                 {
@@ -1280,7 +1280,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "Couch facing right ",
                     "stimuli_id": 244
                 },
                 {
@@ -1305,7 +1305,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "Couch facing right ",
                     "stimuli_id": 244
                 },
                 {
@@ -1330,7 +1330,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "it is red, facing you and you can sit on it",
                     "stimuli_id": 580
                 },
                 {
@@ -1355,7 +1355,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "it is red, facing you and you can sit on it",
                     "stimuli_id": 580
                 },
                 {
@@ -1380,7 +1380,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "it is red, facing you and you can sit on it",
                     "stimuli_id": 580
                 },
                 {
@@ -1405,7 +1405,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "it is red, facing you and you can sit on it",
                     "stimuli_id": 580
                 },
                 {
@@ -1430,7 +1430,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small blue desk",
                     "stimuli_id": 965
                 },
                 {
@@ -1455,7 +1455,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small blue desk",
                     "stimuli_id": 965
                 },
                 {
@@ -1480,7 +1480,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small blue desk",
                     "stimuli_id": 965
                 },
                 {
@@ -1505,7 +1505,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small blue desk",
                     "stimuli_id": 965
                 },
                 {
@@ -1530,7 +1530,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green desk",
                     "stimuli_id": 799
                 },
                 {
@@ -1555,7 +1555,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green desk",
                     "stimuli_id": 799
                 },
                 {
@@ -1580,7 +1580,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green desk",
                     "stimuli_id": 799
                 },
                 {
@@ -1605,7 +1605,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green desk",
                     "stimuli_id": 799
                 },
                 {
@@ -1630,7 +1630,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "it is green and facing to the right, the picture is small",
                     "stimuli_id": 307
                 },
                 {
@@ -1655,7 +1655,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "it is green and facing to the right, the picture is small",
                     "stimuli_id": 307
                 },
                 {
@@ -1680,7 +1680,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "it is green and facing to the right, the picture is small",
                     "stimuli_id": 307
                 },
                 {
@@ -1705,7 +1705,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "it is green and facing to the right, the picture is small",
                     "stimuli_id": 307
                 },
                 {
@@ -1730,7 +1730,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green sofa",
                     "stimuli_id": 977
                 },
                 {
@@ -1755,7 +1755,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green sofa",
                     "stimuli_id": 977
                 },
                 {
@@ -1780,7 +1780,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green sofa",
                     "stimuli_id": 977
                 },
                 {
@@ -1805,7 +1805,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green sofa",
                     "stimuli_id": 977
                 },
                 {
@@ -1830,7 +1830,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green fan",
                     "stimuli_id": 567
                 },
                 {
@@ -1855,7 +1855,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green fan",
                     "stimuli_id": 567
                 },
                 {
@@ -1880,7 +1880,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green fan",
                     "stimuli_id": 567
                 },
                 {
@@ -1905,7 +1905,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green fan",
                     "stimuli_id": 567
                 },
                 {
@@ -1930,7 +1930,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue chair, turned to the left",
                     "stimuli_id": 678
                 },
                 {
@@ -1955,7 +1955,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue chair, turned to the left",
                     "stimuli_id": 678
                 },
                 {
@@ -1980,7 +1980,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue chair, turned to the left",
                     "stimuli_id": 678
                 },
                 {
@@ -2005,7 +2005,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue chair, turned to the left",
                     "stimuli_id": 678
                 }
             ]
@@ -2035,7 +2035,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "a smaller grey couch",
                     "stimuli_id": 1047
                 },
                 {
@@ -2060,7 +2060,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "a smaller grey couch",
                     "stimuli_id": 1047
                 },
                 {
@@ -2085,7 +2085,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "a smaller grey couch",
                     "stimuli_id": 1047
                 },
                 {
@@ -2110,7 +2110,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "a smaller grey couch",
                     "stimuli_id": 1047
                 },
                 {
@@ -2135,7 +2135,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue chair facing right",
                     "stimuli_id": 454
                 },
                 {
@@ -2160,7 +2160,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue chair facing right",
                     "stimuli_id": 454
                 },
                 {
@@ -2185,7 +2185,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue chair facing right",
                     "stimuli_id": 454
                 },
                 {
@@ -2210,7 +2210,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue chair facing right",
                     "stimuli_id": 454
                 },
                 {
@@ -2235,7 +2235,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small green sofa facing left",
                     "stimuli_id": 123
                 },
                 {
@@ -2260,7 +2260,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small green sofa facing left",
                     "stimuli_id": 123
                 },
                 {
@@ -2285,7 +2285,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small green sofa facing left",
                     "stimuli_id": 123
                 },
                 {
@@ -2310,7 +2310,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small green sofa facing left",
                     "stimuli_id": 123
                 },
                 {
@@ -2335,7 +2335,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "a smaller blue fan",
                     "stimuli_id": 501
                 },
                 {
@@ -2360,7 +2360,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "a smaller blue fan",
                     "stimuli_id": 501
                 },
                 {
@@ -2385,7 +2385,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "a smaller blue fan",
                     "stimuli_id": 501
                 },
                 {
@@ -2410,7 +2410,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "a smaller blue fan",
                     "stimuli_id": 501
                 },
                 {
@@ -2435,7 +2435,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small red chair facing straight",
                     "stimuli_id": 588
                 },
                 {
@@ -2460,7 +2460,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small red chair facing straight",
                     "stimuli_id": 588
                 },
                 {
@@ -2485,7 +2485,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small red chair facing straight",
                     "stimuli_id": 588
                 },
                 {
@@ -2510,7 +2510,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small red chair facing straight",
                     "stimuli_id": 588
                 },
                 {
@@ -2535,7 +2535,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small red desk",
                     "stimuli_id": 55
                 },
                 {
@@ -2560,7 +2560,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small red desk",
                     "stimuli_id": 55
                 },
                 {
@@ -2585,7 +2585,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small red desk",
                     "stimuli_id": 55
                 },
                 {
@@ -2610,7 +2610,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small red desk",
                     "stimuli_id": 55
                 },
                 {
@@ -2635,7 +2635,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "the larger grey sofa",
                     "stimuli_id": 1060
                 },
                 {
@@ -2660,7 +2660,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "the larger grey sofa",
                     "stimuli_id": 1060
                 },
                 {
@@ -2685,7 +2685,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "the larger grey sofa",
                     "stimuli_id": 1060
                 },
                 {
@@ -2710,7 +2710,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "the larger grey sofa",
                     "stimuli_id": 1060
                 },
                 {
@@ -2735,7 +2735,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red desk, front facing",
                     "stimuli_id": 9
                 },
                 {
@@ -2760,7 +2760,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red desk, front facing",
                     "stimuli_id": 9
                 },
                 {
@@ -2785,7 +2785,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red desk, front facing",
                     "stimuli_id": 9
                 },
                 {
@@ -2810,7 +2810,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red desk, front facing",
                     "stimuli_id": 9
                 },
                 {
@@ -2835,7 +2835,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "the black fan with it's back to me",
                     "stimuli_id": 164
                 },
                 {
@@ -2860,7 +2860,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "the black fan with it's back to me",
                     "stimuli_id": 164
                 },
                 {
@@ -2885,7 +2885,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "the black fan with it's back to me",
                     "stimuli_id": 164
                 },
                 {
@@ -2910,7 +2910,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "the black fan with it's back to me",
                     "stimuli_id": 164
                 },
                 {
@@ -2935,7 +2935,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "large grey desk facing you",
                     "stimuli_id": 793
                 },
                 {
@@ -2960,7 +2960,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "large grey desk facing you",
                     "stimuli_id": 793
                 },
                 {
@@ -2985,7 +2985,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "large grey desk facing you",
                     "stimuli_id": 793
                 },
                 {
@@ -3010,7 +3010,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "large grey desk facing you",
                     "stimuli_id": 793
                 }
             ]
@@ -3040,7 +3040,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "sphere",
                     "stimuli_id": 1403
                 },
                 {
@@ -3065,7 +3065,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "sphere",
                     "stimuli_id": 1403
                 },
                 {
@@ -3090,7 +3090,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "sphere",
                     "stimuli_id": 1403
                 },
                 {
@@ -3115,7 +3115,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "sphere",
                     "stimuli_id": 1403
                 },
                 {
@@ -3140,7 +3140,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "orange ball",
                     "stimuli_id": 2682
                 },
                 {
@@ -3165,7 +3165,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "orange ball",
                     "stimuli_id": 2682
                 },
                 {
@@ -3190,7 +3190,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "orange ball",
                     "stimuli_id": 2682
                 },
                 {
@@ -3215,7 +3215,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "orange ball",
                     "stimuli_id": 2682
                 },
                 {
@@ -3240,7 +3240,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "pink cube",
                     "stimuli_id": 3762
                 },
                 {
@@ -3265,7 +3265,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "pink cube",
                     "stimuli_id": 3762
                 },
                 {
@@ -3290,7 +3290,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "pink cube",
                     "stimuli_id": 3762
                 },
                 {
@@ -3315,7 +3315,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "pink cube",
                     "stimuli_id": 3762
                 },
                 {
@@ -3340,7 +3340,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "purple cube with left corner",
                     "stimuli_id": 684
                 },
                 {
@@ -3365,7 +3365,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "purple cube with left corner",
                     "stimuli_id": 684
                 },
                 {
@@ -3390,7 +3390,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "purple cube with left corner",
                     "stimuli_id": 684
                 },
                 {
@@ -3415,7 +3415,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "purple cube with left corner",
                     "stimuli_id": 684
                 },
                 {
@@ -3440,7 +3440,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red floor",
                     "stimuli_id": 640
                 },
                 {
@@ -3465,7 +3465,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red floor",
                     "stimuli_id": 640
                 },
                 {
@@ -3490,7 +3490,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red floor",
                     "stimuli_id": 640
                 },
                 {
@@ -3515,7 +3515,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "red floor",
                     "stimuli_id": 640
                 },
                 {
@@ -3540,7 +3540,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green cube",
                     "stimuli_id": 802
                 },
                 {
@@ -3565,7 +3565,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green cube",
                     "stimuli_id": 802
                 },
                 {
@@ -3590,7 +3590,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green cube",
                     "stimuli_id": 802
                 },
                 {
@@ -3615,7 +3615,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green cube",
                     "stimuli_id": 802
                 },
                 {
@@ -3640,7 +3640,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "a turquoise cylinder on a turquoise floor",
                     "stimuli_id": 3160
                 },
                 {
@@ -3665,7 +3665,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "a turquoise cylinder on a turquoise floor",
                     "stimuli_id": 3160
                 },
                 {
@@ -3690,7 +3690,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "a turquoise cylinder on a turquoise floor",
                     "stimuli_id": 3160
                 },
                 {
@@ -3715,7 +3715,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "a turquoise cylinder on a turquoise floor",
                     "stimuli_id": 3160
                 },
                 {
@@ -3740,7 +3740,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "pink cylinder",
                     "stimuli_id": 3123
                 },
                 {
@@ -3765,7 +3765,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "pink cylinder",
                     "stimuli_id": 3123
                 },
                 {
@@ -3790,7 +3790,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "pink cylinder",
                     "stimuli_id": 3123
                 },
                 {
@@ -3815,7 +3815,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "pink cylinder",
                     "stimuli_id": 3123
                 },
                 {
@@ -3840,7 +3840,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "pink background. orange floor",
                     "stimuli_id": 2761
                 },
                 {
@@ -3865,7 +3865,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "pink background. orange floor",
                     "stimuli_id": 2761
                 },
                 {
@@ -3890,7 +3890,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "pink background. orange floor",
                     "stimuli_id": 2761
                 },
                 {
@@ -3915,7 +3915,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "pink background. orange floor",
                     "stimuli_id": 2761
                 },
                 {
@@ -3940,7 +3940,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green sphere",
                     "stimuli_id": 2482
                 },
                 {
@@ -3965,7 +3965,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green sphere",
                     "stimuli_id": 2482
                 },
                 {
@@ -3990,7 +3990,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green sphere",
                     "stimuli_id": 2482
                 },
                 {
@@ -4015,7 +4015,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "green sphere",
                     "stimuli_id": 2482
                 }
             ]
@@ -4045,7 +4045,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "turquoise ball left corner",
                     "stimuli_id": 1856
                 },
                 {
@@ -4070,7 +4070,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "turquoise ball left corner",
                     "stimuli_id": 1856
                 },
                 {
@@ -4095,7 +4095,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "turquoise ball left corner",
                     "stimuli_id": 1856
                 },
                 {
@@ -4120,7 +4120,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "turquoise ball left corner",
                     "stimuli_id": 1856
                 },
                 {
@@ -4145,7 +4145,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "orange sphere, yellow wall, wall corner is closer to the right hand side.",
                     "stimuli_id": 2693
                 },
                 {
@@ -4170,7 +4170,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "orange sphere, yellow wall, wall corner is closer to the right hand side.",
                     "stimuli_id": 2693
                 },
                 {
@@ -4195,7 +4195,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "orange sphere, yellow wall, wall corner is closer to the right hand side.",
                     "stimuli_id": 2693
                 },
                 {
@@ -4220,7 +4220,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "orange sphere, yellow wall, wall corner is closer to the right hand side.",
                     "stimuli_id": 2693
                 },
                 {
@@ -4245,7 +4245,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "the green cube with the corner to the left",
                     "stimuli_id": 453
                 },
                 {
@@ -4270,7 +4270,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "the green cube with the corner to the left",
                     "stimuli_id": 453
                 },
                 {
@@ -4295,7 +4295,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "the green cube with the corner to the left",
                     "stimuli_id": 453
                 },
                 {
@@ -4320,7 +4320,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "the green cube with the corner to the left",
                     "stimuli_id": 453
                 },
                 {
@@ -4345,7 +4345,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "turquoise cylinder, wall and floor are pink, the wall is straight",
                     "stimuli_id": 1129
                 },
                 {
@@ -4370,7 +4370,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "turquoise cylinder, wall and floor are pink, the wall is straight",
                     "stimuli_id": 1129
                 },
                 {
@@ -4395,7 +4395,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "turquoise cylinder, wall and floor are pink, the wall is straight",
                     "stimuli_id": 1129
                 },
                 {
@@ -4420,7 +4420,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "turquoise cylinder, wall and floor are pink, the wall is straight",
                     "stimuli_id": 1129
                 },
                 {
@@ -4445,7 +4445,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "bigger blue cylinder",
                     "stimuli_id": 3014
                 },
                 {
@@ -4470,7 +4470,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "bigger blue cylinder",
                     "stimuli_id": 3014
                 },
                 {
@@ -4495,7 +4495,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "bigger blue cylinder",
                     "stimuli_id": 3014
                 },
                 {
@@ -4520,7 +4520,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "bigger blue cylinder",
                     "stimuli_id": 3014
                 },
                 {
@@ -4545,7 +4545,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "bigger green sphere with straight green walls",
                     "stimuli_id": 2418
                 },
                 {
@@ -4570,7 +4570,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "bigger green sphere with straight green walls",
                     "stimuli_id": 2418
                 },
                 {
@@ -4595,7 +4595,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "bigger green sphere with straight green walls",
                     "stimuli_id": 2418
                 },
                 {
@@ -4620,7 +4620,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "bigger green sphere with straight green walls",
                     "stimuli_id": 2418
                 },
                 {
@@ -4645,7 +4645,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small blue cube",
                     "stimuli_id": 654
                 },
                 {
@@ -4670,7 +4670,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small blue cube",
                     "stimuli_id": 654
                 },
                 {
@@ -4695,7 +4695,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small blue cube",
                     "stimuli_id": 654
                 },
                 {
@@ -4720,7 +4720,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small blue cube",
                     "stimuli_id": 654
                 },
                 {
@@ -4745,7 +4745,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "purple cube blue floor",
                     "stimuli_id": 686
                 },
                 {
@@ -4770,7 +4770,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "purple cube blue floor",
                     "stimuli_id": 686
                 },
                 {
@@ -4795,7 +4795,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "purple cube blue floor",
                     "stimuli_id": 686
                 },
                 {
@@ -4820,7 +4820,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "purple cube blue floor",
                     "stimuli_id": 686
                 },
                 {
@@ -4845,7 +4845,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small purple cube, purple floor ",
                     "stimuli_id": 3367
                 },
                 {
@@ -4870,7 +4870,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small purple cube, purple floor ",
                     "stimuli_id": 3367
                 },
                 {
@@ -4895,7 +4895,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small purple cube, purple floor ",
                     "stimuli_id": 3367
                 },
                 {
@@ -4920,7 +4920,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small purple cube, purple floor ",
                     "stimuli_id": 3367
                 },
                 {
@@ -4945,7 +4945,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small pink sphere, red wall. ",
                     "stimuli_id": 491
                 },
                 {
@@ -4970,7 +4970,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small pink sphere, red wall. ",
                     "stimuli_id": 491
                 },
                 {
@@ -4995,7 +4995,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small pink sphere, red wall. ",
                     "stimuli_id": 491
                 },
                 {
@@ -5020,7 +5020,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small pink sphere, red wall. ",
                     "stimuli_id": 491
                 }
             ]
@@ -5050,7 +5050,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue cylinder with purple wall",
                     "stimuli_id": 3991
                 },
                 {
@@ -5075,7 +5075,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue cylinder with purple wall",
                     "stimuli_id": 3991
                 },
                 {
@@ -5100,7 +5100,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue cylinder with purple wall",
                     "stimuli_id": 3991
                 },
                 {
@@ -5125,7 +5125,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "blue cylinder with purple wall",
                     "stimuli_id": 3991
                 },
                 {
@@ -5150,7 +5150,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "orange cylinder red background",
                     "stimuli_id": 2671
                 },
                 {
@@ -5175,7 +5175,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "orange cylinder red background",
                     "stimuli_id": 2671
                 },
                 {
@@ -5200,7 +5200,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "orange cylinder red background",
                     "stimuli_id": 2671
                 },
                 {
@@ -5225,7 +5225,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "orange cylinder red background",
                     "stimuli_id": 2671
                 },
                 {
@@ -5250,7 +5250,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "bigger green cylinder with corner to the right",
                     "stimuli_id": 2999
                 },
                 {
@@ -5275,7 +5275,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "bigger green cylinder with corner to the right",
                     "stimuli_id": 2999
                 },
                 {
@@ -5300,7 +5300,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "bigger green cylinder with corner to the right",
                     "stimuli_id": 2999
                 },
                 {
@@ -5325,7 +5325,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "bigger green cylinder with corner to the right",
                     "stimuli_id": 2999
                 },
                 {
@@ -5350,7 +5350,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "smaller purple sphere with blue floor",
                     "stimuli_id": 1224
                 },
                 {
@@ -5375,7 +5375,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "smaller purple sphere with blue floor",
                     "stimuli_id": 1224
                 },
                 {
@@ -5400,7 +5400,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "smaller purple sphere with blue floor",
                     "stimuli_id": 1224
                 },
                 {
@@ -5425,7 +5425,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "smaller purple sphere with blue floor",
                     "stimuli_id": 1224
                 },
                 {
@@ -5450,7 +5450,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "Red square, left, light blue",
                     "stimuli_id": 3512
                 },
                 {
@@ -5475,7 +5475,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "Red square, left, light blue",
                     "stimuli_id": 3512
                 },
                 {
@@ -5500,7 +5500,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "Red square, left, light blue",
                     "stimuli_id": 3512
                 },
                 {
@@ -5525,7 +5525,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "Red square, left, light blue",
                     "stimuli_id": 3512
                 },
                 {
@@ -5550,7 +5550,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small cube face on",
                     "stimuli_id": 1559
                 },
                 {
@@ -5575,7 +5575,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small cube face on",
                     "stimuli_id": 1559
                 },
                 {
@@ -5600,7 +5600,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small cube face on",
                     "stimuli_id": 1559
                 },
                 {
@@ -5625,7 +5625,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small cube face on",
                     "stimuli_id": 1559
                 },
                 {
@@ -5650,7 +5650,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "yellow cylinder blue floor left corner",
                     "stimuli_id": 1389
                 },
                 {
@@ -5675,7 +5675,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "yellow cylinder blue floor left corner",
                     "stimuli_id": 1389
                 },
                 {
@@ -5700,7 +5700,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "yellow cylinder blue floor left corner",
                     "stimuli_id": 1389
                 },
                 {
@@ -5725,7 +5725,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "yellow cylinder blue floor left corner",
                     "stimuli_id": 1389
                 },
                 {
@@ -5750,7 +5750,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small pink ball blue floor",
                     "stimuli_id": 3544
                 },
                 {
@@ -5775,7 +5775,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small pink ball blue floor",
                     "stimuli_id": 3544
                 },
                 {
@@ -5800,7 +5800,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small pink ball blue floor",
                     "stimuli_id": 3544
                 },
                 {
@@ -5825,7 +5825,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "small pink ball blue floor",
                     "stimuli_id": 3544
                 },
                 {
@@ -5850,7 +5850,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "yellow cylinder, yellow floor, corner is on the left. ",
                     "stimuli_id": 3589
                 },
                 {
@@ -5875,7 +5875,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "yellow cylinder, yellow floor, corner is on the left. ",
                     "stimuli_id": 3589
                 },
                 {
@@ -5900,7 +5900,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "yellow cylinder, yellow floor, corner is on the left. ",
                     "stimuli_id": 3589
                 },
                 {
@@ -5925,7 +5925,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "yellow cylinder, yellow floor, corner is on the left. ",
                     "stimuli_id": 3589
                 },
                 {
@@ -5950,7 +5950,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "big green cylinder",
                     "stimuli_id": 1276
                 },
                 {
@@ -5975,7 +5975,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "big green cylinder",
                     "stimuli_id": 1276
                 },
                 {
@@ -6000,7 +6000,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "big green cylinder",
                     "stimuli_id": 1276
                 },
                 {
@@ -6025,7 +6025,7 @@
                     "player_2_response_pattern": "^selection:\\s(?P<content>first|second|third|fourth|1|2|3|4|1st|2nd|3rd|4th)\n*(?P<remainder>.*)",
                     "player_1_response_tag": "description:",
                     "player_2_response_tag": "selection:",
-                    "human_expression": "",
+                    "human_expression": "big green cylinder",
                     "stimuli_id": 1276
                 }
             ]
