@@ -298,7 +298,7 @@ def image_loader(row, filename):
     if pd.notna(filename):
         base_path = (
             "games/multimodal_referencegame/resources/tuna_images/"
-            if row["set"] == "tuna"
+            if row["set"].lower() == "tuna"
             else "games/multimodal_referencegame/resources/3ds_images/"
         )
         image_path = os.path.join(base_path, filename)

@@ -19,7 +19,8 @@ def get_idtype(set_name, stimulus_id):
     for experiment in all_stimuli["INSTANCES"]:
         for episode in all_stimuli["INSTANCES"][experiment]:
             if episode["stimuli_id"] == stimulus_id:
-                print(f"Stimulus ID: {stimulus_id}, \t ID Type: {episode['id_type']}")
+                #print(f"Stimulus ID: {stimulus_id}, \t ID Type: {episode['id_type']}")
+                return episode["id_type"], episode["id_attributes"]
 
 
 def map_ids():

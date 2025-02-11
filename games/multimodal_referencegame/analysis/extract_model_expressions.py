@@ -42,8 +42,14 @@ def extract_model_expressions():
 
 def get_model_expression(episode_json):
     stim_id = episode_json["turns"][0][0]["action"]["content"]["stimuli_id"]
-    model_expression = episode_json["turns"][0][2]["action"]["expression"]
-    return stim_id, model_expression
+    if episode_json["turns"][0][2]["action"]["type"] == "parse":
+        try:
+            model_expression = episode_json["turns"][0][2]["action"]["expression"]
+            return stim_id, model_expression
+        except KeyError:
+            return None, None
+    else:
+        return stim_id, "blabla"
 
 
 if __name__ == "__main__":
