@@ -110,6 +110,7 @@ def extract_expressions_by_model():
         "surplus_info"
     ]
     expressions = pd.DataFrame(columns=columns)
+    programmatic = pd.DataFrame(columns=columns)
     for model in ALL_MODELS:
         path = f"results/{model}-t0.0--{model}-t0.0/multimodal_referencegame"
         if os.path.isdir(path):
@@ -144,11 +145,11 @@ def extract_expressions_by_model():
                                         f"{path}/{experiment}/{episode}/scores.json"
                                     ) as h:
                                         scores = json.load(h)
-                                        correct = determine_sucess(scores)
+                                        correct = determine_sucess(scores) if status == "completed" else None
                                     target, d1, d2, d3, id_type, minimal_expression = (
                                         load_raw_stimuli_info(set.lower(), stim_id)
                                     )
-                                    id, surplus_info = analyze_expression(set, model_expression, stim_id)
+                                    id, surplus_info = analyze_expression(set.lower(), model_expression, stim_id)
                                     expressions.loc[len(expressions)] = [
                                         set,
                                         stim_id,
@@ -179,13 +180,85 @@ def extract_expressions_by_model():
                                     f"File not found: {path}/{experiment}/{episode}/interactions.json"
                                 )
                                 continue
+        programmatic_path = f"results/programmatic-t0.0--{model}-t0.0/multimodal_referencegame"
+        if os.path.isdir(programmatic_path):
+            for experiment in os.listdir(programmatic_path):
+                if os.path.isdir(f"{programmatic_path}/{experiment}"):
+                    for episode in os.listdir(f"{programmatic_path}/{experiment}"):
+                        if os.path.isdir(f"{programmatic_path}/{experiment}/{episode}"):
+                            try:
+                                with open(
+                                    f"{programmatic_path}/{experiment}/{episode}/interactions.json"
+                                ) as f:
+                                    data = json.load(f)
+                                    with open(
+                                        f"{programmatic_path}/{experiment}/{episode}/instance.json"
+                                    ) as g:
+                                        instance = json.load(g)
+                                        target_pos_P1 = instance[
+                                            "player_1_target_position"
+                                        ]
+                                        target_pos_P2 = int(
+                                            instance["target_image_name"][1]
+                                        )
+                                    stim_id, model_expression, status, p2_choice = (
+                                        parse_log(data)
+                                    )
+                                    set = (
+                                        "TUNA"
+                                        if int(stim_id) in TUNA_STIMULI_IDS
+                                        else "3DS"
+                                    )
+                                    with open(
+                                        f"{programmatic_path}/{experiment}/{episode}/scores.json"
+                                    ) as h:
+                                        scores = json.load(h)
+                                        correct = determine_sucess(scores) if status == "completed" else None
+                                    target, d1, d2, d3, id_type, minimal_expression = (
+                                        load_raw_stimuli_info(set.lower(), stim_id)
+                                    )
+                                    id, surplus_info = analyze_expression(set.lower(), model_expression, stim_id)
+                                    programmatic.loc[len(programmatic)] = [
+                                        set,
+                                        stim_id,
+                                        target,
+                                        d1,
+                                        d2,
+                                        d3,
+                                        model,
+                                        model_expression,
+                                        target_pos_P1,
+                                        target_pos_P2,
+                                        p2_choice,
+                                        status,
+                                        correct,
+                                        id,
+                                        surplus_info,
+                                    ]
+                                    if status == "abort at P1":
+                                        print(
+                                            f"Unsuccessful because of P1: {programmatic_path}/{experiment}/{episode}"
+                                        )
+                                    if status == "abort at P2":
+                                        print(
+                                            f"Unsuccessful because of P2: {programmatic_path}/{experiment}/{episode}"
+                                        )
+                            except FileNotFoundError:
+                                print(
+                                    f"File not found: {programmatic_path}/{experiment}/{episode}/interactions.json"
+                                )
+                                continue
     expressions.sort_values(by=["set", "model", "stim_id"], inplace=True)
     expressions.reset_index(drop=True, inplace=True)
+    programmatic.sort_values(by=["set", "model", "stim_id"], inplace=True)
+    programmatic.reset_index(drop=True, inplace=True)
     # only_1_stim_one_model = expressions[(expressions["stim_id"] == 101) & (expressions["model"] == "idefics-80b-instruct")]
     # print(only_1_stim_one_model)
-    print(expressions)
     expressions.to_csv(
         "games/multimodal_referencegame/analysis/expressions_by_model.csv", index=False
+    )
+    programmatic.to_csv(
+        "games/multimodal_referencegame/analysis/programmatic_expressions_by_model.csv", index=False
     )
 
 
@@ -212,8 +285,8 @@ def determine_sucess(log):
     return log["episode scores"]["Success"] == 1
 
 
-def make_html():
-    expressions = pd.read_csv("games/multimodal_referencegame/analysis/expressions_by_model.csv")
+def make_html(filename, output_name):
+    expressions = pd.read_csv(filename)
     image_columns = ["target", "D1", "D2", "D3"]
     for col in image_columns:
         expressions[col] = expressions.apply(
@@ -221,7 +294,7 @@ def make_html():
         )
     table_html = expressions.to_html(escape=False, index=False)
     with open(
-        "games/multimodal_referencegame/analysis/model_expressions_overview.html", "w"
+        output_name, "w"
     ) as f:
         f.write(
             """
@@ -245,5 +318,10 @@ def make_html():
 
 
 if __name__ == "__main__":
+    model_expressions = "games/multimodal_referencegame/analysis/expressions_by_model.csv"
+    model_expressions_output = "games/multimodal_referencegame/analysis/model_expressions_overview.html"
+    programmatic = "games/multimodal_referencegame/analysis/programmatic_expressions_by_model.csv"
+    programmatic_output = "games/multimodal_referencegame/analysis/programmatic_expressions_overview.html"
     extract_expressions_by_model()
-    make_html()
+    make_html(programmatic, programmatic_output)
+    make_html(model_expressions, model_expressions_output)
