@@ -30,13 +30,13 @@ tuna_sizes = {
 tuna_orientation = {
     "left": ["left"],
     "right": ["right"],
-    "front": ["front", "to me", "to you", "frontal"],
-    "back": ["back", "behind", "backwards"],
+    "front": ["front", "to me", "to you", "frontal", "facing me", "facing you", "faces me", "faces you", "facing stright"],
+    "back": ["back", "behind", "backwards", "away"],
 }
 
 tuna_attributes = {
     "type": tuna_types,
-    "color": tuna_colors,
+    "colour": tuna_colors,
     "size": tuna_sizes,
     "orientation": tuna_orientation,
 }
@@ -95,7 +95,10 @@ threeds_scale = {
     "large": ["big", "bigger", "large", "lager"],
 }
 
-threeds_orientation = {"left": ["left"], "front": ["front"], "right": ["right"]}
+# This is confusing. The image is rotated: rotating left makes the corner in the
+# right appear and vice versa. People refer to lacation
+# of corner and not rotation.
+threeds_orientation = {"left": ["right"], "front": ["front"], "right": ["left"]}
 
 threeds_attributes = {
     "floorHue": threeds_floorhues,
@@ -127,8 +130,13 @@ def analyze_expression(set_name, expression, stim_id):
             for synonym in synonyms:
                 if synonym in expression:
                     included_attributes += 1
+                    # adjust for multiword syns to count as one token
+                    expression.replace(synonym, correct_attribute)
     if len(id_type) == included_attributes:
-        return "Correct ID", analyze_surplus(expression, included_attributes)
+        if len(id_type) ==  len(expression.split()):
+            return "Correct ID", 0
+        else:
+            return "Correct ID", analyze_surplus(expression, included_attributes)
     else:
         if included_attributes > 0:
             return "Insufficient ID", analyze_surplus(expression, included_attributes)
@@ -144,8 +152,12 @@ def analyze_surplus(expression, id_type_len):
     adjective_count = sum([1 for token in tagged_expression if token.pos_ == "ADJ"])
     noun_count = sum([1 for token in tagged_expression if token.pos_ in {"NOUN", "PROPN"}])
     total_info_surplus = adjective_count + noun_count
-    return total_info_surplus - id_type_len
+    surplus_info = total_info_surplus - id_type_len
+    return surplus_info
 
 
-analyze_expression("tuna", "the small red blue yellow desk sofa", 121)
-analyze_expression("3ds", "green, chair, blue", 48)
+#print(analyze_expression("tuna", "the small red desk", 55))
+#print(analyze_expression("tuna", "red", 220))
+#print(analyze_expression("tuna", "green sofa", 977))
+#print(analyze_expression("3ds", "sphere", 1403))
+#analyze_expression("3ds", "green, chair, blue", 48)
