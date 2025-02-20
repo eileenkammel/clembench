@@ -91,7 +91,7 @@ THREEDS_STIMULI_IDS = [
 ]
 
 
-def extract_expressions_by_model():
+def extract_expressions_by_model(models, output_path):
     columns = [
         "set",
         "stim_id",
@@ -111,7 +111,7 @@ def extract_expressions_by_model():
     ]
     expressions = pd.DataFrame(columns=columns)
     programmatic = pd.DataFrame(columns=columns)
-    for model in ALL_MODELS:
+    for model in models:
         path = f"results/{model}-t0.0--{model}-t0.0/multimodal_referencegame"
         if os.path.isdir(path):
             for experiment in os.listdir(path):
@@ -255,10 +255,10 @@ def extract_expressions_by_model():
     # only_1_stim_one_model = expressions[(expressions["stim_id"] == 101) & (expressions["model"] == "idefics-80b-instruct")]
     # print(only_1_stim_one_model)
     expressions.to_csv(
-        "games/multimodal_referencegame/analysis/expressions_by_model.csv", index=False
+        output_path + ".csv", index=False
     )
     programmatic.to_csv(
-        "games/multimodal_referencegame/analysis/programmatic_expressions_by_model.csv", index=False
+        output_path + "_programmatic.csv", index=False
     )
 
 
@@ -318,10 +318,17 @@ def make_html(filename, output_name):
 
 
 if __name__ == "__main__":
-    model_expressions = "games/multimodal_referencegame/analysis/expressions_by_model.csv"
-    model_expressions_output = "games/multimodal_referencegame/analysis/model_expressions_overview.html"
-    programmatic = "games/multimodal_referencegame/analysis/programmatic_expressions_by_model.csv"
-    programmatic_output = "games/multimodal_referencegame/analysis/programmatic_expressions_overview.html"
-    extract_expressions_by_model()
-    make_html(programmatic, programmatic_output)
-    make_html(model_expressions, model_expressions_output)
+    # model_expressions = "games/multimodal_referencegame/analysis/expressions_by_model.csv"
+    # model_expressions_output = "games/multimodal_referencegame/analysis/model_expressions_overview.html"
+    # programmatic = "games/multimodal_referencegame/analysis/programmatic_expressions_by_model.csv"
+    # programmatic_output = "games/multimodal_referencegame/analysis/programmatic_expressions_overview.html"
+    model_exp_commercial = "games/multimodal_referencegame/analysis/commercial_expressions_by_model.csv"
+    model_exp_comm_html = "games/multimodal_referencegame/analysis/commercial_expressions_by_model.html"
+    model_exp_comm_programmatic = "games/multimodal_referencegame/analysis/commercial_expressions_by_model_programmatic.csv"
+    model_exp_comm_programmatic_html = "games/multimodal_referencegame/analysis/commercial_expressions_by_model_programmatic.html"
+    # extract_expressions_by_model(OPEN_WEIGHED_MODELS, model_exp_commercial)
+    extract_expressions_by_model(COMMERCIAL_MODELS, "games/multimodal_referencegame/analysis/commercial_expressions_by_model")
+    # make_html(programmatic, programmatic_output)
+    # make_html(model_expressions, model_expressions_output)
+    make_html(model_exp_commercial, model_exp_comm_html)
+    make_html(model_exp_comm_programmatic, model_exp_comm_programmatic_html)

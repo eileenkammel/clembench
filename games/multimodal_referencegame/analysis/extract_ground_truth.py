@@ -22,9 +22,9 @@ OPEN_WEIGHED_MODELS = [
 ]
 
 
-def extract_gt():
+def extract_gt(models, output_path):
     gt = dict()
-    for model in OPEN_WEIGHED_MODELS:
+    for model in models:
         gt[model] = {"tuna": dict(), "threeds": dict()}
         path = path = f"results/{model}-t0.0--{model}-t0.0/ground_truth"
         if os.path.isdir(path):
@@ -45,7 +45,7 @@ def extract_gt():
                             except FileNotFoundError:
                                 print(f"File not found: {model}/{experiment}/{episode}/interactions.json")
                                 continue
-    with open("games/multimodal_referencegame/analysis/ground_truth.json", "w") as f:
+    with open(output_path, "w") as f:
         json.dump(gt, f)
 
 
@@ -56,4 +56,4 @@ def get_img_gt(episode_json):
 
 
 if __name__ == "__main__":
-    extract_gt()
+    extract_gt(COMMERCIAL_MODELS, "games/multimodal_referencegame/analysis/commercial_gt.json")
