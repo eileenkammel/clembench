@@ -4,8 +4,6 @@
 
 
 import pandas as pd
-import json
-import os
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 
@@ -16,33 +14,34 @@ OPEN_WEIGHED_MODELS = [
     "InternVL2-8B",
 ]
 
-# load pandas dataframe from csv
+COMMERCIAL_MODELS = [
+    "gpt-4o-2024-08-06",
+    "claude-3-5-sonnet-20240620",
+    "gemini-2.0-flash-exp",
+]
 
-human = pd.read_csv(
-    "games/multimodal_referencegame/analysis/programmatic_expressions_by_model.csv"
-)
-df = pd.read_csv("games/multimodal_referencegame/analysis/expressions_by_model.csv")
+ALL_MODELS = OPEN_WEIGHED_MODELS + COMMERCIAL_MODELS
 
 
 def autopct_format(pct):
     return f"{pct:.1f}%"
 
 
-def plot_id_accuracy():
+def plot_id_accuracy(models, df, output_path):
     fig, axs = plt.subplots(
-        len(OPEN_WEIGHED_MODELS), 2, figsize=(12, 24)
-    )  # Create a subplot for each model
+        len(models), 2, figsize=(12, 24)
+    )
     colors_tuna = mpl.colormaps["YlOrBr"]([0.6, 0.9])
     colors_3ds = mpl.colormaps["PuBuGn"]([0.4, 0.7])
 
     df_tuna = df[df["set"] == "TUNA"]
     df_3ds = df[df["set"] == "3DS"]
 
-    for i, model in enumerate(OPEN_WEIGHED_MODELS):
+    for i, model in enumerate(models):
         model_df_tuna = df_tuna[df_tuna["model"] == model]
         model_df_3ds = df_3ds[df_3ds["model"] == model]
 
-        # count value "NO ID" in column "ID" for TUNA
+
         no_id_tuna = model_df_tuna[model_df_tuna["ID"] == "NO ID"].count()["ID"]
         insuff_id_tuna = model_df_tuna[
             model_df_tuna["ID"] == "Insufficient ID"
@@ -51,13 +50,13 @@ def plot_id_accuracy():
             "ID"
         ]
 
-        # calculate percentages for TUNA
+
         total_tuna = no_id_tuna + insuff_id_tuna + correct_id_tuna
         no_id_pct_tuna = no_id_tuna / total_tuna * 100
         insuff_id_pct_tuna = insuff_id_tuna / total_tuna * 100
         correct_id_pct_tuna = correct_id_tuna / total_tuna * 100
 
-        # make donut chart with matplotlib for TUNA
+
         labels_tuna = [
             f"NO ID\n{no_id_pct_tuna:.1f}%",
             f"Insufficient ID\n{insuff_id_pct_tuna:.1f}%",
@@ -76,7 +75,6 @@ def plot_id_accuracy():
             text.set_color("black")
         axs[i, 0].set_title(f"ID accuracy for {model} (TUNA)")
 
-        # count value "NO ID" in column "ID" for 3DS
         no_id_3ds = model_df_3ds[model_df_3ds["ID"] == "NO ID"].count()["ID"]
         insuff_id_3ds = model_df_3ds[model_df_3ds["ID"] == "Insufficient ID"].count()[
             "ID"
@@ -89,7 +87,7 @@ def plot_id_accuracy():
         insuff_id_pct_3ds = insuff_id_3ds / total_3ds * 100
         correct_id_pct_3ds = correct_id_3ds / total_3ds * 100
 
-        # make donut chart with matplotlib for 3DS
+
         labels_3ds = [
             f"NO ID\n{no_id_pct_3ds:.1f}%",
             f"Insufficient ID\n{insuff_id_pct_3ds:.1f}%",
@@ -110,19 +108,19 @@ def plot_id_accuracy():
 
     plt.tight_layout()
     plt.show()
-    # Save the figure as SVG
+
     fig.savefig(
-        "games/multimodal_referencegame/analysis/plots/ID_accuracy_humans.svg",
+        output_path + ".svg",
         format="svg",
     )
-    # Save the figure as PNG
+
     fig.savefig(
-        "games/multimodal_referencegame/analysis/plots/ID_accuracy_OW_humans.png",
+        output_path + ".png",
         format="png",
     )
 
 
-def plot_id_accuracy_bar_chart():
+def plot_id_accuracy_bar_chart(models, df, output_path):
     no_id_percentages_tuna = []
     insuff_id_percentages_tuna = []
     correct_id_percentages_tuna = []
@@ -132,7 +130,7 @@ def plot_id_accuracy_bar_chart():
     labels = []
     df_tuna = df[df["set"] == "TUNA"]
     df_3ds = df[df["set"] == "3DS"]
-    for model in OPEN_WEIGHED_MODELS:
+    for model in models:
         model_df_tuna = df_tuna[df_tuna["model"] == model]
         model_df_3ds = df_3ds[df_3ds["model"] == model]
 
@@ -174,7 +172,7 @@ def plot_id_accuracy_bar_chart():
 
         labels.append(model)
 
-    y = range(len(OPEN_WEIGHED_MODELS))
+    y = range(len(models))
     colors = mpl.colormaps["YlOrBr"]([0.6, 0.7, 0.9])
     colors2 = mpl.colormaps["PuBuGn"]([0.4, 0.7, 0.9])
 
@@ -242,35 +240,51 @@ def plot_id_accuracy_bar_chart():
 
     plt.tight_layout()
     plt.show()
-    # Save the figure as SVG
+
     fig.savefig(
-        "games/multimodal_referencegame/analysis/plots/ID_accuracy_humans_bar_chart_horizontal.svg",
+        output_path + ".svg",
         format="svg",
     )
-    # Save the figure as PNG
+
     fig.savefig(
-        "games/multimodal_referencegame/analysis/plots/ID_accuracy_humans_bar_chart_horizontal.png",
+        output_path + ".png",
         format="png",
     )
 
 
-def plot_surplus_id_combined():
-    fig, ax = plt.subplots(figsize=(12, 8))  # Create a single plot
+def plot_surplus_id_combined(models_ow, models_commercial, df_ow, df_commercial, human, output_path):
+    fig, ax = plt.subplots(figsize=(12, 8))
 
-    # Collect surplus values for each model and set
+
     surplus_data_tuna = []
     surplus_data_3ds = []
     labels = []
     colors2 = mpl.colormaps["PuBuGn"]([0.4, 0.7, 0.9])
     colors = mpl.colormaps["YlOrBr"]([0.6, 0.7, 0.9])
-    df_tuna = df[df["set"] == "TUNA"]
-    df_3ds = df[df["set"] == "3DS"]
-    human_tuna = human[(human["set"] == "TUNA") & (human["model"] == "InternVL2-8B")]
-    human_3ds = human[(human["set"] == "3DS") & (human["model"] == "InternVL2-8B")]
+    
+    df_tuna_ow = df_ow[df_ow["set"] == "TUNA"]
+    df_3ds_ow = df_ow[df_ow["set"] == "3DS"]
+    df_tuna_commercial = df_commercial[df_commercial["set"] == "TUNA"]
+    df_3ds_commercial = df_commercial[df_commercial["set"] == "3DS"]
+    
+    # Choose just one model bc HE is the same 
+    human_tuna = human[(human["set"] == "TUNA") & (human["model"] == models_commercial[0])]
+    human_3ds = human[(human["set"] == "3DS") & (human["model"] == models_commercial[0])]
 
-    for model in OPEN_WEIGHED_MODELS:
-        model_df_tuna = df_tuna[df_tuna["model"] == model]
-        model_df_3ds = df_3ds[df_3ds["model"] == model]
+    for model in models_ow:
+        model_df_tuna = df_tuna_ow[df_tuna_ow["model"] == model]
+        model_df_3ds = df_3ds_ow[df_3ds_ow["model"] == model]
+
+        surplus_values_tuna = model_df_tuna["surplus_info"]
+        surplus_values_3ds = model_df_3ds["surplus_info"]
+
+        surplus_data_tuna.append(surplus_values_tuna)
+        surplus_data_3ds.append(surplus_values_3ds)
+        labels.append(model)
+
+    for model in models_commercial:
+        model_df_tuna = df_tuna_commercial[df_tuna_commercial["model"] == model]
+        model_df_3ds = df_3ds_commercial[df_3ds_commercial["model"] == model]
 
         surplus_values_tuna = model_df_tuna["surplus_info"]
         surplus_values_3ds = model_df_3ds["surplus_info"]
@@ -296,8 +310,8 @@ def plot_surplus_id_combined():
     flierprops_tuna = dict(markerfacecolor=colors[1], markeredgecolor=colors[1])
     flierprops_3ds = dict(markerfacecolor=colors2[1], markeredgecolor=colors2[1])
 
-    positions_tuna = [i * 2 for i in range(len(OPEN_WEIGHED_MODELS) + 1)]
-    positions_3ds = [i * 2 + 1 for i in range(len(OPEN_WEIGHED_MODELS) + 1)]
+    positions_tuna = [i * 2 for i in range(len(models_ow) + len(models_commercial) + 1)]
+    positions_3ds = [i * 2 + 1 for i in range(len(models_ow) + len(models_commercial) + 1)]
 
     ax.boxplot(
         surplus_data_tuna,
@@ -326,7 +340,7 @@ def plot_surplus_id_combined():
 
     ax.set_title("Surplus Information Distribution for Each Model + Human")
     ax.set_xlabel("Surplus Information (Number of ADJ+NOUN)")
-    ax.set_yticks([i * 2 + 0.5 for i in range(len(OPEN_WEIGHED_MODELS) + 1)])
+    ax.set_yticks([i * 2 + 0.5 for i in range(len(models_ow) + len(models_commercial) + 1)])
     ax.set_yticklabels(labels)
 
     # Add legend
@@ -335,23 +349,23 @@ def plot_surplus_id_combined():
         plt.Line2D([0], [0], color=colors2[0], lw=4, label="3DS"),
     ]
     legend = ax.legend(handles=handles)
-    legend.get_frame().set_alpha(0.5)  # Set the transparency of the legend background
+    legend.get_frame().set_alpha(0.5)
 
     plt.tight_layout()
     plt.show()
-    # Save the figure as SVG
+
     fig.savefig(
-        "games/multimodal_referencegame/analysis/plots/surplus_info_humans_combined.svg",
+        output_path + ".svg",
         format="svg",
     )
-    # Save the figure as PNG
+
     fig.savefig(
-        "games/multimodal_referencegame/analysis/plots/surplus_info_humans_combined.png",
+        output_path + ".png",
         format="png",
     )
 
 
-def plot_complete_correct_ratio():
+def plot_complete_correct_ratio(models, df, output_path, comprehension=False):
     completion_percentages_tuna = []
     correct_percentages_tuna = []
     completion_percentages_3ds = []
@@ -359,7 +373,7 @@ def plot_complete_correct_ratio():
     labels = []
     df_tuna = df[df["set"] == "TUNA"]
     df_3ds = df[df["set"] == "3DS"]
-    for model in OPEN_WEIGHED_MODELS:
+    for model in models:
         model_df_tuna = df_tuna[df_tuna["model"] == model]
         model_df_3ds = df_3ds[df_3ds["model"] == model]
         total_tuna = model_df_tuna[model_df_tuna["status"] == "completed"].count()[
@@ -389,7 +403,7 @@ def plot_complete_correct_ratio():
         correct_percentages_3ds.append(correct_pct_3ds)
         labels.append(model)
 
-        # Print the ratio of correct for each data set and model
+        # Print the ratio of correct for each data set and model to console
         print(f"Model: {model}")
         print(
             f"TUNA - Total: {total_tuna}, Correct: {correct_vals_tuna}, Ratio: {correct_pct_tuna:.2f}%"
@@ -399,7 +413,7 @@ def plot_complete_correct_ratio():
         )
         print()
 
-    x = range(len(OPEN_WEIGHED_MODELS))
+    x = range(len(models))
     colors = mpl.colormaps["YlOrBr"]([0.6, 0.9])
     colors2 = mpl.colormaps["PuBuGn"]([0.4, 0.7])
 
@@ -441,32 +455,39 @@ def plot_complete_correct_ratio():
 
     ax.set_xlabel("Models")
     ax.set_ylabel("% of Games Played")
-    # ax.set_title('Referent Identification with LLM made REs')
-    ax.set_title("Referent Identification with Human made REs")
+    title = "Referent Identification with Human made REs" if comprehension else "Referent Identification with LLM made REs"
+    ax.set_title(title)
     ax.set_xticks(x)
     ax.set_xticklabels(labels, rotation=0, ha="center")
     legend = ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.15), ncol=2)
-    legend.get_frame().set_alpha(0.5)  # Set the transparency of the legend background
+    legend.get_frame().set_alpha(0.5)
 
     plt.tight_layout()
     plt.show()
-    # Save the figure as SVG
-    # fig.savefig("games/multimodal_referencegame/analysis/plots/completion_correct_ratio.svg", format='svg')
-    # Save the figure as PNG
-    # fig.savefig("games/multimodal_referencegame/analysis/plots/completion_correct_ratio.png", format='png')
-    # Save the figure as SVG
+
     fig.savefig(
-        "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_programmatic.svg",
+        output_path + ".svg",
         format="svg",
     )
-    # Save the figure as PNG
+
     fig.savefig(
-        "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_programmatic.png",
+        output_path +  ".png",
         format="png",
     )
 
 
-# plot_complete_correct_ratio()
+if __name__ == "__main__":
+    human_commercial = pd.read_csv(
+        "games/multimodal_referencegame/analysis/commercial_expressions_by_model_programmatic.csv"
+    )
+    human_ow = pd.read_csv(
+        "games/multimodal_referencegame/analysis/programmatic_expressions_by_model.csv"
+    )
+    df_commercial = pd.read_csv("games/multimodal_referencegame/analysis/commercial_expressions_by_model.csv")
+    df_ow = pd.read_csv("games/multimodal_referencegame/analysis/expressions_by_model.csv")
 
-# plot gt comparison
-plot_surplus_id_combined()
+    #plot_id_accuracy(COMMERCIAL_MODELS, df, "games/multimodal_referencegame/analysis/plots/id_accuracy_commercial")
+    #plot_id_accuracy_bar_chart(COMMERCIAL_MODELS, df, "games/multimodal_referencegame/analysis/plots/id_accuracy_bar_chart_commercial")
+    plot_surplus_id_combined(OPEN_WEIGHED_MODELS, COMMERCIAL_MODELS, df_ow, df_commercial, human_commercial, "games/multimodal_referencegame/analysis/plots/surplus_info_commercial")
+    plot_complete_correct_ratio(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_commercial")
+    plot_complete_correct_ratio(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_commercial_comprehension", comprehension=True)
