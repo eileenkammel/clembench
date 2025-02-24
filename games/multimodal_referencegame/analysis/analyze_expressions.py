@@ -10,35 +10,45 @@ import spacy
 
 tuna_types = {
     "chair": ["chair"],
-    "sofa": ["couch", "sofa", "loveseat"],
+    "sofa": ["couch", "sofa", "loveseat", "sofa-like"],
     "desk": ["desk", "table", "drawer", "cabinet", "chest"],
-    "fan": ["fan", "ventilator"],
+    "fan": ["fan", "ventilator"]
 }
 
 tuna_colors = {
     "red": ["red"],
     "blue": ["blue"],
     "green": ["green"],
-    "grey": ["black", "grey", "gray", "white", "beige", "cream"],
+    "grey": ["black", "grey", "gray", "white", "beige", "cream"]
 }
 
 tuna_sizes = {
-    "small": ["small", "smallest"],
+    "small": ["small", "smaller", "smallest"],
     "large": ["big", "large", "bigger", "lager"],
 }
 
 tuna_orientation = {
     "left": ["left"],
     "right": ["right"],
-    "front": ["front", "to me", "to you", "frontal", "facing me", "facing you", "faces me", "faces you", "facing stright"],
-    "back": ["back", "behind", "backwards", "away"],
+    "front": [
+        "front",
+        "to me",
+        "to you",
+        "frontal",
+        "facing me",
+        "facing you",
+        "faces me",
+        "faces you",
+        "facing stright"
+    ],
+    "back": ["back", "behind", "backwards", "away"]
 }
 
 tuna_attributes = {
     "type": tuna_types,
     "colour": tuna_colors,
     "size": tuna_sizes,
-    "orientation": tuna_orientation,
+    "orientation": tuna_orientation
 }
 
 
@@ -50,12 +60,12 @@ threeds_floorhues = {
     "orange": ["orange"],
     "yellow": ["yellow"],
     "green": ["green"],
-    "turquoise": ["turquoise"],
-    "blue": ["blue"],
+    "turquoise": ["turquoise", "cyan"],
+    "blue": ["blue", "lighter blue"],
     "purple": ["purple"],
-    "pink": ["pink"],
+    "pink": ["pink", "magenta"],
     "moss": ["moss", "green"],
-    "darkblue": ["darkblue", "dark blue", "blue"]
+    "darkblue": ["darkblue", "dark blue", "blue", "darker blue"]
 }
 
 threeds_wallhues = {
@@ -63,12 +73,12 @@ threeds_wallhues = {
     "orange": ["orange"],
     "yellow": ["yellow"],
     "green": ["green"],
-    "turquoise": ["turquoise"],
-    "blue": ["blue"],
+    "turquoise": ["turquoise", "cyan"],
+    "blue": ["blue", "lighter blue"],
     "purple": ["purple"],
-    "pink": ["pink"],
+    "pink": ["pink", "magenta"],
     "moss": ["moss", "green"],
-    "darkblue": ["darkblue", "dark blue", "blue"]
+    "darkblue": ["darkblue", "dark blue", "blue", "darker blue"]
 }
 
 threeds_objecthues = {
@@ -76,23 +86,19 @@ threeds_objecthues = {
     "orange": ["orange"],
     "yellow": ["yellow"],
     "green": ["green"],
-    "turquoise": ["turquoise"],
-    "blue": ["blue"],
+    "turquoise": ["turquoise", "cyan"],
+    "blue": ["blue", "lighter blue"],
     "purple": ["purple"],
-    "pink": ["pink"],
+    "pink": ["pink", "magenta"],
     "moss": ["moss", "green"],
-    "darkblue": ["darkblue", "dark blue", "blue"]
+    "darkblue": ["darkblue", "dark blue", "blue", "darker blue"]
 }
 
-threeds_shape = {
-    "cube": ["cube"],
-    "cylinder": ["cylinder"],
-    "ball": ["sphere", "ball"],
-}
+threeds_shape = {"cube": ["cube"], "cylinder": ["cylinder", "cylindrical shape"], "ball": ["sphere", "ball"]}
 
 threeds_scale = {
     "small": ["small", "smaller"],
-    "large": ["big", "bigger", "large", "lager"],
+    "large": ["big", "bigger", "large", "lager"]
 }
 
 # This is confusing. The image is rotated: rotating left makes the corner in the
@@ -106,7 +112,7 @@ threeds_attributes = {
     "objectHue": threeds_objecthues,
     "shape": threeds_shape,
     "scale": threeds_scale,
-    "orientation": threeds_orientation,
+    "orientation": threeds_orientation
 }
 
 
@@ -126,14 +132,16 @@ def analyze_expression(set_name, expression, stim_id):
         synonyms = attributes[correct_attribute]
         if correct_attribute in expression:
             included_attributes += 1
+            expression = expression.replace(correct_attribute, "")
         else:
             for synonym in synonyms:
                 if synonym in expression:
                     included_attributes += 1
                     # adjust for multiword syns to count as one token
-                    expression.replace(synonym, correct_attribute)
+                    expression = expression.replace(synonym,"")
+                    break
     if len(id_type) == included_attributes:
-        if len(id_type) ==  len(expression.split()):
+        if len(id_type) == len(expression.split()):
             return "Correct ID", 0
         else:
             return "Correct ID", analyze_surplus(expression, included_attributes)
@@ -144,20 +152,23 @@ def analyze_expression(set_name, expression, stim_id):
             return "NO ID", analyze_surplus(expression, included_attributes)
 
 
-
 def analyze_surplus(expression, id_type_len):
+
     expression = expression.lower()
     tagger = spacy.load("en_core_web_sm")
     tagged_expression = tagger(expression)
-    adjective_count = sum([1 for token in tagged_expression if token.pos_ == "ADJ"])
-    noun_count = sum([1 for token in tagged_expression if token.pos_ in {"NOUN", "PROPN"}])
+    adjective_count = sum([1 for token in tagged_expression if token.pos_ in {"ADJ", "ADV"}])
+
+    noun_count = sum(
+        [1 for token in tagged_expression if token.pos_ in {"NOUN", "PROPN"}]
+    )
     total_info_surplus = adjective_count + noun_count
-    surplus_info = total_info_surplus - id_type_len
+    surplus_info = adjective_count + noun_count
     return surplus_info
 
 
-#print(analyze_expression("tuna", "the small red desk", 55))
-#print(analyze_expression("tuna", "red", 220))
-#print(analyze_expression("tuna", "green sofa", 977))
-#print(analyze_expression("3ds", "sphere", 1403))
-#analyze_expression("3ds", "green, chair, blue", 48)
+# print(analyze_expression("tuna", "the small red desk", 55))
+# print(analyze_expression("tuna", "red", 220))
+# print(analyze_expression("tuna", "green sofa", 977))
+# print(analyze_expression("3ds", "sphere", 1403))
+# print(analyze_expression("tuna", "the green fan back", 164))

@@ -318,17 +318,19 @@ def make_html(filename, output_name):
 
 
 if __name__ == "__main__":
-    # model_expressions = "games/multimodal_referencegame/analysis/expressions_by_model.csv"
-    # model_expressions_output = "games/multimodal_referencegame/analysis/model_expressions_overview.html"
-    # programmatic = "games/multimodal_referencegame/analysis/programmatic_expressions_by_model.csv"
-    # programmatic_output = "games/multimodal_referencegame/analysis/programmatic_expressions_overview.html"
-    model_exp_commercial = "games/multimodal_referencegame/analysis/commercial_expressions_by_model.csv"
-    model_exp_comm_html = "games/multimodal_referencegame/analysis/commercial_expressions_by_model.html"
-    model_exp_comm_programmatic = "games/multimodal_referencegame/analysis/commercial_expressions_by_model_programmatic.csv"
-    model_exp_comm_programmatic_html = "games/multimodal_referencegame/analysis/commercial_expressions_by_model_programmatic.html"
-    # extract_expressions_by_model(OPEN_WEIGHED_MODELS, model_exp_commercial)
-    extract_expressions_by_model(COMMERCIAL_MODELS, "games/multimodal_referencegame/analysis/commercial_expressions_by_model")
-    # make_html(programmatic, programmatic_output)
-    # make_html(model_expressions, model_expressions_output)
-    make_html(model_exp_commercial, model_exp_comm_html)
-    make_html(model_exp_comm_programmatic, model_exp_comm_programmatic_html)
+    ow_out = "games/multimodal_referencegame/analysis/expressions_by_model"
+    cm_out = "games/multimodal_referencegame/analysis/commercial_expressions_by_model"
+
+    ow_html_in = "games/multimodal_referencegame/analysis/expressions_by_model.csv"
+    ow_prog_html_in = "games/multimodal_referencegame/analysis/expressions_by_model_programmatic.csv"
+    cm_html_in = "games/multimodal_referencegame/analysis/commercial_expressions_by_model.csv"
+
+    cm_prog_html_in = "games/multimodal_referencegame/analysis/commercial_expressions_by_model_programmatic.csv"
+
+    extract_expressions_by_model(OPEN_WEIGHED_MODELS, ow_out)
+    extract_expressions_by_model(COMMERCIAL_MODELS, cm_out)
+
+    make_html(ow_html_in, "games/multimodal_referencegame/analysis/expressions_by_model.html")
+    make_html(ow_prog_html_in, "games/multimodal_referencegame/analysis/expressions_by_model_programmatic.html")
+    make_html(cm_html_in, "games/multimodal_referencegame/analysis/commercial_expressions_by_model.html")
+    make_html(cm_prog_html_in, "games/multimodal_referencegame/analysis/commercial_expressions_by_model_programmatic.html")

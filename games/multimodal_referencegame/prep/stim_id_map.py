@@ -19,13 +19,13 @@ def get_idtype(set_name, stimulus_id):
     for experiment in all_stimuli["INSTANCES"]:
         for episode in all_stimuli["INSTANCES"][experiment]:
             if episode["stimuli_id"] == stimulus_id:
-                #print(f"Stimulus ID: {stimulus_id}, \t ID Type: {episode['id_type']}")
+                # print(f"Stimulus ID: {stimulus_id}, \t ID Type: {episode['id_type']}")
                 return episode["id_type"], episode["id_attributes"]
 
 
 def map_ids():
     instances = json.load(
-        open("games/multimodal_referencegame/in/my_instances_3distractors.json", "r")
+        open("games/multimodal_referencegame/in/instances.json", "r")
     )
     for experiment in instances["experiments"]:
         set_name = "tuna" if "TUNA" in experiment["name"] else "3DS"

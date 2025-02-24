@@ -481,13 +481,21 @@ if __name__ == "__main__":
         "games/multimodal_referencegame/analysis/commercial_expressions_by_model_programmatic.csv"
     )
     human_ow = pd.read_csv(
-        "games/multimodal_referencegame/analysis/programmatic_expressions_by_model.csv"
+        "games/multimodal_referencegame/analysis/expressions_by_model_programmatic.csv"
     )
     df_commercial = pd.read_csv("games/multimodal_referencegame/analysis/commercial_expressions_by_model.csv")
     df_ow = pd.read_csv("games/multimodal_referencegame/analysis/expressions_by_model.csv")
 
-    #plot_id_accuracy(COMMERCIAL_MODELS, df, "games/multimodal_referencegame/analysis/plots/id_accuracy_commercial")
-    #plot_id_accuracy_bar_chart(COMMERCIAL_MODELS, df, "games/multimodal_referencegame/analysis/plots/id_accuracy_bar_chart_commercial")
+    plot_id_accuracy(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/id_accuracy_commercial")
+    plot_id_accuracy_bar_chart(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/id_accuracy_bar_chart_commercial")
+
+    plot_id_accuracy(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/id_accuracy_ow")
+    plot_id_accuracy_bar_chart(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/id_accuracy_bar_chart_ow")
+
     plot_surplus_id_combined(OPEN_WEIGHED_MODELS, COMMERCIAL_MODELS, df_ow, df_commercial, human_commercial, "games/multimodal_referencegame/analysis/plots/surplus_info_commercial")
+
     plot_complete_correct_ratio(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_commercial")
-    plot_complete_correct_ratio(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_commercial_comprehension", comprehension=True)
+    plot_complete_correct_ratio(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_commercial_programmatic", comprehension=True)
+
+    plot_complete_correct_ratio(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_ow")
+    plot_complete_correct_ratio(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_ow_programmatic", comprehension=True)
