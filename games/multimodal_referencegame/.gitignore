@@ -42,3 +42,6 @@ commercial_gt.json
 expressions_by_model_programmatic.csv
 expressions_by_model_programmatic.html
 expressions_by_model.html
+commercial_loc_bias.csv
+loc_mock.csv
+open_loc_bias.csv
