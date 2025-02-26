@@ -45,3 +45,6 @@ expressions_by_model.html
 commercial_loc_bias.csv
 loc_mock.csv
 open_loc_bias.csv
+attribute_influence.csv
+comprehension_consistency.csv
+production_consistency.csv
