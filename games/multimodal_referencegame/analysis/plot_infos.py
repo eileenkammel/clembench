@@ -6,21 +6,14 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib as mpl
-
-OPEN_WEIGHED_MODELS = [
-    "idefics-80b-instruct",
-    "InternVL2-Llama3-76B",
-    "InternVL2-40B",
-    "InternVL2-8B",
-]
-
-COMMERCIAL_MODELS = [
-    "gpt-4o-2024-08-06",
-    "claude-3-5-sonnet-20240620",
-    "gemini-2.0-flash-exp",
-]
-
-ALL_MODELS = OPEN_WEIGHED_MODELS + COMMERCIAL_MODELS
+from games.multimodal_referencegame.analysis.constants import (
+    ALL_MODELS,
+    COMMERCIAL_MODELS,
+    OPEN_WEIGHED_MODELS,
+    COMMERCIAL_MODELS_ALIAS,
+    OPEN_WEIGHED_MODELS_ALIAS,
+    ALL_MODELS_ALIAS
+)
 
 
 def autopct_format(pct):
@@ -365,7 +358,7 @@ def plot_surplus_id_combined(models_ow, models_commercial, df_ow, df_commercial,
     )
 
 
-def plot_complete_correct_ratio(models, df, output_path, comprehension=False):
+def plot_complete_correct_ratio(models, df, model_alias, output_path, comprehension=False):
     completion_percentages_tuna = []
     correct_percentages_tuna = []
     completion_percentages_3ds = []
@@ -401,7 +394,7 @@ def plot_complete_correct_ratio(models, df, output_path, comprehension=False):
         completion_percentages_3ds.append(completion_pct_3ds)
         correct_percentages_tuna.append(correct_pct_tuna)
         correct_percentages_3ds.append(correct_pct_3ds)
-        labels.append(model)
+        labels.append(model_alias[model])
 
         # Print the ratio of correct for each data set and model to console
         print(f"Model: {model}")
@@ -412,6 +405,7 @@ def plot_complete_correct_ratio(models, df, output_path, comprehension=False):
             f"3DS - Total: {total_3ds}, Correct: {correct_vals_3ds}, Ratio: {correct_pct_3ds:.2f}%"
         )
         print()
+    # replace full model names with abbreviations in labels
 
     x = range(len(models))
     colors = mpl.colormaps["YlOrBr"]([0.6, 0.9])
@@ -453,13 +447,13 @@ def plot_complete_correct_ratio(models, df, output_path, comprehension=False):
     ax.axhline(y=25, color="r", linestyle="--", label="Chance Average")
     #    ax.text(0, 25, 'Chance', color='r', va='bottom')
 
-    ax.set_xlabel("Models")
+    #ax.set_xlabel("Models")
     ax.set_ylabel("% of Games Played")
     title = "Referent Identification with Human made REs" if comprehension else "Referent Identification with LLM made REs"
     ax.set_title(title)
     ax.set_xticks(x)
-    ax.set_xticklabels(labels, rotation=0, ha="center")
-    legend = ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.15), ncol=2)
+    ax.set_xticklabels(labels, rotation=45, ha="center")
+    legend = ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.25), ncol=5)
     legend.get_frame().set_alpha(0.5)
 
     plt.tight_layout()
@@ -486,16 +480,19 @@ if __name__ == "__main__":
     df_commercial = pd.read_csv("games/multimodal_referencegame/analysis/commercial_expressions_by_model.csv")
     df_ow = pd.read_csv("games/multimodal_referencegame/analysis/expressions_by_model.csv")
 
-    plot_id_accuracy(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/id_accuracy_commercial")
-    plot_id_accuracy_bar_chart(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/id_accuracy_bar_chart_commercial")
+    # plot_id_accuracy(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/id_accuracy_commercial")
+    # plot_id_accuracy_bar_chart(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/id_accuracy_bar_chart_commercial")
 
-    plot_id_accuracy(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/id_accuracy_ow")
-    plot_id_accuracy_bar_chart(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/id_accuracy_bar_chart_ow")
+    # plot_id_accuracy(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/id_accuracy_ow")
+    # plot_id_accuracy_bar_chart(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/id_accuracy_bar_chart_ow")
 
-    plot_surplus_id_combined(OPEN_WEIGHED_MODELS, COMMERCIAL_MODELS, df_ow, df_commercial, human_commercial, "games/multimodal_referencegame/analysis/plots/surplus_info_commercial")
+    # plot_surplus_id_combined(OPEN_WEIGHED_MODELS, COMMERCIAL_MODELS, df_ow, df_commercial, human_commercial, "games/multimodal_referencegame/analysis/plots/surplus_info_commercial")
 
-    plot_complete_correct_ratio(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_commercial")
-    plot_complete_correct_ratio(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_commercial_programmatic", comprehension=True)
+    # plot_complete_correct_ratio(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_commercial")
+    # plot_complete_correct_ratio(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_commercial_programmatic", comprehension=True)
 
-    plot_complete_correct_ratio(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_ow")
-    plot_complete_correct_ratio(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_ow_programmatic", comprehension=True)
+    # plot_complete_correct_ratio(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_ow")
+    # plot_complete_correct_ratio(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_ow_programmatic", comprehension=True)
+
+    plot_complete_correct_ratio(ALL_MODELS, pd.concat([df_commercial, df_ow]), ALL_MODELS_ALIAS, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_all")
+    plot_complete_correct_ratio(ALL_MODELS, pd.concat([human_commercial, human_ow]), ALL_MODELS_ALIAS, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_all_programmatic", comprehension=True)
