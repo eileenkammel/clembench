@@ -10,6 +10,12 @@ COMMERCIAL_MODELS = [
     "gemini-2.0-flash-exp",
 ]
 
+COMMERCIAL_MODELS_ALIAS = {
+    "gpt-4o-2024-08-06": "GPT-4o",
+    "claude-3-5-sonnet-20240620": "Claude-3.5-Sonnet",
+    "gemini-2.0-flash-exp": "Gemini-2.0-Flash",
+}
+
 OPEN_WEIGHED_MODELS = [
     "idefics-80b-instruct",
     "InternVL2-Llama3-76B",
@@ -17,7 +23,15 @@ OPEN_WEIGHED_MODELS = [
     "InternVL2-8B",
 ]
 
+OPEN_WEIGHED_MODELS_ALIAS = {
+    "idefics-80b-instruct": "idefics-80b",
+    "InternVL2-Llama3-76B": "InternVL2-Llama3-76B",
+    "InternVL2-40B": "InternVL2-40B",
+    "InternVL2-8B": "InternVL2-8B",
+}
+
 ALL_MODELS = COMMERCIAL_MODELS + OPEN_WEIGHED_MODELS
+ALL_MODELS_ALIAS = {**COMMERCIAL_MODELS_ALIAS, **OPEN_WEIGHED_MODELS_ALIAS}
 
 TUNA_STIMULI_IDS = [
     642,
