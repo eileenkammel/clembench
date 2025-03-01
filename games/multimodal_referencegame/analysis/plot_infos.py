@@ -123,18 +123,15 @@ def plot_id_accuracy_bar_chart(models, df, output_path):
     labels = []
     df_tuna = df[df["set"] == "TUNA"]
     df_3ds = df[df["set"] == "3DS"]
+
     for model in models:
         model_df_tuna = df_tuna[df_tuna["model"] == model]
         model_df_3ds = df_3ds[df_3ds["model"] == model]
 
         # count values for TUNA
         no_id_tuna = model_df_tuna[model_df_tuna["ID"] == "NO ID"].count()["ID"]
-        insuff_id_tuna = model_df_tuna[
-            model_df_tuna["ID"] == "Insufficient ID"
-        ].count()["ID"]
-        correct_id_tuna = model_df_tuna[model_df_tuna["ID"] == "Correct ID"].count()[
-            "ID"
-        ]
+        insuff_id_tuna = model_df_tuna[model_df_tuna["ID"] == "Insufficient ID"].count()["ID"]
+        correct_id_tuna = model_df_tuna[model_df_tuna["ID"] == "Correct ID"].count()["ID"]
 
         # calculate percentages for TUNA
         total_tuna = no_id_tuna + insuff_id_tuna + correct_id_tuna
@@ -148,9 +145,7 @@ def plot_id_accuracy_bar_chart(models, df, output_path):
 
         # count values for 3DS
         no_id_3ds = model_df_3ds[model_df_3ds["ID"] == "NO ID"].count()["ID"]
-        insuff_id_3ds = model_df_3ds[model_df_3ds["ID"] == "Insufficient ID"].count()[
-            "ID"
-        ]
+        insuff_id_3ds = model_df_3ds[model_df_3ds["ID"] == "Insufficient ID"].count()["ID"]
         correct_id_3ds = model_df_3ds[model_df_3ds["ID"] == "Correct ID"].count()["ID"]
 
         # calculate percentages for 3DS
@@ -164,6 +159,12 @@ def plot_id_accuracy_bar_chart(models, df, output_path):
         correct_id_percentages_3ds.append(correct_id_pct_3ds)
 
         labels.append(model)
+
+        # Print the information to the command line
+        print(f"Model: {model}")
+        print(f"TUNA - NO ID: {no_id_tuna} ({no_id_pct_tuna:.2f}%), Insufficient ID: {insuff_id_tuna} ({insuff_id_pct_tuna:.2f}%), Correct ID: {correct_id_tuna} ({correct_id_pct_tuna:.2f}%)")
+        print(f"3DS - NO ID: {no_id_3ds} ({no_id_pct_3ds:.2f}%), Insufficient ID: {insuff_id_3ds} ({insuff_id_pct_3ds:.2f}%), Correct ID: {correct_id_3ds} ({correct_id_pct_3ds:.2f}%)")
+        print()
 
     y = range(len(models))
     colors = mpl.colormaps["YlOrBr"]([0.6, 0.7, 0.9])
@@ -248,21 +249,20 @@ def plot_id_accuracy_bar_chart(models, df, output_path):
 def plot_surplus_id_combined(models_ow, models_commercial, df_ow, df_commercial, human, output_path):
     fig, ax = plt.subplots(figsize=(12, 8))
 
-
     surplus_data_tuna = []
     surplus_data_3ds = []
     labels = []
     colors2 = mpl.colormaps["PuBuGn"]([0.4, 0.7, 0.9])
     colors = mpl.colormaps["YlOrBr"]([0.6, 0.7, 0.9])
-    
-    df_tuna_ow = df_ow[df_ow["set"] == "TUNA"]
-    df_3ds_ow = df_ow[df_ow["set"] == "3DS"]
-    df_tuna_commercial = df_commercial[df_commercial["set"] == "TUNA"]
-    df_3ds_commercial = df_commercial[df_commercial["set"] == "3DS"]
-    
+
+    df_tuna_ow = df_ow[(df_ow["set"] == "TUNA") & (df_ow["status"] == "completed")]
+    df_3ds_ow = df_ow[(df_ow["set"] == "3DS") & (df_ow["status"] == "completed")]
+    df_tuna_commercial = df_commercial[(df_commercial["set"] == "TUNA") & (df_commercial["status"] == "completed")]
+    df_3ds_commercial = df_commercial[(df_commercial["set"] == "3DS") & (df_commercial["status"] == "completed")]
+
     # Choose just one model bc HE is the same 
-    human_tuna = human[(human["set"] == "TUNA") & (human["model"] == models_commercial[0])]
-    human_3ds = human[(human["set"] == "3DS") & (human["model"] == models_commercial[0])]
+    human_tuna = human[(human["set"] == "TUNA") & (human["model"] == models_commercial[0]) & (human["status"] == "completed")]
+    human_3ds = human[(human["set"] == "3DS") & (human["model"] == models_commercial[0]) & (human["status"] == "completed")]
 
     for model in models_ow:
         model_df_tuna = df_tuna_ow[df_tuna_ow["model"] == model]
@@ -285,6 +285,7 @@ def plot_surplus_id_combined(models_ow, models_commercial, df_ow, df_commercial,
         surplus_data_tuna.append(surplus_values_tuna)
         surplus_data_3ds.append(surplus_values_3ds)
         labels.append(model)
+    labels = [ALL_MODELS_ALIAS[model] for model in labels]
 
     # Add human data
     surplus_data_tuna.append(human_tuna["surplus_info"])
@@ -332,7 +333,7 @@ def plot_surplus_id_combined(models_ow, models_commercial, df_ow, df_commercial,
     )
 
     ax.set_title("Surplus Information Distribution for Each Model + Human")
-    ax.set_xlabel("Surplus Information (Number of ADJ+NOUN)")
+    ax.set_xlabel("Surplus Information (Number of ADJ/ADV+NOUN/PROPN)")
     ax.set_yticks([i * 2 + 0.5 for i in range(len(models_ow) + len(models_commercial) + 1)])
     ax.set_yticklabels(labels)
 
@@ -486,7 +487,7 @@ if __name__ == "__main__":
     # plot_id_accuracy(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/id_accuracy_ow")
     # plot_id_accuracy_bar_chart(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/id_accuracy_bar_chart_ow")
 
-    # plot_surplus_id_combined(OPEN_WEIGHED_MODELS, COMMERCIAL_MODELS, df_ow, df_commercial, human_commercial, "games/multimodal_referencegame/analysis/plots/surplus_info_commercial")
+    plot_surplus_id_combined(OPEN_WEIGHED_MODELS, COMMERCIAL_MODELS, df_ow, df_commercial, human_commercial, "games/multimodal_referencegame/analysis/plots/surplus_info_commercial")
 
     # plot_complete_correct_ratio(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_commercial")
     # plot_complete_correct_ratio(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_commercial_programmatic", comprehension=True)
@@ -494,5 +495,7 @@ if __name__ == "__main__":
     # plot_complete_correct_ratio(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_ow")
     # plot_complete_correct_ratio(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_ow_programmatic", comprehension=True)
 
-    plot_complete_correct_ratio(ALL_MODELS, pd.concat([df_commercial, df_ow]), ALL_MODELS_ALIAS, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_all")
-    plot_complete_correct_ratio(ALL_MODELS, pd.concat([human_commercial, human_ow]), ALL_MODELS_ALIAS, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_all_programmatic", comprehension=True)
+    # plot_complete_correct_ratio(ALL_MODELS, pd.concat([df_commercial, df_ow]), ALL_MODELS_ALIAS, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_all")
+    # plot_complete_correct_ratio(ALL_MODELS, pd.concat([human_commercial, human_ow]), ALL_MODELS_ALIAS, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_all_programmatic", comprehension=True)
+
+    plot_id_accuracy_bar_chart(ALL_MODELS, pd.concat([df_commercial, df_ow]), "games/multimodal_referencegame/analysis/plots/id_accuracy_bar_chart_all")
