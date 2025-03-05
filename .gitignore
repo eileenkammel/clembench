@@ -192,3 +192,6 @@ cython_debug/
 #.idea/
 /venv_hf/
 /venv_llamacpp/
+games/multimodal_referencegame/analysis/consistent_episodes_comprehension.csv
+games/multimodal_referencegame/analysis/model_gt_comparison.csv
+games/multimodal_referencegame/analysis/all_gt.json

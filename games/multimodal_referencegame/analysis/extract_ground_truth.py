@@ -7,19 +7,7 @@
 
 import json
 import os
-
-COMMERCIAL_MODELS = [
-    "gpt-4o-2024-08-06",
-    "claude-3-5-sonnet-20240620",
-    "gemini-2.0-flash-exp",
-]
-
-OPEN_WEIGHED_MODELS = [
-    "idefics-80b-instruct",
-    "InternVL2-Llama3-76B",
-    "InternVL2-40B",
-    "InternVL2-8B",
-]
+from games.multimodal_referencegame.analysis.constants import ALL_MODELS
 
 
 def extract_gt(models, output_path):
@@ -56,4 +44,4 @@ def get_img_gt(episode_json):
 
 
 if __name__ == "__main__":
-    extract_gt(COMMERCIAL_MODELS, "games/multimodal_referencegame/analysis/commercial_gt.json")
+    extract_gt(ALL_MODELS, "games/multimodal_referencegame/analysis/all_gt.json")

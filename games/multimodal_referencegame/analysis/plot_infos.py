@@ -12,7 +12,8 @@ from games.multimodal_referencegame.analysis.constants import (
     OPEN_WEIGHED_MODELS,
     COMMERCIAL_MODELS_ALIAS,
     OPEN_WEIGHED_MODELS_ALIAS,
-    ALL_MODELS_ALIAS
+    ALL_MODELS_ALIAS,
+    CONSITENT_EPISODES
 )
 
 
@@ -113,7 +114,7 @@ def plot_id_accuracy(models, df, output_path):
     )
 
 
-def plot_id_accuracy_bar_chart(models, df, output_path):
+def plot_id_accuracy_bar_chart(models, df, output_path, comprehension=False):
     no_id_percentages_tuna = []
     insuff_id_percentages_tuna = []
     correct_id_percentages_tuna = []
@@ -123,6 +124,10 @@ def plot_id_accuracy_bar_chart(models, df, output_path):
     labels = []
     df_tuna = df[df["set"] == "TUNA"]
     df_3ds = df[df["set"] == "3DS"]
+    # Only use the first model if comprehension is True
+    # because the expressions are the same for all models
+    if comprehension:
+        models = [models[0]]
 
     for model in models:
         model_df_tuna = df_tuna[df_tuna["model"] == model]
@@ -275,6 +280,14 @@ def plot_surplus_id_combined(models_ow, models_commercial, df_ow, df_commercial,
         surplus_data_3ds.append(surplus_values_3ds)
         labels.append(model)
 
+        # Print mean surplus info to console
+        mean_surplus_tuna = surplus_values_tuna.mean()
+        mean_surplus_3ds = surplus_values_3ds.mean()
+        print(f"Model: {model}")
+        print(f"TUNA - Mean Surplus Info: {mean_surplus_tuna:.2f}")
+        print(f"3DS - Mean Surplus Info: {mean_surplus_3ds:.2f}")
+        print()
+
     for model in models_commercial:
         model_df_tuna = df_tuna_commercial[df_tuna_commercial["model"] == model]
         model_df_3ds = df_3ds_commercial[df_3ds_commercial["model"] == model]
@@ -285,12 +298,29 @@ def plot_surplus_id_combined(models_ow, models_commercial, df_ow, df_commercial,
         surplus_data_tuna.append(surplus_values_tuna)
         surplus_data_3ds.append(surplus_values_3ds)
         labels.append(model)
+
+        # Print mean surplus info to console
+        mean_surplus_tuna = surplus_values_tuna.mean()
+        mean_surplus_3ds = surplus_values_3ds.mean()
+        print(f"Model: {model}")
+        print(f"TUNA - Mean Surplus Info: {mean_surplus_tuna:.2f}")
+        print(f"3DS - Mean Surplus Info: {mean_surplus_3ds:.2f}")
+        print()
+
     labels = [ALL_MODELS_ALIAS[model] for model in labels]
 
     # Add human data
     surplus_data_tuna.append(human_tuna["surplus_info"])
     surplus_data_3ds.append(human_3ds["surplus_info"])
     labels.append("Human")
+
+    # Print mean surplus info for human data
+    mean_surplus_tuna_human = human_tuna["surplus_info"].mean()
+    mean_surplus_3ds_human = human_3ds["surplus_info"].mean()
+    print("Human")
+    print(f"TUNA - Mean Surplus Info: {mean_surplus_tuna_human:.2f}")
+    print(f"3DS - Mean Surplus Info: {mean_surplus_3ds_human:.2f}")
+    print()
 
     # Make combined boxplot with matplotlib
     boxprops_tuna = dict(facecolor=colors[0], color=colors[2])
@@ -359,7 +389,7 @@ def plot_surplus_id_combined(models_ow, models_commercial, df_ow, df_commercial,
     )
 
 
-def plot_complete_correct_ratio(models, df, model_alias, output_path, comprehension=False):
+def plot_complete_correct_ratio(models, df, model_alias, output_path, comprehension=False, consistency=False):
     completion_percentages_tuna = []
     correct_percentages_tuna = []
     completion_percentages_3ds = []
@@ -367,30 +397,27 @@ def plot_complete_correct_ratio(models, df, model_alias, output_path, comprehens
     labels = []
     df_tuna = df[df["set"] == "TUNA"]
     df_3ds = df[df["set"] == "3DS"]
+    results = []
+
     for model in models:
         model_df_tuna = df_tuna[df_tuna["model"] == model]
         model_df_3ds = df_3ds[df_3ds["model"] == model]
-        total_tuna = model_df_tuna[model_df_tuna["status"] == "completed"].count()[
-            "status"
-        ]
-        total_3ds = model_df_3ds[model_df_3ds["status"] == "completed"].count()[
-            "status"
-        ]
-        correct_vals_tuna = model_df_tuna[model_df_tuna["correct"] == True].count()[
-            "correct"
-        ]
-        correct_vals_3ds = model_df_3ds[model_df_3ds["correct"] == True].count()[
-            "correct"
-        ]
+        total_tuna = model_df_tuna[model_df_tuna["status"] == "completed"].count()["status"]
+        total_3ds = model_df_3ds[model_df_3ds["status"] == "completed"].count()["status"]
+
+        if consistency:
+            tuns_episodes, threeds_episodes = get_consistent_episodes(model)
+            model_df_tuna = model_df_tuna[model_df_tuna["stim_id"].isin(tuns_episodes)]
+            model_df_3ds = model_df_3ds[model_df_3ds["stim_id"].isin(threeds_episodes)]
+
+        correct_vals_tuna = model_df_tuna[model_df_tuna["correct"] == True].count()["correct"]
+        correct_vals_3ds = model_df_3ds[model_df_3ds["correct"] == True].count()["correct"]
 
         completion_pct_tuna = total_tuna / total_tuna * 100
         completion_pct_3ds = total_3ds / total_3ds * 100
-        correct_pct_tuna = (
-            correct_vals_tuna / total_tuna * 100 if total_tuna > 0 else 0
-        )  # Correct percentage out of completed
-        correct_pct_3ds = (
-            correct_vals_3ds / total_3ds * 100 if total_3ds > 0 else 0
-        )  # Correct percentage out of completed
+        correct_pct_tuna = correct_vals_tuna / total_tuna * 100 if total_tuna > 0 else 0
+        correct_pct_3ds = correct_vals_3ds / total_3ds * 100 if total_3ds > 0 else 0
+
         completion_percentages_tuna.append(completion_pct_tuna)
         completion_percentages_3ds.append(completion_pct_3ds)
         correct_percentages_tuna.append(correct_pct_tuna)
@@ -399,14 +426,29 @@ def plot_complete_correct_ratio(models, df, model_alias, output_path, comprehens
 
         # Print the ratio of correct for each data set and model to console
         print(f"Model: {model}")
-        print(
-            f"TUNA - Total: {total_tuna}, Correct: {correct_vals_tuna}, Ratio: {correct_pct_tuna:.2f}%"
-        )
-        print(
-            f"3DS - Total: {total_3ds}, Correct: {correct_vals_3ds}, Ratio: {correct_pct_3ds:.2f}%"
-        )
+        print(f"TUNA - Total: {total_tuna}, Correct: {correct_vals_tuna}, Ratio: {correct_pct_tuna:.2f}%")
+        print(f"3DS - Total: {total_3ds}, Correct: {correct_vals_3ds}, Ratio: {correct_pct_3ds:.2f}%")
         print()
-    # replace full model names with abbreviations in labels
+
+        # Save results to list
+        results.append({
+            "model": model_alias[model],
+            "set": "TUNA",
+            "total": total_tuna,
+            "correct": correct_vals_tuna,
+            "correct_percentage": correct_pct_tuna
+        })
+        results.append({
+            "model": model_alias[model],
+            "set": "3DS",
+            "total": total_3ds,
+            "correct": correct_vals_3ds,
+            "correct_percentage": correct_pct_3ds
+        })
+
+    # Save results to CSV
+    results_df = pd.DataFrame(results)
+    results_df.to_csv(output_path + "_correct_percentages.csv", index=False)
 
     x = range(len(models))
     colors = mpl.colormaps["YlOrBr"]([0.6, 0.9])
@@ -446,11 +488,10 @@ def plot_complete_correct_ratio(models, df, model_alias, output_path, comprehens
     )
 
     ax.axhline(y=25, color="r", linestyle="--", label="Chance Average")
-    #    ax.text(0, 25, 'Chance', color='r', va='bottom')
-
-    #ax.set_xlabel("Models")
     ax.set_ylabel("% of Games Played")
     title = "Referent Identification with Human made REs" if comprehension else "Referent Identification with LLM made REs"
+    if consistency:
+        title = "Consistent " + title
     ax.set_title(title)
     ax.set_xticks(x)
     ax.set_xticklabels(labels, rotation=45, ha="center")
@@ -460,18 +501,28 @@ def plot_complete_correct_ratio(models, df, model_alias, output_path, comprehens
     plt.tight_layout()
     plt.show()
 
+    if consistency:
+        output_path += "_consistent"
+
     fig.savefig(
         output_path + ".svg",
         format="svg",
     )
 
     fig.savefig(
-        output_path +  ".png",
+        output_path + ".png",
         format="png",
     )
 
 
+def get_consistent_episodes(model):
+    tuna_episodes = CONSITENT_EPISODES[model]["tuna"]
+    threeds_episodes = CONSITENT_EPISODES[model]["threeds"]
+    return tuna_episodes, threeds_episodes
+
+
 if __name__ == "__main__":
+
     human_commercial = pd.read_csv(
         "games/multimodal_referencegame/analysis/commercial_expressions_by_model_programmatic.csv"
     )
@@ -487,7 +538,9 @@ if __name__ == "__main__":
     # plot_id_accuracy(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/id_accuracy_ow")
     # plot_id_accuracy_bar_chart(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/id_accuracy_bar_chart_ow")
 
-    plot_surplus_id_combined(OPEN_WEIGHED_MODELS, COMMERCIAL_MODELS, df_ow, df_commercial, human_commercial, "games/multimodal_referencegame/analysis/plots/surplus_info_commercial")
+    # plot_id_accuracy_bar_chart(COMMERCIAL_MODELS, human_commercial, "games/multimodal_referencegame/analysis/plots/id_accuracy_human")
+
+    # plot_surplus_id_combined(OPEN_WEIGHED_MODELS, COMMERCIAL_MODELS, df_ow, df_commercial, human_commercial, "games/multimodal_referencegame/analysis/plots/surplus_info_commercial")
 
     # plot_complete_correct_ratio(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_commercial")
     # plot_complete_correct_ratio(COMMERCIAL_MODELS, df_commercial, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_commercial_programmatic", comprehension=True)
@@ -495,7 +548,9 @@ if __name__ == "__main__":
     # plot_complete_correct_ratio(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_ow")
     # plot_complete_correct_ratio(OPEN_WEIGHED_MODELS, df_ow, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_ow_programmatic", comprehension=True)
 
-    # plot_complete_correct_ratio(ALL_MODELS, pd.concat([df_commercial, df_ow]), ALL_MODELS_ALIAS, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_all")
-    # plot_complete_correct_ratio(ALL_MODELS, pd.concat([human_commercial, human_ow]), ALL_MODELS_ALIAS, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_all_programmatic", comprehension=True)
+    plot_complete_correct_ratio(ALL_MODELS, pd.concat([df_commercial, df_ow]), ALL_MODELS_ALIAS, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_all", comprehension=False, consistency=False)
+    plot_complete_correct_ratio(ALL_MODELS, pd.concat([human_commercial, human_ow]), ALL_MODELS_ALIAS, "games/multimodal_referencegame/analysis/plots/completion_correct_ratio_all_programmatic", comprehension=True, consistency=False)
 
-    plot_id_accuracy_bar_chart(ALL_MODELS, pd.concat([df_commercial, df_ow]), "games/multimodal_referencegame/analysis/plots/id_accuracy_bar_chart_all")
+    plot_complete_correct_ratio(ALL_MODELS, pd.concat([human_commercial, human_ow]), ALL_MODELS_ALIAS, "games/multimodal_referencegame/analysis/plots/consistent_completion_correct_ratio_all", comprehension=True, consistency=True)
+
+    # plot_id_accuracy_bar_chart(ALL_MODELS, pd.concat([df_commercial, df_ow]), "games/multimodal_referencegame/analysis/plots/id_accuracy_bar_chart_all")

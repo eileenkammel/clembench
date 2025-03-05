@@ -5,7 +5,6 @@
 # Check if model have location bias
 # in comprehension/orogrammatic mode
 
-import json
 import pandas as pd
 
 COMMERCIAL_MODELS = [
@@ -116,7 +115,6 @@ def compare_episodes(episodes):
 def compare_choices(choices):
     unique_choices = list(choices.unique())
     if len(unique_choices) == 2:
-
         choice_one = list(choices).count(unique_choices[0])
         choice_two = list(choices).count(unique_choices[1])
         if choice_one == 3 or choice_two == 3:
@@ -128,12 +126,24 @@ def compare_choices(choices):
 
 
 def count_loc_bias(models, data):
+    loc_bias_summary = []
     for model in models:
         model_df = data[data["model"] == model]
-        loc_bias = model_df["loc bias"].value_counts()
-        print(model)
-        print(loc_bias)
+        loc_bias = model_df["loc bias"].value_counts().to_dict()
+        loc_bias_summary.append({"model": model, "loc_bias": loc_bias})
+    return loc_bias_summary
 
+
+def generate_html_table(data, title):
+    html = f"<h2>{title}</h2>"
+    html += "<table border='1'>"
+    html += "<tr><th>Model</th><th>Location Bias</th><th>Count</th></tr>"
+    for entry in data:
+        model = entry["model"]
+        for loc_bias, count in entry["loc_bias"].items():
+            html += f"<tr><td>{model}</td><td>{loc_bias}</td><td>{count}</td></tr>"
+    html += "</table>"
+    return html
 
 
 if __name__ == "__main__":
@@ -150,5 +160,14 @@ if __name__ == "__main__":
 
     commercial_loc_bias = pd.read_csv("games/multimodal_referencegame/analysis/commercial_loc_bias.csv")
     open_loc_bias = pd.read_csv("games/multimodal_referencegame/analysis/open_loc_bias.csv")
-    count_loc_bias(COMMERCIAL_MODELS, commercial_loc_bias)
-    count_loc_bias(OPEN_WEIGHED_MODELS, open_loc_bias)
+    commercial_loc_bias_summary = count_loc_bias(COMMERCIAL_MODELS, commercial_loc_bias)
+    open_loc_bias_summary = count_loc_bias(OPEN_WEIGHED_MODELS, open_loc_bias)
+
+    # Generate HTML tables
+    commercial_loc_bias_html = generate_html_table(commercial_loc_bias_summary, "Commercial Models Location Bias")
+    open_loc_bias_html = generate_html_table(open_loc_bias_summary, "Open-Weight Models Location Bias")
+
+    # Save HTML tables to file
+    with open("games/multimodal_referencegame/analysis/location_bias.html", "w") as f:
+        f.write(commercial_loc_bias_html)
+        f.write(open_loc_bias_html)

@@ -7,88 +7,22 @@
 import json
 import pandas as pd
 import spacy
+from games.multimodal_referencegame.analysis.constants import (
+    OPEN_WEIGHED_MODELS,
+    COMMERCIAL_MODELS,
+    ALL_MODELS,
+    TUNA_STIMULI_IDS,
+    THREEDS_STIMULI_IDS,
 
-OPEN_WEIGHED_MODELS = [
-    "idefics-80b-instruct",
-    "InternVL2-Llama3-76B",
-    "InternVL2-40B",
-    "InternVL2-8B",
-]
-
-TUNA_STIMULI_IDS = [
-    642,
-    580,
-    965,
-    454,
-    9,
-    588,
-    975,
-    719,
-    784,
-    593,
-    977,
-    55,
-    1047,
-    793,
-    220,
-    799,
-    96,
-    675,
-    932,
-    101,
-    678,
-    1060,
-    164,
-    878,
-    307,
-    244,
-    501,
-    567,
-    123,
-    127,
-]  # List of stimuli ids for TUNA
-THREEDS_STIMULI_IDS = [
-    640,
-    1856,
-    453,
-    2693,
-    3014,
-    3589,
-    2761,
-    1224,
-    654,
-    1559,
-    3160,
-    3544,
-    3991,
-    802,
-    3367,
-    1129,
-    491,
-    684,
-    1389,
-    686,
-    2671,
-    3762,
-    3123,
-    2482,
-    2418,
-    2999,
-    3512,
-    2682,
-    1403,
-    1276,
-]
+)
 
 
-def compare_to_gt():
+def compare_to_gt(models, data, outfile):
     gt_comparison = pd.DataFrame(
         columns=["set", "model", "episode", "information_comparison", "len_comparison"]
     )
-    model_expressions = pd.read_csv(
-        "games/multimodal_referencegame/analysis/expressions_by_model.csv"
-    )
-    for model in OPEN_WEIGHED_MODELS:
+    model_expressions = data
+    for model in models:
         df_model = model_expressions[model_expressions["model"] == model]
         df_model_tuna = df_model[df_model["set"] == "TUNA"]
         df_model_threeds = df_model[df_model["set"] == "3DS"]
@@ -124,8 +58,8 @@ def compare_to_gt():
                 information_comparison,
                 len_coparison,
             ]
-    gt_comparison.to_csv("games/multimodal_referencegame/analysis/gt_comparison.csv")
-    gt_comparison.to_html("games/multimodal_referencegame/analysis/gt_comparison.html")
+    gt_comparison.to_csv("games/multimodal_referencegame/analysis/" + outfile + ".csv")
+    gt_comparison.to_html("games/multimodal_referencegame/analysis/" + outfile + ".html")
 
 
 def load_gt(set, stimuli_id, model):
@@ -133,7 +67,7 @@ def load_gt(set, stimuli_id, model):
         open("games/multimodal_referencegame/analysis/id_target_table.json")
     )
     target = id_t_lookup[set][str(stimuli_id)]
-    gt = json.load(open("games/multimodal_referencegame/analysis/ground_truth.json"))
+    gt = json.load(open("games/multimodal_referencegame/analysis/all_gt.json"))
     return gt[model][set][target]
 
 
@@ -173,9 +107,9 @@ def compare_len(gt, model):
     return gt - model
 
 
-def get_means():
-    df = pd.read_csv("games/multimodal_referencegame/analysis/gt_comparison.csv")
-    for model in OPEN_WEIGHED_MODELS:
+def get_means(models, data):
+    df = data
+    for model in models:
         df_model = df[df["model"] == model]
         df_model_tuna = df_model[df_model["set"] == "TUNA"]
         mean_info = df_model_tuna["information_comparison"].mean().round(2)
@@ -191,6 +125,10 @@ def get_means():
 
 
 
-
-#compare_to_gt()
-get_means()
+if __name__ == "__main__":
+    df_commercial = pd.read_csv("games/multimodal_referencegame/analysis/commercial_expressions_by_model.csv")
+    df_ow = pd.read_csv("games/multimodal_referencegame/analysis/expressions_by_model.csv")
+    data = pd.concat([df_commercial, df_ow])
+    compare_to_gt(ALL_MODELS, data, "model_gt_comparison")
+    gt = pd.read_csv("games/multimodal_referencegame/analysis/model_gt_comparison.csv")
+    get_means(ALL_MODELS, gt)
